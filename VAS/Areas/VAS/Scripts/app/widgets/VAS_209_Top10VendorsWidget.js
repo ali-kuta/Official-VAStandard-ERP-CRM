@@ -10,52 +10,52 @@
  * Message Table:
  *   # | Fallback Text                                    | Message Key
  *  ---+--------------------------------------------------+-----------------------------------
- *   1 | Top 10 Vendors                                   | VAS_Top10Vendors
- *   2 | Month                                            | VAS_Month
- *   3 | Year                                             | VAS_Year
- *   4 | Ranked by PO value                               | VAS_RankedByPOValue
- *   5 | Showing                                          | VAS_Showing
- *   6 | of                                               | VAS_Of
- *   7 | PO value                                         | VAS_POValue
- *   8 | POs                                              | VAS_POs
- *   9 | Share of month                                   | VAS_ShareOfMonth
- *  10 | On-time %                                        | VAS_OnTimePct
- *  11 | Purchase orders                                  | VAS_PurchaseOrders
- *  12 | Purchase order lines                             | VAS_PurchaseOrderLines
- *  13 | Vendor purchase orders                           | VAS_VendorPurchaseOrders
- *  14 | PO No                                            | VAS_PONo
- *  15 | PO date                                          | VAS_PODate
- *  16 | Vendor                                           | VAS_Vendor
- *  17 | Warehouse                                        | VAS_Warehouse
- *  18 | Representative                                   | VAS_Representative
- *  19 | Value                                            | VAS_Value
- *  20 | Delivery                                         | VAS_Delivery
- *  21 | Status                                           | VAS_Status
- *  22 | Product                                          | VAS_Product
- *  23 | Attribute                                        | VAS_Attribute
- *  24 | UoM                                              | VAS_UoM
- *  25 | Ordered                                          | VAS_Ordered
- *  26 | Received                                         | VAS_Received
- *  27 | Pending                                          | VAS_Pending
- *  28 | Rate                                             | VAS_Rate
- *  29 | Amount                                           | VAS_Amount
- *  30 | Line status                                      | VAS_LineStatus
- *  31 | Lines                                            | VAS_Lines
- *  32 | Qty ordered                                      | VAS_QtyOrdered
- *  33 | Qty pending                                      | VAS_QtyPending
- *  34 | Back                                             | VAS_Back
- *  35 | Close                                            | VAS_Close
- *  36 | Select a PO number to open the record            | VAS_SelectPOToOpen
- *  37 | Lines of                                         | VAS_LinesOf
- *  38 | No vendors found for this period                 | VAS_NoVendorsFound
- *  39 | Failed to load vendor data                       | VAS_FailedToLoadVendorData
- *  40 | Retry                                            | VAS_Retry
- *  41 | Loading...                                       | VAS_Loading
- *  42 | No purchase orders found                         | VAS_NoPOsFound
- *  43 | No lines found                                   | VAS_NoLinesFound
- *  44 | Previous                                         | VAS_Previous
- *  45 | Next                                             | VAS_Next
- *  46 | Open in Window                                   | VAS_OpenInWindow
+ *   1 | Top 10 Vendors                                   | VAS_209_Top10Vendors
+ *   2 | Month                                            | VAS_209_Month
+ *   3 | Year                                             | VAS_209_Year
+ *   4 | Ranked by PO value                               | VAS_209_RankedByPOValue
+ *   5 | Showing                                          | VAS_209_Showing
+ *   6 | of                                               | VAS_209_Of
+ *   7 | PO value                                         | VAS_209_POValue
+ *   8 | POs                                              | VAS_209_POs
+ *   9 | Share of month                                   | VAS_209_ShareOfMonth
+ *  10 | On-time %                                        | VAS_209_OnTimePct
+ *  11 | Purchase orders                                  | VAS_209_PurchaseOrders
+ *  12 | Purchase order lines                             | VAS_209_PurchaseOrderLines
+ *  13 | Vendor purchase orders                           | VAS_209_VendorPurchaseOrders
+ *  14 | PO No                                            | VAS_209_PONo
+ *  15 | PO date                                          | VAS_209_PODate
+ *  16 | Vendor                                           | VAS_209_Vendor
+ *  17 | Warehouse                                        | VAS_209_Warehouse
+ *  18 | Representative                                   | VAS_209_Representative
+ *  19 | Value                                            | VAS_209_Value
+ *  20 | Delivery                                         | VAS_209_Delivery
+ *  21 | Status                                           | VAS_209_Status
+ *  22 | Product                                          | VAS_209_Product
+ *  23 | Attribute                                        | VAS_209_Attribute
+ *  24 | UoM                                              | VAS_209_UoM
+ *  25 | Ordered                                          | VAS_209_Ordered
+ *  26 | Received                                         | VAS_209_Received
+ *  27 | Pending                                          | VAS_209_Pending
+ *  28 | Rate                                             | VAS_209_Rate
+ *  29 | Amount                                           | VAS_209_Amount
+ *  30 | Line status                                      | VAS_209_LineStatus
+ *  31 | Lines                                            | VAS_209_Lines
+ *  32 | Qty ordered                                      | VAS_209_QtyOrdered
+ *  33 | Qty pending                                      | VAS_209_QtyPending
+ *  34 | Back                                             | VAS_209_Back
+ *  35 | Close                                            | VAS_209_Close
+ *  36 | Select a PO number to open the record            | VAS_209_SelectPOToOpen
+ *  37 | Lines of                                         | VAS_209_LinesOf
+ *  38 | No vendors found for this period                 | VAS_209_NoVendorsFound
+ *  39 | Failed to load vendor data                       | VAS_209_FailedToLoadVendorData
+ *  40 | Retry                                            | VAS_209_Retry
+ *  41 | Loading...                                       | VAS_209_Loading
+ *  42 | No purchase orders found                         | VAS_209_NoPOsFound
+ *  43 | No lines found                                   | VAS_209_NoLinesFound
+ *  44 | Previous                                         | VAS_209_Previous
+ *  45 | Next                                             | VAS_209_Next
+ *  46 | Open in Window                                   | VAS_209_OpenInWindow
  */
 
 ; VAS = window.VAS || {};
@@ -198,11 +198,11 @@
 
             // 1. Header with Title and Month/Year Dropdown filters (Rule 13 Arrow-less)
             $header = $('<div class="vas-t10v-head"></div>');
-            var $headTxt = $('<div class="vas-t10v-head-txt"><p class="vas-t10v-title" title="' + esc(lbl('VAS_Top10Vendors', 'Top 10 Vendors')) + '">' + esc(lbl('VAS_Top10Vendors', 'Top 10 Vendors')) + '</p></div>');
+            var $headTxt = $('<div class="vas-t10v-head-txt"><p class="vas-t10v-title" title="' + esc(lbl('VAS_209_Top10Vendors', 'Top 10 Vendors')) + '">' + esc(lbl('VAS_209_Top10Vendors', 'Top 10 Vendors')) + '</p></div>');
             
             var $mfilter = $('<div class="vas-t10v-mfilter"></div>');
-            $monthSelect = $('<select class="vas-t10v-sel vas-t10v-sel-month" aria-label="' + esc(lbl('VAS_Month', 'Month')) + '"></select>');
-            $yearSelect = $('<select class="vas-t10v-sel vas-t10v-sel-year" aria-label="' + esc(lbl('VAS_Year', 'Year')) + '"></select>');
+            $monthSelect = $('<select class="vas-t10v-sel vas-t10v-sel-month" aria-label="' + esc(lbl('VAS_209_Month', 'Month')) + '"></select>');
+            $yearSelect = $('<select class="vas-t10v-sel vas-t10v-sel-year" aria-label="' + esc(lbl('VAS_209_Year', 'Year')) + '"></select>');
 
             for (var m = 1; m <= 12; m++) {
                 var mOpt = $('<option value="' + m + '">' + MONTH_NAMES[m - 1] + '</option>');
@@ -229,11 +229,11 @@
             $helperText = $('<span class="vas-t10v-helper"></span>');
             $pagerContainer = $('<div class="vas-t10v-pager"></div>');
             
-            $prevBtn = $('<button type="button" class="vas-t10v-pbtn" aria-label="' + esc(lbl('VAS_Previous', 'Previous')) + '" disabled>' +
+            $prevBtn = $('<button type="button" class="vas-t10v-pbtn" aria-label="' + esc(lbl('VAS_209_Previous', 'Previous')) + '" disabled>' +
                 '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>' +
                 '</button>');
-            $pageText = $('<span class="vas-t10v-ptxt">1 ' + lbl('VAS_Of', 'of') + ' 1</span>');
-            $nextBtn = $('<button type="button" class="vas-t10v-pbtn" aria-label="' + esc(lbl('VAS_Next', 'Next')) + '" disabled>' +
+            $pageText = $('<span class="vas-t10v-ptxt">1 ' + lbl('VAS_209_Of', 'of') + ' 1</span>');
+            $nextBtn = $('<button type="button" class="vas-t10v-pbtn" aria-label="' + esc(lbl('VAS_209_Next', 'Next')) + '" disabled>' +
                 '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>' +
                 '</button>');
 
@@ -347,8 +347,8 @@
                     '<span class="vas-t10v-track"><span class="vas-t10v-fill" style="width:0%;"></span></span></div>';
             }
             $listContainer.html(skeletonHtml);
-            $helperText.text(lbl('VAS_Loading', 'Loading...'));
-            $pageText.text('1 ' + lbl('VAS_Of', 'of') + ' 1');
+            $helperText.text(lbl('VAS_209_Loading', 'Loading...'));
+            $pageText.text('1 ' + lbl('VAS_209_Of', 'of') + ' 1');
             $prevBtn.prop('disabled', true);
             $nextBtn.prop('disabled', true);
         }
@@ -356,15 +356,15 @@
         function renderErrorState() {
             $listContainer.empty();
             var errHtml = $('<div class="vas-t10v-empty-box">' +
-                '<p class="vas-t10v-empty-msg">' + esc(lbl('VAS_FailedToLoadVendorData', 'Failed to load vendor data')) + '</p>' +
-                '<button type="button" class="vas-t10v-retry-btn">' + esc(lbl('VAS_Retry', 'Retry')) + '</button>' +
+                '<p class="vas-t10v-empty-msg">' + esc(lbl('VAS_209_FailedToLoadVendorData', 'Failed to load vendor data')) + '</p>' +
+                '<button type="button" class="vas-t10v-retry-btn">' + esc(lbl('VAS_209_Retry', 'Retry')) + '</button>' +
                 '</div>');
             errHtml.find('.vas-t10v-retry-btn').on('click', function () {
                 loadTopVendors();
             });
             $listContainer.append(errHtml);
-            $helperText.text('0 ' + lbl('VAS_Of', 'of') + ' 0');
-            $pageText.text('1 ' + lbl('VAS_Of', 'of') + ' 1');
+            $helperText.text('0 ' + lbl('VAS_209_Of', 'of') + ' 0');
+            $pageText.text('1 ' + lbl('VAS_209_Of', 'of') + ' 1');
             $prevBtn.prop('disabled', true);
             $nextBtn.prop('disabled', true);
         }
@@ -375,11 +375,11 @@
 
             if (count === 0) {
                 var emptyHtml = '<div class="vas-t10v-empty-box">' +
-                    '<p class="vas-t10v-empty-msg">' + esc(lbl('VAS_NoVendorsFound', 'No vendors found for this period')) + '</p>' +
+                    '<p class="vas-t10v-empty-msg">' + esc(lbl('VAS_209_NoVendorsFound', 'No vendors found for this period')) + '</p>' +
                     '</div>';
                 $listContainer.html(emptyHtml);
-                $helperText.text('0 ' + lbl('VAS_Of', 'of') + ' 0');
-                $pageText.text('1 ' + lbl('VAS_Of', 'of') + ' 1');
+                $helperText.text('0 ' + lbl('VAS_209_Of', 'of') + ' 0');
+                $pageText.text('1 ' + lbl('VAS_209_Of', 'of') + ' 1');
                 $prevBtn.prop('disabled', true);
                 $nextBtn.prop('disabled', true);
                 return;
@@ -415,10 +415,10 @@
             $listContainer.html(rowsHtml);
 
             // Update footer helper and pager
-            var helperString = lbl('VAS_Showing', 'Showing') + ' ' + (startIdx + 1) + '–' + endIdx + ' ' +
-                lbl('VAS_Of', 'of') + ' ' + count + ' · ' + lbl('VAS_RankedByPOValue', 'ranked by PO value');
+            var helperString = lbl('VAS_209_Showing', 'Showing') + ' ' + (startIdx + 1) + '–' + endIdx + ' ' +
+                lbl('VAS_209_Of', 'of') + ' ' + count + ' · ' + lbl('VAS_209_RankedByPOValue', 'ranked by PO value');
             $helperText.text(helperString);
-            $pageText.text((currentPage + 1) + ' ' + lbl('VAS_Of', 'of') + ' ' + totalPages);
+            $pageText.text((currentPage + 1) + ' ' + lbl('VAS_209_Of', 'of') + ' ' + totalPages);
 
             $prevBtn.prop('disabled', currentPage === 0);
             $nextBtn.prop('disabled', currentPage >= totalPages - 1);
@@ -435,7 +435,7 @@
                     '<div class="vas-t10v-modal" id="vas_t10v_modal_box">' +
                     '  <div class="vas-t10v-modal-header">' +
                     '    <div class="vas-t10v-mhead-left">' +
-                    '      <button type="button" class="vas-t10v-xbtn vas-t10v-mback" id="vas_t10v_mBack" aria-label="' + esc(lbl('VAS_Back', 'Back')) + '" hidden>' +
+                    '      <button type="button" class="vas-t10v-xbtn vas-t10v-mback" id="vas_t10v_mBack" aria-label="' + esc(lbl('VAS_209_Back', 'Back')) + '" hidden>' +
                     '        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>' +
                     '      </button>' +
                     '      <div class="vas-t10v-htxt">' +
@@ -444,7 +444,7 @@
                     '      </div>' +
                     '    </div>' +
                     '    <div class="vas-t10v-hact">' +
-                    '      <button type="button" class="vas-t10v-xbtn" id="vas_t10v_mClose" aria-label="' + esc(lbl('VAS_Close', 'Close')) + '">' +
+                    '      <button type="button" class="vas-t10v-xbtn" id="vas_t10v_mClose" aria-label="' + esc(lbl('VAS_209_Close', 'Close')) + '">' +
                     '        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>' +
                     '      </button>' +
                     '    </div>' +
@@ -523,7 +523,7 @@
                 $mFoot.html(cfg.foot);
             } else {
                 var $defFoot = $('<span class="vas-t10v-foot-note"></span>' +
-                    '<button type="button" class="vas-t10v-btn vas-t10v-btn-close">' + esc(lbl('VAS_Close', 'Close')) + '</button>');
+                    '<button type="button" class="vas-t10v-btn vas-t10v-btn-close">' + esc(lbl('VAS_209_Close', 'Close')) + '</button>');
                 $defFoot.filter('.vas-t10v-btn-close').on('click', closeModal);
                 $mFoot.append($defFoot);
             }
@@ -563,7 +563,7 @@
 
             var periodStr = getPeriodLabel();
             var title = vendorName || (vObj ? vObj.name : 'Vendor');
-            var subtitle = lbl('VAS_VendorPurchaseOrders', 'Vendor purchase orders') + ' · ' + periodStr;
+            var subtitle = lbl('VAS_209_VendorPurchaseOrders', 'Vendor purchase orders') + ' · ' + periodStr;
 
             var vSpend = vObj ? vObj.value : 0;
             var vPOs = vObj ? vObj.pos : 0;
@@ -571,12 +571,12 @@
             var vOnTime = vObj ? (vObj.onTimePct != null ? vObj.onTimePct + '%' : '100%') : '100%';
 
             var statStripHtml = '<div class="vas-t10v-mstats">' +
-                '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_POValue', 'PO value')) + '</div><div class="v" title="' + esc(fmtMoney(vSpend)) + '">' + esc(fmtMoney(vSpend)) + '</div></div>' +
-                '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_POs', 'POs')) + '</div><div class="v">' + num(vPOs) + '</div></div>' +
-                '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_ShareOfMonth', 'Share of month')) + '</div><div class="v">' + esc(vShare) + '</div></div>' +
-                '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_OnTimePct', 'On-time %')) + '</div><div class="v">' + esc(vOnTime) + '</div></div>' +
+                '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_209_POValue', 'PO value')) + '</div><div class="v" title="' + esc(fmtMoney(vSpend)) + '">' + esc(fmtMoney(vSpend)) + '</div></div>' +
+                '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_209_POs', 'POs')) + '</div><div class="v">' + num(vPOs) + '</div></div>' +
+                '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_209_ShareOfMonth', 'Share of month')) + '</div><div class="v">' + esc(vShare) + '</div></div>' +
+                '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_209_OnTimePct', 'On-time %')) + '</div><div class="v">' + esc(vOnTime) + '</div></div>' +
                 '</div>' +
-                '<div class="vas-t10v-msec">' + esc(lbl('VAS_PurchaseOrders', 'Purchase orders')) + '</div>' +
+                '<div class="vas-t10v-msec">' + esc(lbl('VAS_209_PurchaseOrders', 'Purchase orders')) + '</div>' +
                 '<div class="vas-t10v-mtbl-wrap" id="vas_t10v_po_table_wrap"></div>';
 
             openModal({
@@ -585,8 +585,8 @@
                 subtitle: subtitle,
                 body: statStripHtml,
                 foot: function ($foot) {
-                    $foot.html('<span class="vas-t10v-foot-note">' + esc(lbl('VAS_SelectPOToOpen', 'select a PO number to open the record')) + '</span>' +
-                        '<button type="button" class="vas-t10v-btn vas-t10v-close-btn">' + esc(lbl('VAS_Close', 'Close')) + '</button>');
+                    $foot.html('<span class="vas-t10v-foot-note">' + esc(lbl('VAS_209_SelectPOToOpen', 'select a PO number to open the record')) + '</span>' +
+                        '<button type="button" class="vas-t10v-btn vas-t10v-close-btn">' + esc(lbl('VAS_209_Close', 'Close')) + '</button>');
                     $foot.find('.vas-t10v-close-btn').on('click', closeModal);
                 },
                 afterRender: function ($host) {
@@ -596,7 +596,7 @@
         }
 
         function loadVendorPurchaseOrders(vendorId, vendorName, $container) {
-            $container.html('<div class="vas-t10v-loading-row">' + esc(lbl('VAS_Loading', 'Loading...')) + '</div>');
+            $container.html('<div class="vas-t10v-loading-row">' + esc(lbl('VAS_209_Loading', 'Loading...')) + '</div>');
 
             var url = VIS.Application.contextUrl + 'VAS_209_Top10VendorsWidget/GetVendorPurchaseOrders';
             $.ajax({
@@ -610,7 +610,7 @@
                     renderPagedPOTable($container, orders, vendorName);
                 },
                 error: function () {
-                    $container.html('<div class="vas-t10v-empty-box"><p class="vas-t10v-empty-msg">' + esc(lbl('VAS_FailedToLoadVendorData', 'Failed to load vendor data')) + '</p></div>');
+                    $container.html('<div class="vas-t10v-empty-box"><p class="vas-t10v-empty-msg">' + esc(lbl('VAS_209_FailedToLoadVendorData', 'Failed to load vendor data')) + '</p></div>');
                 }
             });
         }
@@ -624,14 +624,14 @@
             var $tableWrap = $('<div class="vas-t10v-paged-table-wrap"></div>');
             var $tableHead = $('<div class="vas-t10v-mrow vas-t10v-mhead" style="grid-template-columns: minmax(0, 0.35fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 1.1fr);">' +
                 '<span class="vas-t10v-cell"></span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_PONo', 'PO No')) + '">' + esc(lbl('VAS_PONo', 'PO No')) + '</span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_PODate', 'PO date')) + '">' + esc(lbl('VAS_PODate', 'PO date')) + '</span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_Vendor', 'Vendor')) + '">' + esc(lbl('VAS_Vendor', 'Vendor')) + '</span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_Warehouse', 'Warehouse')) + '">' + esc(lbl('VAS_Warehouse', 'Warehouse')) + '</span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_Representative', 'Representative')) + '">' + esc(lbl('VAS_Representative', 'Representative')) + '</span>' +
-                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_Value', 'Value')) + '">' + esc(lbl('VAS_Value', 'Value')) + '</span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_Delivery', 'Delivery')) + '">' + esc(lbl('VAS_Delivery', 'Delivery')) + '</span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_Status', 'Status')) + '">' + esc(lbl('VAS_Status', 'Status')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_PONo', 'PO No')) + '">' + esc(lbl('VAS_209_PONo', 'PO No')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_PODate', 'PO date')) + '">' + esc(lbl('VAS_209_PODate', 'PO date')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_Vendor', 'Vendor')) + '">' + esc(lbl('VAS_209_Vendor', 'Vendor')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_Warehouse', 'Warehouse')) + '">' + esc(lbl('VAS_209_Warehouse', 'Warehouse')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_Representative', 'Representative')) + '">' + esc(lbl('VAS_209_Representative', 'Representative')) + '</span>' +
+                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_209_Value', 'Value')) + '">' + esc(lbl('VAS_209_Value', 'Value')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_Delivery', 'Delivery')) + '">' + esc(lbl('VAS_209_Delivery', 'Delivery')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_Status', 'Status')) + '">' + esc(lbl('VAS_209_Status', 'Status')) + '</span>' +
                 '</div>');
 
             var $tableBody = $('<div class="vas-t10v-mbody"></div>');
@@ -643,8 +643,8 @@
             function drawPage() {
                 $tableBody.empty();
                 if (orders.length === 0) {
-                    $tableBody.html('<div class="vas-t10v-empty-box"><p class="vas-t10v-empty-msg">' + esc(lbl('VAS_NoPOsFound', 'No purchase orders found')) + '</p></div>');
-                    $tableFoot.html('<span class="vas-t10v-helper">' + esc(lbl('VAS_Showing', 'Showing') + ' 0 ' + lbl('VAS_Of', 'of') + ' 0') + '</span>');
+                    $tableBody.html('<div class="vas-t10v-empty-box"><p class="vas-t10v-empty-msg">' + esc(lbl('VAS_209_NoPOsFound', 'No purchase orders found')) + '</p></div>');
+                    $tableFoot.html('<span class="vas-t10v-helper">' + esc(lbl('VAS_209_Showing', 'Showing') + ' 0 ' + lbl('VAS_209_Of', 'of') + ' 0') + '</span>');
                     return;
                 }
 
@@ -663,7 +663,7 @@
                     var formattedVal = fmtMoney(p.valueNum);
 
                     var $row = $('<div class="vas-t10v-mrow" style="grid-template-columns: minmax(0, 0.35fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 1.1fr);">' +
-                        '<span class="vas-t10v-cell vas-t10v-center"><button type="button" class="vas-t10v-iconbtn" data-order-id="' + p.orderId + '" title="' + esc(lbl('VAS_LinesOf', 'Lines of') + ' ' + p.po) + '">' + iconLinesSvg + '</button></span>' +
+                        '<span class="vas-t10v-cell vas-t10v-center"><button type="button" class="vas-t10v-iconbtn" data-order-id="' + p.orderId + '" title="' + esc(lbl('VAS_209_LinesOf', 'Lines of') + ' ' + p.po) + '">' + iconLinesSvg + '</button></span>' +
                         '<span class="vas-t10v-cell"><button type="button" class="vas-t10v-lnk" data-order-id="' + p.orderId + '" title="' + esc(p.po) + '">' + esc(p.po) + '</button></span>' +
                         '<span class="vas-t10v-cell" title="' + esc(p.dateFull) + '">' + esc(p.dateFull) + '</span>' +
                         '<span class="vas-t10v-cell" title="' + esc(p.vendor) + '">' + esc(p.vendor) + '</span>' +
@@ -677,14 +677,14 @@
                     $tableBody.append($row);
                 }
 
-                var footHelper = lbl('VAS_Showing', 'Showing') + ' ' + (sIdx + 1) + '–' + eIdx + ' ' +
-                    lbl('VAS_Of', 'of') + ' ' + orders.length + ' · ' + lbl('VAS_SelectPOToOpen', 'select a PO number to open the record');
+                var footHelper = lbl('VAS_209_Showing', 'Showing') + ' ' + (sIdx + 1) + '–' + eIdx + ' ' +
+                    lbl('VAS_209_Of', 'of') + ' ' + orders.length + ' · ' + lbl('VAS_209_SelectPOToOpen', 'select a PO number to open the record');
 
                 var pagerHtml = '<span class="vas-t10v-helper">' + esc(footHelper) + '</span>';
                 if (mTotalPages > 1) {
                     pagerHtml += '<span class="vas-t10v-pager">' +
                         '<button type="button" class="vas-t10v-pbtn vas-t10v-m-prev"' + (mPage === 0 ? ' disabled' : '') + ' aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>' +
-                        '<span class="vas-t10v-ptxt">' + (mPage + 1) + ' ' + lbl('VAS_Of', 'of') + ' ' + mTotalPages + '</span>' +
+                        '<span class="vas-t10v-ptxt">' + (mPage + 1) + ' ' + lbl('VAS_209_Of', 'of') + ' ' + mTotalPages + '</span>' +
                         '<button type="button" class="vas-t10v-pbtn vas-t10v-m-next"' + (mPage >= mTotalPages - 1 ? ' disabled' : '') + ' aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>' +
                         '</span>';
                 }
@@ -749,30 +749,30 @@
                     }
 
                     var linesBodyHtml = '<div class="vas-t10v-polink">' +
-                        '  <span>' + esc(lbl('VAS_PurchaseOrders', 'Purchase order')) + ' </span>' +
+                        '  <span>' + esc(lbl('VAS_209_PurchaseOrders', 'Purchase order')) + ' </span>' +
                         '  <button type="button" class="vas-t10v-lnk vas-t10v-po-direct-lnk" data-order-id="' + orderId + '">' + esc(poNo) + '</button>' +
                         '  <span> · ' + esc(poDate) + ' · ' + esc(poVendor) + '</span>' +
                         '</div>' +
                         '<div class="vas-t10v-mstats">' +
-                        '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_Lines', 'Lines')) + '</div><div class="v">' + lines.length + '</div></div>' +
-                        '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_POValue', 'PO value')) + '</div><div class="v" title="' + esc(fmtMoney(totalLinesAmt)) + '">' + esc(fmtMoney(totalLinesAmt)) + '</div></div>' +
-                        '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_QtyOrdered', 'Qty ordered')) + '</div><div class="v">' + num(totalOrdered) + '</div></div>' +
-                        '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_QtyPending', 'Qty pending')) + '</div><div class="v">' + num(totalPending) + '</div></div>' +
+                        '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_209_Lines', 'Lines')) + '</div><div class="v">' + lines.length + '</div></div>' +
+                        '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_209_POValue', 'PO value')) + '</div><div class="v" title="' + esc(fmtMoney(totalLinesAmt)) + '">' + esc(fmtMoney(totalLinesAmt)) + '</div></div>' +
+                        '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_209_QtyOrdered', 'Qty ordered')) + '</div><div class="v">' + num(totalOrdered) + '</div></div>' +
+                        '  <div class="vas-t10v-mstat"><div class="l">' + esc(lbl('VAS_209_QtyPending', 'Qty pending')) + '</div><div class="v">' + num(totalPending) + '</div></div>' +
                         '</div>' +
-                        '<div class="vas-t10v-msec">' + esc(lbl('VAS_PurchaseOrderLines', 'Purchase order lines')) + '</div>' +
+                        '<div class="vas-t10v-msec">' + esc(lbl('VAS_209_PurchaseOrderLines', 'Purchase order lines')) + '</div>' +
                         '<div class="vas-t10v-mtbl-wrap" id="vas_t10v_lines_table_wrap"></div>';
 
                     openModal({
                         isChild: true,
                         size: 'md',
-                        title: lbl('VAS_Lines', 'Lines') + ' · ' + poNo,
+                        title: lbl('VAS_209_Lines', 'Lines') + ' · ' + poNo,
                         subtitle: poVendor + ' · ' + poDate,
                         body: linesBodyHtml,
                         foot: function ($foot) {
                             $foot.html('<span class="vas-t10v-foot-note">' + esc(poNo) + ' · ' + esc(poVendor) + '</span>' +
                                 '<span>' +
-                                '<button type="button" class="vas-t10v-btn vas-t10v-back-btn">' + esc(lbl('VAS_Back', 'Back')) + '</button> ' +
-                                '<button type="button" class="vas-t10v-btn vas-t10v-close-btn">' + esc(lbl('VAS_Close', 'Close')) + '</button>' +
+                                '<button type="button" class="vas-t10v-btn vas-t10v-back-btn">' + esc(lbl('VAS_209_Back', 'Back')) + '</button> ' +
+                                '<button type="button" class="vas-t10v-btn vas-t10v-close-btn">' + esc(lbl('VAS_209_Close', 'Close')) + '</button>' +
                                 '</span>');
                             $foot.find('.vas-t10v-back-btn').on('click', popModal);
                             $foot.find('.vas-t10v-close-btn').on('click', closeModal);
@@ -797,15 +797,15 @@
             var $tableWrap = $('<div class="vas-t10v-paged-table-wrap"></div>');
             var $tableHead = $('<div class="vas-t10v-mrow vas-t10v-mhead" style="grid-template-columns: minmax(0, 0.4fr) minmax(0, 1.6fr) minmax(0, 1.2fr) minmax(0, 0.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 1fr) minmax(0, 1.1fr);">' +
                 '<span class="vas-t10v-cell vas-t10v-right">#</span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_Product', 'Product')) + '">' + esc(lbl('VAS_Product', 'Product')) + '</span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_Attribute', 'Attribute')) + '">' + esc(lbl('VAS_Attribute', 'Attribute')) + '</span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_UoM', 'UoM')) + '">' + esc(lbl('VAS_UoM', 'UoM')) + '</span>' +
-                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_Ordered', 'Ordered')) + '">' + esc(lbl('VAS_Ordered', 'Ordered')) + '</span>' +
-                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_Received', 'Received')) + '">' + esc(lbl('VAS_Received', 'Received')) + '</span>' +
-                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_Pending', 'Pending')) + '">' + esc(lbl('VAS_Pending', 'Pending')) + '</span>' +
-                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_Rate', 'Rate')) + '">' + esc(lbl('VAS_Rate', 'Rate')) + '</span>' +
-                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_Amount', 'Amount')) + '">' + esc(lbl('VAS_Amount', 'Amount')) + '</span>' +
-                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_LineStatus', 'Line status')) + '">' + esc(lbl('VAS_LineStatus', 'Line status')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_Product', 'Product')) + '">' + esc(lbl('VAS_209_Product', 'Product')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_Attribute', 'Attribute')) + '">' + esc(lbl('VAS_209_Attribute', 'Attribute')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_UoM', 'UoM')) + '">' + esc(lbl('VAS_209_UoM', 'UoM')) + '</span>' +
+                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_209_Ordered', 'Ordered')) + '">' + esc(lbl('VAS_209_Ordered', 'Ordered')) + '</span>' +
+                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_209_Received', 'Received')) + '">' + esc(lbl('VAS_209_Received', 'Received')) + '</span>' +
+                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_209_Pending', 'Pending')) + '">' + esc(lbl('VAS_209_Pending', 'Pending')) + '</span>' +
+                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_209_Rate', 'Rate')) + '">' + esc(lbl('VAS_209_Rate', 'Rate')) + '</span>' +
+                '<span class="vas-t10v-cell vas-t10v-right" title="' + esc(lbl('VAS_209_Amount', 'Amount')) + '">' + esc(lbl('VAS_209_Amount', 'Amount')) + '</span>' +
+                '<span class="vas-t10v-cell" title="' + esc(lbl('VAS_209_LineStatus', 'Line status')) + '">' + esc(lbl('VAS_209_LineStatus', 'Line status')) + '</span>' +
                 '</div>');
 
             var $tableBody = $('<div class="vas-t10v-mbody"></div>');
@@ -817,8 +817,8 @@
             function drawLinesPage() {
                 $tableBody.empty();
                 if (lines.length === 0) {
-                    $tableBody.html('<div class="vas-t10v-empty-box"><p class="vas-t10v-empty-msg">' + esc(lbl('VAS_NoLinesFound', 'No lines found')) + '</p></div>');
-                    $tableFoot.html('<span class="vas-t10v-helper">' + esc(lbl('VAS_Showing', 'Showing') + ' 0 ' + lbl('VAS_Of', 'of') + ' 0') + '</span>');
+                    $tableBody.html('<div class="vas-t10v-empty-box"><p class="vas-t10v-empty-msg">' + esc(lbl('VAS_209_NoLinesFound', 'No lines found')) + '</p></div>');
+                    $tableFoot.html('<span class="vas-t10v-helper">' + esc(lbl('VAS_209_Showing', 'Showing') + ' 0 ' + lbl('VAS_209_Of', 'of') + ' 0') + '</span>');
                     return;
                 }
 
@@ -851,14 +851,14 @@
                     $tableBody.append($row);
                 }
 
-                var footHelper = lbl('VAS_Showing', 'Showing') + ' ' + (sIdx + 1) + '–' + eIdx + ' ' +
-                    lbl('VAS_Of', 'of') + ' ' + lines.length + ' · ' + lbl('VAS_LinesOf', 'lines of') + ' ' + poNo;
+                var footHelper = lbl('VAS_209_Showing', 'Showing') + ' ' + (sIdx + 1) + '–' + eIdx + ' ' +
+                    lbl('VAS_209_Of', 'of') + ' ' + lines.length + ' · ' + lbl('VAS_209_LinesOf', 'lines of') + ' ' + poNo;
 
                 var pagerHtml = '<span class="vas-t10v-helper">' + esc(footHelper) + '</span>';
                 if (lTotalPages > 1) {
                     pagerHtml += '<span class="vas-t10v-pager">' +
                         '<button type="button" class="vas-t10v-pbtn vas-t10v-l-prev"' + (lPage === 0 ? ' disabled' : '') + ' aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>' +
-                        '<span class="vas-t10v-ptxt">' + (lPage + 1) + ' ' + lbl('VAS_Of', 'of') + ' ' + lTotalPages + '</span>' +
+                        '<span class="vas-t10v-ptxt">' + (lPage + 1) + ' ' + lbl('VAS_209_Of', 'of') + ' ' + lTotalPages + '</span>' +
                         '<button type="button" class="vas-t10v-pbtn vas-t10v-l-next"' + (lPage >= lTotalPages - 1 ? ' disabled' : '') + ' aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>' +
                         '</span>';
                 }
@@ -883,7 +883,7 @@
             if (!orderId) return;
             closeModal();
 
-            var ZOOM_WINDOW_NAME = 'VAS_PurchaseOrder';
+            var ZOOM_WINDOW_NAME = 'VAS_209_PurchaseOrder';
             var ZOOM_WINDOW_FALLBACK = 'Purchase Order';
             var ZOOM_TABLE = 'C_Order';
 

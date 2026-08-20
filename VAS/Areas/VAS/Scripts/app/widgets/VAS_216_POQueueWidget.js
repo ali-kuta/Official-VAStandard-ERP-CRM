@@ -8,57 +8,57 @@
  * Summary Message Table
  *  # | Current Text                                            | Message Key
  * ---+---------------------------------------------------------+-----------------------------------
- *  1 | PO Queue                                                | VAS_POQueue
- *  2 | Live purchase orders by expected delivery date          | VAS_POQueueSubtitle
- *  3 | Month                                                   | VAS_Month
- *  4 | Year                                                    | VAS_Year
- *  5 | PO No                                                   | VAS_PONumber
- *  6 | PO date                                                 | VAS_PODate
- *  7 | Vendor                                                  | VAS_Vendor
- *  8 | Warehouse                                               | VAS_Warehouse
- *  9 | Requisition                                             | VAS_Requisition
- * 10 | Representative                                          | VAS_Representative
- * 11 | Expected                                                | VAS_Expected
- * 12 | Value                                                   | VAS_Value
- * 13 | Status                                                  | VAS_Status
- * 14 | Showing                                                 | VAS_Showing
- * 15 | of                                                      | VAS_Of
- * 16 | select a PO number to open the record                   | VAS_SelectPORecordHelper
- * 17 | Previous                                                | VAS_Previous
- * 18 | Next                                                    | VAS_Next
- * 19 | No live purchase orders found for the selected period   | VAS_NoLivePOsFound
- * 20 | Loading...                                              | VAS_Loading
- * 21 | Couldn't load data                                      | VAS_CouldntLoad
- * 22 | Expected on                                             | VAS_ExpectedOn
- * 23 | PO value                                                | VAS_POValue
- * 24 | Created by                                              | VAS_CreatedBy
- * 25 | Document status                                         | VAS_DocumentStatus
- * 26 | Delivery status                                         | VAS_DeliveryStatus
- * 27 | Purchase order lines                                    | VAS_PurchaseOrderLines
- * 28 | Product                                                 | VAS_Product
- * 29 | Attribute                                               | VAS_Attribute
- * 30 | UoM                                                     | VAS_UOM
- * 31 | Ordered                                                 | VAS_Ordered
- * 32 | Received                                                | VAS_Received
- * 33 | Pending                                                 | VAS_Pending
- * 34 | Rate                                                    | VAS_Rate
- * 35 | Amount                                                  | VAS_Amount
- * 36 | Line status                                             | VAS_LineStatus
- * 37 | Partial                                                 | VAS_Partial
- * 38 | Partial received                                        | VAS_PartialReceived
- * 39 | Completed                                               | VAS_Completed
- * 40 | Closed                                                  | VAS_Closed
- * 41 | Drafted                                                 | VAS_Drafted
- * 42 | In process                                              | VAS_InProcess
- * 43 | Voided                                                  | VAS_Voided
- * 44 | Fully delivered                                         | VAS_FullyDelivered
- * 45 | Not applicable                                          | VAS_NotApplicable
- * 46 | Lines                                                   | VAS_Lines
- * 47 | qty ordered                                             | VAS_QtyOrdered
- * 48 | Open Record                                             | VAS_OpenRecord
- * 49 | Back                                                    | VAS_Back
- * 50 | Close                                                   | VAS_Close
- * 51 | lines of                                                | VAS_LinesOf
+ *  1 | PO Queue                                                | VAS_216_POQueue
+ *  2 | Live purchase orders by expected delivery date          | VAS_216_POQueueSubtitle
+ *  3 | Month                                                   | VAS_216_Month
+ *  4 | Year                                                    | VAS_216_Year
+ *  5 | PO No                                                   | VAS_216_PONumber
+ *  6 | PO date                                                 | VAS_216_PODate
+ *  7 | Vendor                                                  | VAS_216_Vendor
+ *  8 | Warehouse                                               | VAS_216_Warehouse
+ *  9 | Requisition                                             | VAS_216_Requisition
+ * 10 | Representative                                          | VAS_216_Representative
+ * 11 | Expected                                                | VAS_216_Expected
+ * 12 | Value                                                   | VAS_216_Value
+ * 13 | Status                                                  | VAS_216_Status
+ * 14 | Showing                                                 | VAS_216_Showing
+ * 15 | of                                                      | VAS_216_Of
+ * 16 | select a PO number to open the record                   | VAS_216_SelectPORecordHelper
+ * 17 | Previous                                                | VAS_216_Previous
+ * 18 | Next                                                    | VAS_216_Next
+ * 19 | No live purchase orders found for the selected period   | VAS_216_NoLivePOsFound
+ * 20 | Loading...                                              | VAS_216_Loading
+ * 21 | Couldn't load data                                      | VAS_216_CouldntLoad
+ * 22 | Expected on                                             | VAS_216_ExpectedOn
+ * 23 | PO value                                                | VAS_216_POValue
+ * 24 | Created by                                              | VAS_216_CreatedBy
+ * 25 | Document status                                         | VAS_216_DocumentStatus
+ * 26 | Delivery status                                         | VAS_216_DeliveryStatus
+ * 27 | Purchase order lines                                    | VAS_216_PurchaseOrderLines
+ * 28 | Product                                                 | VAS_216_Product
+ * 29 | Attribute                                               | VAS_216_Attribute
+ * 30 | UoM                                                     | VAS_216_UOM
+ * 31 | Ordered                                                 | VAS_216_Ordered
+ * 32 | Received                                                | VAS_216_Received
+ * 33 | Pending                                                 | VAS_216_Pending
+ * 34 | Rate                                                    | VAS_216_Rate
+ * 35 | Amount                                                  | VAS_216_Amount
+ * 36 | Line status                                             | VAS_216_LineStatus
+ * 37 | Partial                                                 | VAS_216_Partial
+ * 38 | Partial received                                        | VAS_216_PartialReceived
+ * 39 | Completed                                               | VAS_216_Completed
+ * 40 | Closed                                                  | VAS_216_Closed
+ * 41 | Drafted                                                 | VAS_216_Drafted
+ * 42 | In process                                              | VAS_216_InProcess
+ * 43 | Voided                                                  | VAS_216_Voided
+ * 44 | Fully delivered                                         | VAS_216_FullyDelivered
+ * 45 | Not applicable                                          | VAS_216_NotApplicable
+ * 46 | Lines                                                   | VAS_216_Lines
+ * 47 | qty ordered                                             | VAS_216_QtyOrdered
+ * 48 | Open Record                                             | VAS_216_OpenRecord
+ * 49 | Back                                                    | VAS_216_Back
+ * 50 | Close                                                   | VAS_216_Close
+ * 51 | lines of                                                | VAS_216_LinesOf
  */
 
 ; VAS = window.VAS || {};
@@ -161,21 +161,21 @@
         var code = (docStatus || '').toUpperCase();
         switch (code) {
             case 'DR':
-                return { text: lbl('VAS_Drafted', 'Drafted'), chip: 'vas-216-chip-neutral' };
+                return { text: lbl('VAS_216_Drafted', 'Drafted'), chip: 'vas-216-chip-neutral' };
             case 'IP':
-                return { text: lbl('VAS_InProcess', 'In process'), chip: 'vas-216-chip-prop' };
+                return { text: lbl('VAS_216_InProcess', 'In process'), chip: 'vas-216-chip-prop' };
             case 'CO':
-                return { text: lbl('VAS_Completed', 'Completed'), chip: 'vas-216-chip-ok' };
+                return { text: lbl('VAS_216_Completed', 'Completed'), chip: 'vas-216-chip-ok' };
             case 'CL':
-                return { text: lbl('VAS_Closed', 'Closed'), chip: 'vas-216-chip-ok' };
+                return { text: lbl('VAS_216_Closed', 'Closed'), chip: 'vas-216-chip-ok' };
             case 'VO':
-                return { text: lbl('VAS_Voided', 'Voided'), chip: 'vas-216-chip-risk' };
+                return { text: lbl('VAS_216_Voided', 'Voided'), chip: 'vas-216-chip-risk' };
             case 'RE':
-                return { text: lbl('VAS_Reversed', 'Reversed'), chip: 'vas-216-chip-risk' };
+                return { text: lbl('VAS_216_Reversed', 'Reversed'), chip: 'vas-216-chip-risk' };
             case 'WC':
-                return { text: lbl('VAS_WaitingConfirmation', 'Waiting Confirmation'), chip: 'vas-216-chip-prop' };
+                return { text: lbl('VAS_216_WaitingConfirmation', 'Waiting Confirmation'), chip: 'vas-216-chip-prop' };
             case 'WP':
-                return { text: lbl('VAS_WaitingPayment', 'Waiting Payment'), chip: 'vas-216-chip-prop' };
+                return { text: lbl('VAS_216_WaitingPayment', 'Waiting Payment'), chip: 'vas-216-chip-prop' };
             default:
                 var translated = VIS.Msg.getMsg(docStatus);
                 return { text: (translated && translated.charAt(0) !== '[') ? translated : docStatus, chip: 'vas-216-chip-neutral' };
@@ -185,28 +185,28 @@
     function getDeliveryStatusInfo(status) {
         var st = (status || '').toLowerCase();
         if (st === 'fully delivered' || st === 'full') {
-            return { text: lbl('VAS_FullyDelivered', 'Fully delivered'), chip: 'vas-216-chip-ok' };
+            return { text: lbl('VAS_216_FullyDelivered', 'Fully delivered'), chip: 'vas-216-chip-ok' };
         } else if (st === 'partial') {
-            return { text: lbl('VAS_Partial', 'Partial'), chip: 'vas-216-chip-warn' };
+            return { text: lbl('VAS_216_Partial', 'Partial'), chip: 'vas-216-chip-warn' };
         } else if (st === 'not applicable' || st === 'na') {
-            return { text: lbl('VAS_NotApplicable', 'Not applicable'), chip: 'vas-216-chip-neutral' };
+            return { text: lbl('VAS_216_NotApplicable', 'Not applicable'), chip: 'vas-216-chip-neutral' };
         } else {
-            return { text: lbl('VAS_Pending', 'Pending'), chip: 'vas-216-chip-neutral' };
+            return { text: lbl('VAS_216_Pending', 'Pending'), chip: 'vas-216-chip-neutral' };
         }
     }
 
     function getLineStatusInfo(status) {
         var st = (status || '').toLowerCase();
         if (st === 'received') {
-            return { text: lbl('VAS_Received', 'Received'), chip: 'vas-216-chip-ok' };
+            return { text: lbl('VAS_216_Received', 'Received'), chip: 'vas-216-chip-ok' };
         } else if (st === 'partial received' || st === 'partial') {
-            return { text: lbl('VAS_PartialReceived', 'Partial received'), chip: 'vas-216-chip-warn' };
+            return { text: lbl('VAS_216_PartialReceived', 'Partial received'), chip: 'vas-216-chip-warn' };
         } else if (st === 'drafted') {
-            return { text: lbl('VAS_Drafted', 'Drafted'), chip: 'vas-216-chip-neutral' };
+            return { text: lbl('VAS_216_Drafted', 'Drafted'), chip: 'vas-216-chip-neutral' };
         } else if (st === 'voided') {
-            return { text: lbl('VAS_Voided', 'Voided'), chip: 'vas-216-chip-risk' };
+            return { text: lbl('VAS_216_Voided', 'Voided'), chip: 'vas-216-chip-risk' };
         } else {
-            return { text: lbl('VAS_Pending', 'Pending'), chip: 'vas-216-chip-neutral' };
+            return { text: lbl('VAS_216_Pending', 'Pending'), chip: 'vas-216-chip-neutral' };
         }
     }
 
@@ -279,8 +279,8 @@
         }
 
         function createWidgetHtml() {
-            var title = lbl('VAS_POQueue', 'PO Queue');
-            var subtitle = lbl('VAS_POQueueSubtitle', 'Live purchase orders by expected delivery date');
+            var title = lbl('VAS_216_POQueue', 'PO Queue');
+            var subtitle = lbl('VAS_216_POQueueSubtitle', 'Live purchase orders by expected delivery date');
 
             $card = $(
                 '<div class="vas-216-card">' +
@@ -290,8 +290,8 @@
                             '<p class="vas-216-sub">' + esc(subtitle) + '</p>' +
                         '</div>' +
                         '<div class="vas-216-mfilter">' +
-                            '<select class="vas-216-msel vas-216-month-sel" aria-label="' + esc(lbl('VAS_Month', 'Month')) + '"></select>' +
-                            '<select class="vas-216-msel vas-216-year-sel" aria-label="' + esc(lbl('VAS_Year', 'Year')) + '"></select>' +
+                            '<select class="vas-216-msel vas-216-month-sel" aria-label="' + esc(lbl('VAS_216_Month', 'Month')) + '"></select>' +
+                            '<select class="vas-216-msel vas-216-year-sel" aria-label="' + esc(lbl('VAS_216_Year', 'Year')) + '"></select>' +
                         '</div>' +
                     '</div>' +
                     '<div class="vas-216-tbl">' +
@@ -301,9 +301,9 @@
                     '<div class="vas-216-wfoot">' +
                         '<span class="vas-216-helper"></span>' +
                         '<div class="vas-216-pager">' +
-                            '<button type="button" class="vas-216-pbtn vas-216-pbtn-prev" data-dir="-1" aria-label="' + esc(lbl('VAS_Previous', 'Previous')) + '">' + ICON_PREV + '</button>' +
-                            '<span class="vas-216-ptxt">1 ' + esc(lbl('VAS_Of', 'of')) + ' 1</span>' +
-                            '<button type="button" class="vas-216-pbtn vas-216-pbtn-next" data-dir="1" aria-label="' + esc(lbl('VAS_Next', 'Next')) + '">' + ICON_NEXT + '</button>' +
+                            '<button type="button" class="vas-216-pbtn vas-216-pbtn-prev" data-dir="-1" aria-label="' + esc(lbl('VAS_216_Previous', 'Previous')) + '">' + ICON_PREV + '</button>' +
+                            '<span class="vas-216-ptxt">1 ' + esc(lbl('VAS_216_Of', 'of')) + ' 1</span>' +
+                            '<button type="button" class="vas-216-pbtn vas-216-pbtn-next" data-dir="1" aria-label="' + esc(lbl('VAS_216_Next', 'Next')) + '">' + ICON_NEXT + '</button>' +
                         '</div>' +
                     '</div>' +
                 '</div>'
@@ -393,15 +393,15 @@
 
         function renderTableHeaders() {
             var headers = [
-                { label: lbl('VAS_PONumber', 'PO No'), align: 'left' },
-                { label: lbl('VAS_PODate', 'PO date'), align: 'left' },
-                { label: lbl('VAS_Vendor', 'Vendor'), align: 'left' },
-                { label: lbl('VAS_Warehouse', 'Warehouse'), align: 'left' },
-                { label: lbl('VAS_Requisition', 'Requisition'), align: 'left' },
-                { label: lbl('VAS_Representative', 'Representative'), align: 'left' },
-                { label: lbl('VAS_Expected', 'Expected'), align: 'left' },
-                { label: lbl('VAS_Value', 'Value'), align: 'right' },
-                { label: lbl('VAS_Status', 'Status'), align: 'left' }
+                { label: lbl('VAS_216_PONumber', 'PO No'), align: 'left' },
+                { label: lbl('VAS_216_PODate', 'PO date'), align: 'left' },
+                { label: lbl('VAS_216_Vendor', 'Vendor'), align: 'left' },
+                { label: lbl('VAS_216_Warehouse', 'Warehouse'), align: 'left' },
+                { label: lbl('VAS_216_Requisition', 'Requisition'), align: 'left' },
+                { label: lbl('VAS_216_Representative', 'Representative'), align: 'left' },
+                { label: lbl('VAS_216_Expected', 'Expected'), align: 'left' },
+                { label: lbl('VAS_216_Value', 'Value'), align: 'right' },
+                { label: lbl('VAS_216_Status', 'Status'), align: 'left' }
             ];
 
             var hHtml = '';
@@ -431,7 +431,7 @@
                 success: function (res) {
                     var data = parseResponse(res);
                     if (data.error || data.success === false) {
-                        renderErrorState(data.error || lbl('VAS_CouldntLoad', "Couldn't load data"));
+                        renderErrorState(data.error || lbl('VAS_216_CouldntLoad', "Couldn't load data"));
                         return;
                     }
 
@@ -445,7 +445,7 @@
                     renderPager();
                 },
                 error: function () {
-                    renderErrorState(lbl('VAS_CouldntLoad', "Couldn't load data"));
+                    renderErrorState(lbl('VAS_216_CouldntLoad', "Couldn't load data"));
                 },
                 complete: function () {
                     showBusy(false);
@@ -455,7 +455,7 @@
 
         function renderTableRows(records) {
             if (!records || records.length === 0) {
-                var emptyMsg = lbl('VAS_NoLivePOsFound', 'No live purchase orders found for the selected period');
+                var emptyMsg = lbl('VAS_216_NoLivePOsFound', 'No live purchase orders found for the selected period');
                 $tableBody.html(
                     '<div class="vas-216-empty-state">' +
                         ICON_EMPTY +
@@ -508,15 +508,15 @@
             var startIdx = totalRecords > 0 ? (currentPage - 1) * pageSize + 1 : 0;
             var endIdx = Math.min(currentPage * pageSize, totalRecords);
 
-            var helperText = lbl('VAS_Showing', 'Showing') + ' ' +
+            var helperText = lbl('VAS_216_Showing', 'Showing') + ' ' +
                              startIdx + '–' + endIdx + ' ' +
-                             lbl('VAS_Of', 'of') + ' ' + totalRecords + ' · ' +
-                             lbl('VAS_SelectPORecordHelper', 'select a PO number to open the record');
+                             lbl('VAS_216_Of', 'of') + ' ' + totalRecords + ' · ' +
+                             lbl('VAS_216_SelectPORecordHelper', 'select a PO number to open the record');
 
             $helper.text(helperText);
             $helper.attr('title', helperText);
 
-            $pageText.text(currentPage + ' ' + lbl('VAS_Of', 'of') + ' ' + totalPages);
+            $pageText.text(currentPage + ' ' + lbl('VAS_216_Of', 'of') + ' ' + totalPages);
 
             $prevBtn.prop('disabled', currentPage <= 1);
             $nextBtn.prop('disabled', currentPage >= totalPages || totalRecords === 0);
@@ -529,7 +529,7 @@
                 '</div>'
             );
             $helper.text('—');
-            $pageText.text('1 ' + lbl('VAS_Of', 'of') + ' 1');
+            $pageText.text('1 ' + lbl('VAS_216_Of', 'of') + ' 1');
             $prevBtn.prop('disabled', true);
             $nextBtn.prop('disabled', true);
         }
@@ -547,7 +547,7 @@
                         "Record_ID": orderId,
                         "C_Order_ID": orderId,
                         "AD_Table_ID": 259,
-                        "WindowName": "VAS_PurchaseOrder",
+                        "WindowName": "VAS_216_PurchaseOrder",
                         "AD_Tab_ID": 1002398,
                         "TabWhereClause": "C_Order.C_Order_ID = " + orderId,
                         "TabLayout": "N",
@@ -570,7 +570,7 @@
                     var action = new VIS.AActionItem();
                     action.setAD_Table_ID(259);
                     action.setRecord_ID(orderId);
-                    action.setWindowName("VAS_PurchaseOrder");
+                    action.setWindowName("VAS_216_PurchaseOrder");
                     action.setAD_Tab_ID(1002398);
                     VIS.viewManager.startWindow(0, action);
                 }
@@ -588,7 +588,7 @@
                     '<div class="vas-216-modal">' +
                         '<div class="vas-216-modal-header">' +
                             '<div class="vas-216-htxt-wrap">' +
-                                '<button type="button" class="vas-216-xbtn vas-216-back-btn" aria-label="' + esc(lbl('VAS_Back', 'Back')) + '" style="display:none;">' +
+                                '<button type="button" class="vas-216-xbtn vas-216-back-btn" aria-label="' + esc(lbl('VAS_216_Back', 'Back')) + '" style="display:none;">' +
                                     ICON_BACK +
                                 '</button>' +
                                 '<div class="vas-216-htxt">' +
@@ -597,7 +597,7 @@
                                 '</div>' +
                             '</div>' +
                             '<div class="vas-216-hact">' +
-                                '<button type="button" class="vas-216-xbtn vas-216-close-btn" aria-label="' + esc(lbl('VAS_Close', 'Close')) + '">' +
+                                '<button type="button" class="vas-216-xbtn vas-216-close-btn" aria-label="' + esc(lbl('VAS_216_Close', 'Close')) + '">' +
                                     ICON_CLOSE +
                                 '</button>' +
                             '</div>' +
@@ -676,7 +676,7 @@
             $modalHost.find('.vas-216-msub').text(cfg.subtitle || '');
 
             $mBody.html(cfg.body || '');
-            $mFoot.html(cfg.foot || '<span class="vas-216-foot-note"></span><button type="button" class="vas-216-btn" data-vas-close="1">' + esc(lbl('VAS_Close', 'Close')) + '</button>');
+            $mFoot.html(cfg.foot || '<span class="vas-216-foot-note"></span><button type="button" class="vas-216-btn" data-vas-close="1">' + esc(lbl('VAS_216_Close', 'Close')) + '</button>');
 
             $modalHost.addClass('vas-216-open');
 
@@ -767,17 +767,17 @@
 
             headHtml += bodyRowsHtml + '</div></div>';
 
-            var helperText = lbl('VAS_Showing', 'Showing') + ' ' + (t.rows.length > 0 ? (s + 1) : 0) + '–' + (s + slice.length) + ' ' +
-                             lbl('VAS_Of', 'of') + ' ' + t.rows.length +
+            var helperText = lbl('VAS_216_Showing', 'Showing') + ' ' + (t.rows.length > 0 ? (s + 1) : 0) + '–' + (s + slice.length) + ' ' +
+                             lbl('VAS_216_Of', 'of') + ' ' + t.rows.length +
                              (t.label ? ' · ' + t.label : '');
 
             var footHtml = '<div class="vas-216-mtfoot"><span class="vas-216-helper">' + esc(helperText) + '</span>';
             if (pages > 1) {
                 footHtml +=
                     '<span class="vas-216-pager">' +
-                        '<button type="button" class="vas-216-pbtn" data-mt="' + id + '" data-dir="-1"' + (t.page === 0 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_Previous', 'Previous')) + '">' + ICON_PREV + '</button>' +
-                        '<span class="vas-216-ptxt">' + (t.page + 1) + ' ' + lbl('VAS_Of', 'of') + ' ' + pages + '</span>' +
-                        '<button type="button" class="vas-216-pbtn" data-mt="' + id + '" data-dir="1"' + (t.page >= pages - 1 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_Next', 'Next')) + '">' + ICON_NEXT + '</button>' +
+                        '<button type="button" class="vas-216-pbtn" data-mt="' + id + '" data-dir="-1"' + (t.page === 0 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_216_Previous', 'Previous')) + '">' + ICON_PREV + '</button>' +
+                        '<span class="vas-216-ptxt">' + (t.page + 1) + ' ' + lbl('VAS_216_Of', 'of') + ' ' + pages + '</span>' +
+                        '<button type="button" class="vas-216-pbtn" data-mt="' + id + '" data-dir="1"' + (t.page >= pages - 1 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_216_Next', 'Next')) + '">' + ICON_NEXT + '</button>' +
                     '</span>';
             } else {
                 footHtml += '<span></span>';
@@ -878,14 +878,14 @@
                     var delivStatusInfo = getDeliveryStatusInfo(deliveryStatus);
 
                     var headerStats = mstatsHtml([
-                        { l: lbl('VAS_Vendor', 'Vendor'), v: vendor },
-                        { l: lbl('VAS_PODate', 'PO date'), v: dateDisplay },
-                        { l: lbl('VAS_ExpectedOn', 'Expected on'), v: expDateDisplay },
-                        { l: lbl('VAS_POValue', 'PO value'), v: formattedVal },
-                        { l: lbl('VAS_Warehouse', 'Warehouse'), v: whName },
-                        { l: lbl('VAS_CreatedBy', 'Created by'), v: createdBy || '—' },
-                        { l: lbl('VAS_DocumentStatus', 'Document status'), v: docStatusInfo.text },
-                        { l: lbl('VAS_DeliveryStatus', 'Delivery status'), v: delivStatusInfo.text }
+                        { l: lbl('VAS_216_Vendor', 'Vendor'), v: vendor },
+                        { l: lbl('VAS_216_PODate', 'PO date'), v: dateDisplay },
+                        { l: lbl('VAS_216_ExpectedOn', 'Expected on'), v: expDateDisplay },
+                        { l: lbl('VAS_216_POValue', 'PO value'), v: formattedVal },
+                        { l: lbl('VAS_216_Warehouse', 'Warehouse'), v: whName },
+                        { l: lbl('VAS_216_CreatedBy', 'Created by'), v: createdBy || '—' },
+                        { l: lbl('VAS_216_DocumentStatus', 'Document status'), v: docStatusInfo.text },
+                        { l: lbl('VAS_216_DeliveryStatus', 'Delivery status'), v: delivStatusInfo.text }
                     ]);
 
                     // Load PO lines for the record modal table
@@ -899,15 +899,15 @@
 
                             var lineCols = [
                                 { label: '#', w: 0.3, align: 'right' },
-                                { label: lbl('VAS_Product', 'Product'), w: 1.5, cls: 'vas-216-c-prim' },
-                                { label: lbl('VAS_Attribute', 'Attribute'), w: 1.2 },
-                                { label: lbl('VAS_UOM', 'UoM'), w: 0.5 },
-                                { label: lbl('VAS_Ordered', 'Ordered'), w: 0.7, align: 'right' },
-                                { label: lbl('VAS_Received', 'Received'), w: 0.7, align: 'right' },
-                                { label: lbl('VAS_Pending', 'Pending'), w: 0.7, align: 'right', cls: 'vas-216-c-prim' },
-                                { label: lbl('VAS_Rate', 'Rate'), w: 0.7, align: 'right' },
-                                { label: lbl('VAS_Amount', 'Amount'), w: 0.9, align: 'right', cls: 'vas-216-c-emph' },
-                                { label: lbl('VAS_LineStatus', 'Line status'), w: 1.0 }
+                                { label: lbl('VAS_216_Product', 'Product'), w: 1.5, cls: 'vas-216-c-prim' },
+                                { label: lbl('VAS_216_Attribute', 'Attribute'), w: 1.2 },
+                                { label: lbl('VAS_216_UOM', 'UoM'), w: 0.5 },
+                                { label: lbl('VAS_216_Ordered', 'Ordered'), w: 0.7, align: 'right' },
+                                { label: lbl('VAS_216_Received', 'Received'), w: 0.7, align: 'right' },
+                                { label: lbl('VAS_216_Pending', 'Pending'), w: 0.7, align: 'right', cls: 'vas-216-c-prim' },
+                                { label: lbl('VAS_216_Rate', 'Rate'), w: 0.7, align: 'right' },
+                                { label: lbl('VAS_216_Amount', 'Amount'), w: 0.9, align: 'right', cls: 'vas-216-c-emph' },
+                                { label: lbl('VAS_216_LineStatus', 'Line status'), w: 1.0 }
                             ];
 
                             var lineRows = lines.map(function (l, idx) {
@@ -931,11 +931,11 @@
 
                             var bodyHtml =
                                 headerStats +
-                                '<div class="vas-216-msec">' + esc(lbl('VAS_PurchaseOrderLines', 'Purchase order lines')) + '</div>' +
-                                pagedTable(lineCols, lineRows, { label: lbl('VAS_LinesOf', 'lines of') + ' ' + (hdr.DocumentNo || poNo) });
+                                '<div class="vas-216-msec">' + esc(lbl('VAS_216_PurchaseOrderLines', 'Purchase order lines')) + '</div>' +
+                                pagedTable(lineCols, lineRows, { label: lbl('VAS_216_LinesOf', 'lines of') + ' ' + (hdr.DocumentNo || poNo) });
 
-                            var footNote = lines.length + ' ' + lbl('VAS_Lines', 'lines') + ' · ' +
-                                           formatNumber(totalOrdered) + ' ' + lbl('VAS_QtyOrdered', 'qty ordered') + ' · ' +
+                            var footNote = lines.length + ' ' + lbl('VAS_216_Lines', 'lines') + ' · ' +
+                                           formatNumber(totalOrdered) + ' ' + lbl('VAS_216_QtyOrdered', 'qty ordered') + ' · ' +
                                            delivStatusInfo.text;
 
                             openModal({
@@ -944,8 +944,8 @@
                                 subtitle: vendor + ' · ' + dateDisplay + ' · ' + docStatusInfo.text,
                                 body: bodyHtml,
                                 foot: '<span class="vas-216-foot-note">' + esc(footNote) + '</span>' +
-                                      '<span><button type="button" class="vas-216-btn vas-216-btn-primary vas-216-btn-open-record">' + esc(lbl('VAS_OpenRecord', 'Open Record')) + '</button> ' +
-                                      '<button type="button" class="vas-216-btn" data-vas-close="1">' + esc(lbl('VAS_Close', 'Close')) + '</button></span>',
+                                      '<span><button type="button" class="vas-216-btn vas-216-btn-primary vas-216-btn-open-record">' + esc(lbl('VAS_216_OpenRecord', 'Open Record')) + '</button> ' +
+                                      '<button type="button" class="vas-216-btn" data-vas-close="1">' + esc(lbl('VAS_216_Close', 'Close')) + '</button></span>',
                                 after: function () {
                                     $modalHost.find('.vas-216-btn-open-record').on('click', function () {
                                         openPurchaseOrderRecord(poId);

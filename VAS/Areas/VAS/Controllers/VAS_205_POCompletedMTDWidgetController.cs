@@ -253,25 +253,25 @@ namespace VIS.Controllers
                         if (docStatus == "CL" || docStatus == "VO")
                         {
                             deliveryCode = "na";
-                            deliveryText = Msg.GetMsg(ctx, "VAS_NotApplicable") ?? "Not applicable";
+                            deliveryText = Msg.GetMsg(ctx, "VAS_205_NotApplicable") ?? "Not applicable";
                             deliveryChip = "chip-neutral";
                         }
                         else if (isFullyReceived)
                         {
                             deliveryCode = "full";
-                            deliveryText = Msg.GetMsg(ctx, "VAS_FullyDelivered") ?? "Fully delivered";
+                            deliveryText = Msg.GetMsg(ctx, "VAS_205_FullyDelivered") ?? "Fully delivered";
                             deliveryChip = "chip-ok";
                         }
                         else if (deliveredQty > 0m && deliveredQty < orderedQty)
                         {
                             deliveryCode = "partial";
-                            deliveryText = Msg.GetMsg(ctx, "VAS_Partial") ?? "Partial";
+                            deliveryText = Msg.GetMsg(ctx, "VAS_205_Partial") ?? "Partial";
                             deliveryChip = "chip-warn";
                         }
                         else
                         {
                             deliveryCode = "pending";
-                            deliveryText = Msg.GetMsg(ctx, "VAS_Pending") ?? "Pending";
+                            deliveryText = Msg.GetMsg(ctx, "VAS_205_Pending") ?? "Pending";
                             deliveryChip = "chip-neutral";
                         }
 
@@ -507,12 +507,12 @@ namespace VIS.Controllers
 
                 // Delivery Status
                 string delivStatus = (docStatus == "CL" || docStatus == "VO")
-                    ? (Msg.GetMsg(ctx, "VAS_NotApplicable") ?? "Not applicable")
+                    ? (Msg.GetMsg(ctx, "VAS_205_NotApplicable") ?? "Not applicable")
                     : (totalOrderedQty > 0m && totalDeliveredQty >= totalOrderedQty)
-                        ? (Msg.GetMsg(ctx, "VAS_FullyDelivered") ?? "Fully delivered")
+                        ? (Msg.GetMsg(ctx, "VAS_205_FullyDelivered") ?? "Fully delivered")
                         : (totalDeliveredQty > 0m)
-                            ? (Msg.GetMsg(ctx, "VAS_Partial") ?? "Partial")
-                            : (Msg.GetMsg(ctx, "VAS_Pending") ?? "Pending");
+                            ? (Msg.GetMsg(ctx, "VAS_205_Partial") ?? "Partial")
+                            : (Msg.GetMsg(ctx, "VAS_205_Pending") ?? "Pending");
 
                 var result = new
                 {

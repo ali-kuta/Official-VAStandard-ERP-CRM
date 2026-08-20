@@ -7,73 +7,73 @@
  * Summary Message Table
  *  # | Current Text                                       | Message Key
  * ---+----------------------------------------------------+---------------------------------------
- *  1 | New Purchase Order                                 | VAS_NewPurchaseOrder
- *  2 | Open Requisitions                                  | VAS_OpenRequisitions
- *  3 | Select a requisition to raise a purchase order...  | VAS_SelectRequisitionSub
- *  4 | Open requisitions                                  | VAS_OpenRequisitionsStat
- *  5 | Ready to PO                                        | VAS_ReadyToPO
- *  6 | Partly ordered                                     | VAS_PartlyOrdered
- *  7 | Pending qty                                        | VAS_PendingQty
- *  8 | Requisition                                        | VAS_Requisition
- *  9 | Lines                                              | VAS_Lines
- * 10 | Req qty                                            | VAS_ReqQty
- * 11 | Already ordered                                    | VAS_AlreadyOrdered
- * 12 | Needed by                                          | VAS_NeededBy
- * 13 | Status                                             | VAS_Status
- * 14 | One requisition at a time · its lines can go into...| VAS_OneReqAtTime
- * 15 | Close                                              | VAS_Close
- * 16 | Back                                               | VAS_Back
- * 17 | Continue                                           | VAS_Continue
- * 18 | Cancel                                             | VAS_Cancel
- * 19 | Product                                            | VAS_Product
- * 20 | Attribute                                          | VAS_Attribute
- * 21 | UoM                                                | VAS_UoM
- * 22 | Qty to order                                       | VAS_QtyToOrder
- * 23 | Vendor                                             | VAS_Vendor
- * 24 | Rate                                               | VAS_Rate
- * 25 | Amount                                             | VAS_Amount
- * 26 | Tax                                                | VAS_Tax
- * 27 | Date promised                                      | VAS_DatePromised
- * 28 | PO date                                            | VAS_PODate
- * 29 | Warehouse                                          | VAS_Warehouse
- * 30 | Payment term                                       | VAS_PaymentTerm
- * 31 | Payment method                                     | VAS_PaymentMethod
- * 32 | Description                                        | VAS_Description
- * 33 | Print description                                  | VAS_PrintDescription
- * 34 | Target document type                               | VAS_TargetDocType
- * 35 | Order reference                                    | VAS_OrderReference
- * 36 | Priority                                           | VAS_Priority
- * 37 | Price list                                         | VAS_PriceList
- * 38 | Currency                                           | VAS_Currency
- * 39 | Currency rate type                                 | VAS_CurrencyRateType
- * 40 | Incoterm                                           | VAS_Incoterm
- * 41 | Create PO                                          | VAS_CreatePO
- * 42 | Continue to lines                                  | VAS_ContinueToLines
- * 43 | No lines selected                                  | VAS_NoLinesSelected
- * 44 | lines selected                                     | VAS_LinesSelected
- * 45 | different vendors — one PO needs a single vendor   | VAS_MultiVendorWarning
- * 46 | Direct New PO (Blank)                              | VAS_DirectNewPO
- * 47 | Purchase order created                             | VAS_POCreatedSuccess
- * 48 | Unable to open Purchase Order window               | VAS_CouldntOpenPOWindow
- * 49 | Subtotal                                           | VAS_Subtotal
- * 50 | Order total                                        | VAS_OrderTotal
- * 51 | Requisition lines · select one or many             | VAS_ReqLinesSelectHeader
- * 52 | New Purchase Order · Details                       | VAS_NewPODetailsHeader
- * 53 | New Purchase Order · Lines                         | VAS_NewPOLinesHeader
- * 54 | Normal                                             | VAS_PriorityNormal
- * 55 | High                                               | VAS_PriorityHigh
- * 56 | Urgent                                             | VAS_PriorityUrgent
- * 57 | Low                                                | VAS_PriorityLow
- * 58 | Page 1 of 2                                        | VAS_Page1Of2
- * 59 | Page 2 of 2                                        | VAS_Page2Of2
- * 60 | from                                               | VAS_From
- * 61 | Showing                                            | VAS_Showing
- * 62 | of                                                 | VAS_Of
- * 63 | Back to details                                    | VAS_BackToDetails
- * 64 | Standard Vendor                                    | VAS_StandardVendor
- * 65 | Purchase against                                   | VAS_PurchaseAgainst
- * 66 | Error creating Purchase Order                      | VAS_ErrorCreatingPO
- * 67 | Server error creating Purchase Order               | VAS_ServerTimeoutError
+ *  1 | New Purchase Order                                 | VAS_204_NewPurchaseOrder
+ *  2 | Open Requisitions                                  | VAS_204_OpenRequisitions
+ *  3 | Select a requisition to raise a purchase order...  | VAS_204_SelectRequisitionSub
+ *  4 | Open requisitions                                  | VAS_204_OpenRequisitionsStat
+ *  5 | Ready to PO                                        | VAS_204_ReadyToPO
+ *  6 | Partly ordered                                     | VAS_204_PartlyOrdered
+ *  7 | Pending qty                                        | VAS_204_PendingQty
+ *  8 | Requisition                                        | VAS_204_Requisition
+ *  9 | Lines                                              | VAS_204_Lines
+ * 10 | Req qty                                            | VAS_204_ReqQty
+ * 11 | Already ordered                                    | VAS_204_AlreadyOrdered
+ * 12 | Needed by                                          | VAS_204_NeededBy
+ * 13 | Status                                             | VAS_204_Status
+ * 14 | One requisition at a time · its lines can go into...| VAS_204_OneReqAtTime
+ * 15 | Close                                              | VAS_204_Close
+ * 16 | Back                                               | VAS_204_Back
+ * 17 | Continue                                           | VAS_204_Continue
+ * 18 | Cancel                                             | VAS_204_Cancel
+ * 19 | Product                                            | VAS_204_Product
+ * 20 | Attribute                                          | VAS_204_Attribute
+ * 21 | UoM                                                | VAS_204_UoM
+ * 22 | Qty to order                                       | VAS_204_QtyToOrder
+ * 23 | Vendor                                             | VAS_204_Vendor
+ * 24 | Rate                                               | VAS_204_Rate
+ * 25 | Amount                                             | VAS_204_Amount
+ * 26 | Tax                                                | VAS_204_Tax
+ * 27 | Date promised                                      | VAS_204_DatePromised
+ * 28 | PO date                                            | VAS_204_PODate
+ * 29 | Warehouse                                          | VAS_204_Warehouse
+ * 30 | Payment term                                       | VAS_204_PaymentTerm
+ * 31 | Payment method                                     | VAS_204_PaymentMethod
+ * 32 | Description                                        | VAS_204_Description
+ * 33 | Print description                                  | VAS_204_PrintDescription
+ * 34 | Target document type                               | VAS_204_TargetDocType
+ * 35 | Order reference                                    | VAS_204_OrderReference
+ * 36 | Priority                                           | VAS_204_Priority
+ * 37 | Price list                                         | VAS_204_PriceList
+ * 38 | Currency                                           | VAS_204_Currency
+ * 39 | Currency rate type                                 | VAS_204_CurrencyRateType
+ * 40 | Incoterm                                           | VAS_204_Incoterm
+ * 41 | Create PO                                          | VAS_204_CreatePO
+ * 42 | Continue to lines                                  | VAS_204_ContinueToLines
+ * 43 | No lines selected                                  | VAS_204_NoLinesSelected
+ * 44 | lines selected                                     | VAS_204_LinesSelected
+ * 45 | different vendors — one PO needs a single vendor   | VAS_204_MultiVendorWarning
+ * 46 | Direct New PO (Blank)                              | VAS_204_DirectNewPO
+ * 47 | Purchase order created                             | VAS_204_POCreatedSuccess
+ * 48 | Unable to open Purchase Order window               | VAS_204_CouldntOpenPOWindow
+ * 49 | Subtotal                                           | VAS_204_Subtotal
+ * 50 | Order total                                        | VAS_204_OrderTotal
+ * 51 | Requisition lines · select one or many             | VAS_204_ReqLinesSelectHeader
+ * 52 | New Purchase Order · Details                       | VAS_204_NewPODetailsHeader
+ * 53 | New Purchase Order · Lines                         | VAS_204_NewPOLinesHeader
+ * 54 | Normal                                             | VAS_204_PriorityNormal
+ * 55 | High                                               | VAS_204_PriorityHigh
+ * 56 | Urgent                                             | VAS_204_PriorityUrgent
+ * 57 | Low                                                | VAS_204_PriorityLow
+ * 58 | Page 1 of 2                                        | VAS_204_Page1Of2
+ * 59 | Page 2 of 2                                        | VAS_204_Page2Of2
+ * 60 | from                                               | VAS_204_From
+ * 61 | Showing                                            | VAS_204_Showing
+ * 62 | of                                                 | VAS_204_Of
+ * 63 | Back to details                                    | VAS_204_BackToDetails
+ * 64 | Standard Vendor                                    | VAS_204_StandardVendor
+ * 65 | Purchase against                                   | VAS_204_PurchaseAgainst
+ * 66 | Error creating Purchase Order                      | VAS_204_ErrorCreatingPO
+ * 67 | Server error creating Purchase Order               | VAS_204_ServerTimeoutError
  */
 ; VAS = window.VAS || {};
 
@@ -226,7 +226,7 @@
         }
 
         function createWidget() {
-            var title = lbl('VAS_NewPurchaseOrder', 'New Purchase Order');
+            var title = lbl('VAS_204_NewPurchaseOrder', 'New Purchase Order');
 
             $card = $(
                 '<button type="button" class="vas-204-npo-card" aria-label="' + escapeHtml(title) + '">' +
@@ -260,13 +260,13 @@
                 '  <div class="vas-204-modal">' +
                 '    <div class="vas-204-modal-header">' +
                 '      <div class="vas-204-htxt-wrap">' +
-                '        <button type="button" class="vas-204-xbtn vas-204-mback" aria-label="' + escapeHtml(lbl('VAS_Back', 'Back')) + '" style="display:none;">' +
+                '        <button type="button" class="vas-204-xbtn vas-204-mback" aria-label="' + escapeHtml(lbl('VAS_204_Back', 'Back')) + '" style="display:none;">' +
                 '          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>' +
                 '        </button>' +
                 '        <div class="vas-204-htxt"><h2 class="vas-204-mtitle"></h2><div class="vas-204-msub"></div></div>' +
                 '      </div>' +
                 '      <div class="vas-204-hact">' +
-                '        <button type="button" class="vas-204-xbtn vas-204-mclose" aria-label="' + escapeHtml(lbl('VAS_Close', 'Close')) + '">' +
+                '        <button type="button" class="vas-204-xbtn vas-204-mclose" aria-label="' + escapeHtml(lbl('VAS_204_Close', 'Close')) + '">' +
                 '          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>' +
                 '        </button>' +
                 '      </div>' +
@@ -335,7 +335,7 @@
             $mTitle.text(cfg.title || '');
             $mSub.text(cfg.subtitle || '');
             $mBody.html(cfg.body || '');
-            $mFoot.html(cfg.foot || '<span class="vas-204-foot-note"></span><button type="button" class="vas-204-btn" data-close="1">' + escapeHtml(lbl('VAS_Close', 'Close')) + '</button>');
+            $mFoot.html(cfg.foot || '<span class="vas-204-foot-note"></span><button type="button" class="vas-204-btn" data-close="1">' + escapeHtml(lbl('VAS_204_Close', 'Close')) + '</button>');
 
             $mask.addClass('open');
             drawAllTables();
@@ -448,12 +448,12 @@
             var showStart = slice.length ? (s + 1) : 0;
             var showEnd = s + slice.length;
             h += '<div class="vas-204-mtfoot">';
-            h += '<span class="vas-204-helper">' + escapeHtml(lbl('VAS_Showing', 'Showing') + ' ' + showStart + '–' + showEnd + ' ' + lbl('VAS_Of', 'of') + ' ' + t.rows.length + (t.label ? ' · ' + t.label : '')) + '</span>';
+            h += '<span class="vas-204-helper">' + escapeHtml(lbl('VAS_204_Showing', 'Showing') + ' ' + showStart + '–' + showEnd + ' ' + lbl('VAS_204_Of', 'of') + ' ' + t.rows.length + (t.label ? ' · ' + t.label : '')) + '</span>';
 
             if (pages > 1) {
                 h += '<span class="vas-204-pager">' +
                     '<button type="button" class="vas-204-pbtn" data-mt="' + id + '" data-dir="-1"' + (t.page === 0 ? ' disabled' : '') + ' aria-label="' + escapeHtml(lbl('Previous', 'Previous')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>' +
-                    '<span class="vas-204-ptxt">' + (t.page + 1) + ' ' + escapeHtml(lbl('VAS_Of', 'of')) + ' ' + pages + '</span>' +
+                    '<span class="vas-204-ptxt">' + (t.page + 1) + ' ' + escapeHtml(lbl('VAS_204_Of', 'of')) + ' ' + pages + '</span>' +
                     '<button type="button" class="vas-204-pbtn" data-mt="' + id + '" data-dir="1"' + (t.page >= pages - 1 ? ' disabled' : '') + ' aria-label="' + escapeHtml(lbl('Next', 'Next')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>' +
                     '</span>';
             } else {
@@ -528,12 +528,12 @@
 
         function openRequisitionsModal() {
             openModal({
-                title: lbl('VAS_OpenRequisitions', 'Open Requisitions'),
-                subtitle: lbl('VAS_SelectRequisitionSub', 'Select a requisition to raise a purchase order against'),
+                title: lbl('VAS_204_OpenRequisitions', 'Open Requisitions'),
+                subtitle: lbl('VAS_204_SelectRequisitionSub', 'Select a requisition to raise a purchase order against'),
                 body: '<div class="vas-204-loading">' + escapeHtml(lbl('Loading', 'Loading...')) + '</div>',
-                foot: '<span class="vas-204-foot-note">' + escapeHtml(lbl('VAS_OneReqAtTime', 'One requisition at a time · its lines can go into one PO')) + '</span>' +
-                    '<span><button type="button" class="vas-204-btn vas-204-direct-po">' + escapeHtml(lbl('VAS_DirectNewPO', 'Direct New PO (Blank)')) + '</button> ' +
-                    '<button type="button" class="vas-204-btn" data-close="1">' + escapeHtml(lbl('VAS_Close', 'Close')) + '</button></span>',
+                foot: '<span class="vas-204-foot-note">' + escapeHtml(lbl('VAS_204_OneReqAtTime', 'One requisition at a time · its lines can go into one PO')) + '</span>' +
+                    '<span><button type="button" class="vas-204-btn vas-204-direct-po">' + escapeHtml(lbl('VAS_204_DirectNewPO', 'Direct New PO (Blank)')) + '</button> ' +
+                    '<button type="button" class="vas-204-btn" data-close="1">' + escapeHtml(lbl('VAS_204_Close', 'Close')) + '</button></span>',
                 after: function () {
                     $mFoot.find('.vas-204-direct-po').on('click', function () {
                         openDirectNewPORecord();
@@ -561,20 +561,20 @@
                     renderRequisitionsStep(cachedRequisitions, summary);
                 },
                 error: function () {
-                    $mBody.html('<div class="vas-204-empty-msg">' + escapeHtml(lbl('VAS_ErrorLoadingData', 'Unable to load requisitions.')) + '</div>');
+                    $mBody.html('<div class="vas-204-empty-msg">' + escapeHtml(lbl('VAS_204_ErrorLoadingData', 'Unable to load requisitions.')) + '</div>');
                 }
             });
         }
 
         function renderRequisitionsStep(reqs, summary) {
             var reqCols = [
-                { label: lbl('VAS_Requisition', 'Requisition'), w: 1.2, cls: 'c-prim' },
-                { label: lbl('VAS_Lines', 'Lines'), w: 0.6, align: 'right' },
-                { label: lbl('VAS_ReqQty', 'Req qty'), w: 0.9, align: 'right' },
-                { label: lbl('VAS_AlreadyOrdered', 'Already ordered'), w: 1, align: 'right' },
-                { label: lbl('VAS_PendingQty', 'Pending qty'), w: 0.9, align: 'right', cls: 'c-prim' },
-                { label: lbl('VAS_NeededBy', 'Needed by'), w: 1 },
-                { label: lbl('VAS_Status', 'Status'), w: 1.1 }
+                { label: lbl('VAS_204_Requisition', 'Requisition'), w: 1.2, cls: 'c-prim' },
+                { label: lbl('VAS_204_Lines', 'Lines'), w: 0.6, align: 'right' },
+                { label: lbl('VAS_204_ReqQty', 'Req qty'), w: 0.9, align: 'right' },
+                { label: lbl('VAS_204_AlreadyOrdered', 'Already ordered'), w: 1, align: 'right' },
+                { label: lbl('VAS_204_PendingQty', 'Pending qty'), w: 0.9, align: 'right', cls: 'c-prim' },
+                { label: lbl('VAS_204_NeededBy', 'Needed by'), w: 1 },
+                { label: lbl('VAS_204_Status', 'Status'), w: 1.1 }
             ];
 
             var rows = reqs.map(function (r) {
@@ -591,16 +591,16 @@
 
             var statsHtml =
                 '<div class="vas-204-mstats">' +
-                '  <div class="vas-204-mstat"><div class="l">' + escapeHtml(lbl('VAS_OpenRequisitionsStat', 'Open requisitions')) + '</div><div class="v">' + fmtNum(summary.openRequisitions) + '</div></div>' +
-                '  <div class="vas-204-mstat"><div class="l">' + escapeHtml(lbl('VAS_ReadyToPO', 'Ready to PO')) + '</div><div class="v">' + fmtNum(summary.readyToPO) + '</div></div>' +
-                '  <div class="vas-204-mstat"><div class="l">' + escapeHtml(lbl('VAS_PartlyOrdered', 'Partly ordered')) + '</div><div class="v">' + fmtNum(summary.partlyOrdered) + '</div></div>' +
-                '  <div class="vas-204-mstat"><div class="l">' + escapeHtml(lbl('VAS_PendingQty', 'Pending qty')) + '</div><div class="v">' + fmtNum(summary.pendingQty) + '</div></div>' +
+                '  <div class="vas-204-mstat"><div class="l">' + escapeHtml(lbl('VAS_204_OpenRequisitionsStat', 'Open requisitions')) + '</div><div class="v">' + fmtNum(summary.openRequisitions) + '</div></div>' +
+                '  <div class="vas-204-mstat"><div class="l">' + escapeHtml(lbl('VAS_204_ReadyToPO', 'Ready to PO')) + '</div><div class="v">' + fmtNum(summary.readyToPO) + '</div></div>' +
+                '  <div class="vas-204-mstat"><div class="l">' + escapeHtml(lbl('VAS_204_PartlyOrdered', 'Partly ordered')) + '</div><div class="v">' + fmtNum(summary.partlyOrdered) + '</div></div>' +
+                '  <div class="vas-204-mstat"><div class="l">' + escapeHtml(lbl('VAS_204_PendingQty', 'Pending qty')) + '</div><div class="v">' + fmtNum(summary.pendingQty) + '</div></div>' +
                 '</div>';
 
             var bodyHtml = statsHtml +
-                '<div class="vas-204-msec">' + escapeHtml(lbl('VAS_Requisitions', 'Requisitions')) + '</div>' +
+                '<div class="vas-204-msec">' + escapeHtml(lbl('VAS_204_Requisitions', 'Requisitions')) + '</div>' +
                 pagedTable(reqCols, rows, {
-                    label: lbl('VAS_SelectRowToOpenLines', 'select a row to open its lines'),
+                    label: lbl('VAS_204_SelectRowToOpenLines', 'select a row to open its lines'),
                     rowClass: 'pick',
                     render: function (r, idx) {
                         return reqCols.map(function (c, ci) {
@@ -635,11 +635,11 @@
                 child: true,
                 reopen: function () { stepRequisitionLines(req); },
                 title: req.requisitionNumber,
-                subtitle: (req.neededByDisplay || req.neededBy) + ' · ' + lbl('VAS_SelectLinesToRaisePO', 'select the lines to raise a PO against'),
+                subtitle: (req.neededByDisplay || req.neededBy) + ' · ' + lbl('VAS_204_SelectLinesToRaisePO', 'select the lines to raise a PO against'),
                 body: '<div class="vas-204-loading">' + escapeHtml(lbl('Loading', 'Loading...')) + '</div>',
-                foot: '<span class="vas-204-foot-note" id="vas204_selNote">' + escapeHtml(lbl('VAS_NoLinesSelected', 'No lines selected')) + '</span>' +
-                    '<span><button type="button" class="vas-204-btn vas-204-btn-back">' + escapeHtml(lbl('VAS_Back', 'Back')) + '</button> ' +
-                    '<button type="button" class="vas-204-btn vas-204-btn-primary vas-204-btn-continue" disabled>' + escapeHtml(lbl('VAS_Continue', 'Continue')) + '</button></span>',
+                foot: '<span class="vas-204-foot-note" id="vas204_selNote">' + escapeHtml(lbl('VAS_204_NoLinesSelected', 'No lines selected')) + '</span>' +
+                    '<span><button type="button" class="vas-204-btn vas-204-btn-back">' + escapeHtml(lbl('VAS_204_Back', 'Back')) + '</button> ' +
+                    '<button type="button" class="vas-204-btn vas-204-btn-primary vas-204-btn-continue" disabled>' + escapeHtml(lbl('VAS_204_Continue', 'Continue')) + '</button></span>',
                 after: function () {
                     $mFoot.find('.vas-204-btn-back').on('click', function () { backModal(); });
                     $mFoot.find('.vas-204-btn-continue').on('click', function () { startNewPOForm(); });
@@ -663,7 +663,7 @@
                     renderRequisitionLinesStep(activeReq, lines);
                 },
                 error: function () {
-                    $mBody.html('<div class="vas-204-empty-msg">' + escapeHtml(lbl('VAS_ErrorLoadingLines', 'Unable to load requisition lines.')) + '</div>');
+                    $mBody.html('<div class="vas-204-empty-msg">' + escapeHtml(lbl('VAS_204_ErrorLoadingLines', 'Unable to load requisition lines.')) + '</div>');
                 }
             });
         }
@@ -671,34 +671,34 @@
         function renderRequisitionLinesStep(req, lines) {
             var lineCols = [
                 { label: '', w: 0.28 },
-                { label: lbl('VAS_Product', 'Product'), w: 1.6, cls: 'c-dark' },
-                { label: lbl('VAS_Attribute', 'Attribute'), w: 1.25 },
-                { label: lbl('VAS_UoM', 'UoM'), w: 0.5 },
-                { label: lbl('VAS_ReqQty', 'Req qty'), w: 0.75, align: 'right' },
-                { label: lbl('VAS_AlreadyOrdered', 'Already ordered'), w: 0.9, align: 'right' },
-                { label: lbl('VAS_PendingQty', 'Pending'), w: 0.75, align: 'right', cls: 'c-prim' },
-                { label: lbl('VAS_QtyToOrder', 'Qty to order'), w: 0.9, align: 'right' },
-                { label: lbl('VAS_Vendor', 'Vendor'), w: 1.6 },
-                { label: lbl('VAS_Rate', 'Rate'), w: 0.75, align: 'right' }
+                { label: lbl('VAS_204_Product', 'Product'), w: 1.6, cls: 'c-dark' },
+                { label: lbl('VAS_204_Attribute', 'Attribute'), w: 1.25 },
+                { label: lbl('VAS_204_UoM', 'UoM'), w: 0.5 },
+                { label: lbl('VAS_204_ReqQty', 'Req qty'), w: 0.75, align: 'right' },
+                { label: lbl('VAS_204_AlreadyOrdered', 'Already ordered'), w: 0.9, align: 'right' },
+                { label: lbl('VAS_204_PendingQty', 'Pending'), w: 0.75, align: 'right', cls: 'c-prim' },
+                { label: lbl('VAS_204_QtyToOrder', 'Qty to order'), w: 0.9, align: 'right' },
+                { label: lbl('VAS_204_Vendor', 'Vendor'), w: 1.6 },
+                { label: lbl('VAS_204_Rate', 'Rate'), w: 0.75, align: 'right' }
             ];
 
             var vendorsList = (formLookups && formLookups.vendors) || [];
 
             var summaryHtml =
                 '<div class="vas-204-posum">' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_Requisition', 'Requisition')) + '</div><div class="v">' + escapeHtml(req.requisitionNumber) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_Lines', 'Lines')) + '</div><div class="v">' + fmtNum(lines.length) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_ReqQty', 'Req qty')) + '</div><div class="v">' + fmtNum(req.requisitionQty) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_AlreadyOrdered', 'Already ordered')) + '</div><div class="v">' + (req.alreadyOrderedQty > 0 ? fmtNum(req.alreadyOrderedQty) : '—') + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_PendingQty', 'Pending qty')) + '</div><div class="v">' + fmtNum(req.pendingQty) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_NeededBy', 'Needed by')) + '</div><div class="v">' + escapeHtml(req.neededByDisplay || req.neededBy) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_Status', 'Status')) + '</div><div class="v">' + escapeHtml(req.status) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_Requisition', 'Requisition')) + '</div><div class="v">' + escapeHtml(req.requisitionNumber) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_Lines', 'Lines')) + '</div><div class="v">' + fmtNum(lines.length) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_ReqQty', 'Req qty')) + '</div><div class="v">' + fmtNum(req.requisitionQty) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_AlreadyOrdered', 'Already ordered')) + '</div><div class="v">' + (req.alreadyOrderedQty > 0 ? fmtNum(req.alreadyOrderedQty) : '—') + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_PendingQty', 'Pending qty')) + '</div><div class="v">' + fmtNum(req.pendingQty) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_NeededBy', 'Needed by')) + '</div><div class="v">' + escapeHtml(req.neededByDisplay || req.neededBy) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_Status', 'Status')) + '</div><div class="v">' + escapeHtml(req.status) + '</div></div>' +
                 '</div>';
 
             var bodyHtml = summaryHtml +
-                '<div class="vas-204-msec">' + escapeHtml(lbl('VAS_ReqLinesSelectHeader', 'Requisition lines · select one or many')) + '</div>' +
+                '<div class="vas-204-msec">' + escapeHtml(lbl('VAS_204_ReqLinesSelectHeader', 'Requisition lines · select one or many')) + '</div>' +
                 pagedTable(lineCols, lines, {
-                    label: lbl('VAS_SetQtyAndVendor', 'set quantity and vendor per line'),
+                    label: lbl('VAS_204_SetQtyAndVendor', 'set quantity and vendor per line'),
                     rowClass: 'pick',
                     render: function (l, i) {
                         var isSel = !!l.sel;
@@ -765,7 +765,7 @@
             if (!$note.length || !$btn.length) { return; }
 
             if (!sel.length) {
-                $note.attr('class', 'vas-204-foot-note').text(lbl('VAS_NoLinesSelected', 'No lines selected'));
+                $note.attr('class', 'vas-204-foot-note').text(lbl('VAS_204_NoLinesSelected', 'No lines selected'));
                 $btn.prop('disabled', true);
                 return;
             }
@@ -775,8 +775,8 @@
 
             if (vendors.length > 1) {
                 $note.attr('class', 'vas-204-warnnote').text(
-                    sel.length + ' ' + lbl('VAS_LinesSelected', 'lines selected') + ' · ' +
-                    vendors.length + ' ' + lbl('VAS_MultiVendorWarning', 'different vendors — one PO needs a single vendor')
+                    sel.length + ' ' + lbl('VAS_204_LinesSelected', 'lines selected') + ' · ' +
+                    vendors.length + ' ' + lbl('VAS_204_MultiVendorWarning', 'different vendors — one PO needs a single vendor')
                 );
                 $btn.prop('disabled', true);
                 return;
@@ -787,7 +787,7 @@
             }, 0);
 
             $note.attr('class', 'vas-204-foot-note').text(
-                sel.length + ' ' + (sel.length > 1 ? lbl('VAS_LinesSelected', 'lines selected') : lbl('VAS_LineSelected', 'line selected')) +
+                sel.length + ' ' + (sel.length > 1 ? lbl('VAS_204_LinesSelected', 'lines selected') : lbl('VAS_204_LineSelected', 'line selected')) +
                 ' · ' + (vendors[0] || '') + ' · ' + fmtMoney(totalVal)
             );
             $btn.prop('disabled', false);
@@ -822,7 +822,7 @@
 
             poHeadValues = {
                 vendorId: lines[0].vendorId || 0,
-                vendorName: lines[0].vendorName || lbl('VAS_StandardVendor', 'Standard Vendor'),
+                vendorName: lines[0].vendorName || lbl('VAS_204_StandardVendor', 'Standard Vendor'),
                 docTypeId: (formLookups && formLookups.docTypes && formLookups.docTypes[0]) ? formLookups.docTypes[0].id : 0,
                 warehouseId: (formLookups && formLookups.warehouses && formLookups.warehouses[0]) ? formLookups.warehouses[0].id : 0,
                 paymentTermId: (formLookups && formLookups.paymentTerms && formLookups.paymentTerms[0]) ? formLookups.paymentTerms[0].id : 0,
@@ -830,7 +830,7 @@
                 poDate: new Date().toISOString().slice(0, 10),
                 promisedDate: (activeReq && activeReq.neededBy) ? activeReq.neededBy : new Date().toISOString().slice(0, 10),
                 priority: 'Normal',
-                description: lbl('VAS_PurchaseAgainst', 'Purchase against') + ' ' + (activeReq ? activeReq.requisitionNumber : ''),
+                description: lbl('VAS_204_PurchaseAgainst', 'Purchase against') + ' ' + (activeReq ? activeReq.requisitionNumber : ''),
                 printDescription: ''
             };
 
@@ -865,55 +865,55 @@
                 ? formLookups.docTypes.map(function (d) {
                     return '<option value="' + d.id + '"' + (d.id === poHeadValues.docTypeId ? ' selected' : '') + '>' + escapeHtml(d.name) + '</option>';
                 }).join('')
-                : '<option value="0">' + escapeHtml(lbl('VAS_PurchaseOrder', 'Purchase Order')) + '</option>';
+                : '<option value="0">' + escapeHtml(lbl('VAS_204_PurchaseOrder', 'Purchase Order')) + '</option>';
 
             var whOpts = (formLookups && formLookups.warehouses && formLookups.warehouses.length)
                 ? formLookups.warehouses.map(function (w) {
                     return '<option value="' + w.id + '"' + (w.id === poHeadValues.warehouseId ? ' selected' : '') + '>' + escapeHtml(w.name) + '</option>';
                 }).join('')
-                : '<option value="0">' + escapeHtml(lbl('VAS_MainWarehouse', 'Main Warehouse')) + '</option>';
+                : '<option value="0">' + escapeHtml(lbl('VAS_204_MainWarehouse', 'Main Warehouse')) + '</option>';
 
             var termOpts = (formLookups && formLookups.paymentTerms && formLookups.paymentTerms.length)
                 ? formLookups.paymentTerms.map(function (pt) {
                     return '<option value="' + pt.id + '"' + (pt.id === poHeadValues.paymentTermId ? ' selected' : '') + '>' + escapeHtml(pt.name) + '</option>';
                 }).join('')
-                : '<option value="0">' + escapeHtml(lbl('VAS_Net30Days', '30 days net')) + '</option>';
+                : '<option value="0">' + escapeHtml(lbl('VAS_204_Net30Days', '30 days net')) + '</option>';
 
             var summaryHtml =
                 '<div class="vas-204-posum">' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_Vendor', 'Vendor')) + '</div><div class="v">' + escapeHtml(poHeadValues.vendorName) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_SourceRequisition', 'Source requisition')) + '</div><div class="v">' + escapeHtml(activeReq ? activeReq.requisitionNumber : '') + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_Lines', 'Lines')) + '</div><div class="v">' + fmtNum(selectedPoLines.length) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_OrderQty', 'Order qty')) + '</div><div class="v">' + fmtNum(totals.qty) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_OrderValue', 'Order value')) + '</div><div class="v">' + fmtMoney(totals.sub) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_Vendor', 'Vendor')) + '</div><div class="v">' + escapeHtml(poHeadValues.vendorName) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_SourceRequisition', 'Source requisition')) + '</div><div class="v">' + escapeHtml(activeReq ? activeReq.requisitionNumber : '') + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_Lines', 'Lines')) + '</div><div class="v">' + fmtNum(selectedPoLines.length) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_OrderQty', 'Order qty')) + '</div><div class="v">' + fmtNum(totals.qty) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_OrderValue', 'Order value')) + '</div><div class="v">' + fmtMoney(totals.sub) + '</div></div>' +
                 '</div>';
 
             var priorityOpts =
-                '<option value="Normal">' + escapeHtml(lbl('VAS_PriorityNormal', 'Normal')) + '</option>' +
-                '<option value="High">' + escapeHtml(lbl('VAS_PriorityHigh', 'High')) + '</option>' +
-                '<option value="Urgent">' + escapeHtml(lbl('VAS_PriorityUrgent', 'Urgent')) + '</option>' +
-                '<option value="Low">' + escapeHtml(lbl('VAS_PriorityLow', 'Low')) + '</option>';
+                '<option value="Normal">' + escapeHtml(lbl('VAS_204_PriorityNormal', 'Normal')) + '</option>' +
+                '<option value="High">' + escapeHtml(lbl('VAS_204_PriorityHigh', 'High')) + '</option>' +
+                '<option value="Urgent">' + escapeHtml(lbl('VAS_204_PriorityUrgent', 'Urgent')) + '</option>' +
+                '<option value="Low">' + escapeHtml(lbl('VAS_204_PriorityLow', 'Low')) + '</option>';
 
             var formHtml =
                 '<div class="vas-204-formwrap">' +
-                '  <div class="vas-204-formsec">' + escapeHtml(lbl('VAS_Document', 'Document')) + '</div>' +
+                '  <div class="vas-204-formsec">' + escapeHtml(lbl('VAS_204_Document', 'Document')) + '</div>' +
                 '  <div class="vas-204-form-grid">' +
-                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_TargetDocType', 'Target document type')) + star + '</label><select class="vas-204-fctl" id="vas204_fDocType">' + docTypeOpts + '</select></div>' +
-                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_OrderReference', 'Order reference')) + '</label><input class="vas-204-fctl" id="vas204_fOrderRef" value="' + escapeHtml(poHeadValues.orderRef) + '"></div>' +
-                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_PODate', 'PO date')) + star + '</label><input class="vas-204-fctl" type="date" id="vas204_fPoDate" value="' + escapeHtml(poHeadValues.poDate) + '"></div>' +
-                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_DatePromised', 'Date promised')) + star + '</label><input class="vas-204-fctl" type="date" id="vas204_fPromised" value="' + escapeHtml(poHeadValues.promisedDate) + '"></div>' +
+                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_204_TargetDocType', 'Target document type')) + star + '</label><select class="vas-204-fctl" id="vas204_fDocType">' + docTypeOpts + '</select></div>' +
+                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_204_OrderReference', 'Order reference')) + '</label><input class="vas-204-fctl" id="vas204_fOrderRef" value="' + escapeHtml(poHeadValues.orderRef) + '"></div>' +
+                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_204_PODate', 'PO date')) + star + '</label><input class="vas-204-fctl" type="date" id="vas204_fPoDate" value="' + escapeHtml(poHeadValues.poDate) + '"></div>' +
+                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_204_DatePromised', 'Date promised')) + star + '</label><input class="vas-204-fctl" type="date" id="vas204_fPromised" value="' + escapeHtml(poHeadValues.promisedDate) + '"></div>' +
                 '  </div>' +
-                '  <div class="vas-204-formsec">' + escapeHtml(lbl('VAS_VendorAndPayment', 'Vendor and payment')) + '</div>' +
+                '  <div class="vas-204-formsec">' + escapeHtml(lbl('VAS_204_VendorAndPayment', 'Vendor and payment')) + '</div>' +
                 '  <div class="vas-204-form-grid">' +
-                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_Vendor', 'Vendor')) + star + '</label><input class="vas-204-fctl" value="' + escapeHtml(poHeadValues.vendorName) + '" disabled></div>' +
-                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_PaymentTerm', 'Payment term')) + star + '</label><select class="vas-204-fctl" id="vas204_fTerm">' + termOpts + '</select></div>' +
-                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_Warehouse', 'Warehouse')) + star + '</label><select class="vas-204-fctl" id="vas204_fWh">' + whOpts + '</select></div>' +
-                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_Priority', 'Priority')) + '</label><select class="vas-204-fctl" id="vas204_fPriority">' + priorityOpts + '</select></div>' +
+                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_204_Vendor', 'Vendor')) + star + '</label><input class="vas-204-fctl" value="' + escapeHtml(poHeadValues.vendorName) + '" disabled></div>' +
+                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_204_PaymentTerm', 'Payment term')) + star + '</label><select class="vas-204-fctl" id="vas204_fTerm">' + termOpts + '</select></div>' +
+                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_204_Warehouse', 'Warehouse')) + star + '</label><select class="vas-204-fctl" id="vas204_fWh">' + whOpts + '</select></div>' +
+                '    <div class="vas-204-field"><label>' + escapeHtml(lbl('VAS_204_Priority', 'Priority')) + '</label><select class="vas-204-fctl" id="vas204_fPriority">' + priorityOpts + '</select></div>' +
                 '  </div>' +
-                '  <div class="vas-204-formsec">' + escapeHtml(lbl('VAS_Description', 'Description')) + '</div>' +
+                '  <div class="vas-204-formsec">' + escapeHtml(lbl('VAS_204_Description', 'Description')) + '</div>' +
                 '  <div class="vas-204-form-grid">' +
-                '    <div class="vas-204-field span-2"><label>' + escapeHtml(lbl('VAS_Description', 'Description')) + '</label><input class="vas-204-fctl" id="vas204_fDesc" value="' + escapeHtml(poHeadValues.description) + '"></div>' +
-                '    <div class="vas-204-field span-2"><label>' + escapeHtml(lbl('VAS_PrintDescription', 'Print description')) + '</label><input class="vas-204-fctl" id="vas204_fPrintDesc" placeholder="' + escapeHtml(lbl('VAS_PrintDescPlaceholder', 'Text printed on the vendor copy')) + '" value="' + escapeHtml(poHeadValues.printDescription) + '"></div>' +
+                '    <div class="vas-204-field span-2"><label>' + escapeHtml(lbl('VAS_204_Description', 'Description')) + '</label><input class="vas-204-fctl" id="vas204_fDesc" value="' + escapeHtml(poHeadValues.description) + '"></div>' +
+                '    <div class="vas-204-field span-2"><label>' + escapeHtml(lbl('VAS_204_PrintDescription', 'Print description')) + '</label><input class="vas-204-fctl" id="vas204_fPrintDesc" placeholder="' + escapeHtml(lbl('VAS_204_PrintDescPlaceholder', 'Text printed on the vendor copy')) + '" value="' + escapeHtml(poHeadValues.printDescription) + '"></div>' +
                 '  </div>' +
                 '</div>';
 
@@ -922,12 +922,12 @@
                 bodyClass: 'compact',
                 size: 'md',
                 reopen: renderPoDetailsPage,
-                title: lbl('VAS_NewPODetailsHeader', 'New Purchase Order · Details'),
-                subtitle: lbl('VAS_Page1Of2', 'Page 1 of 2') + ' · ' + poHeadValues.vendorName + ' · ' + lbl('VAS_From', 'from') + ' ' + (activeReq ? activeReq.requisitionNumber : ''),
+                title: lbl('VAS_204_NewPODetailsHeader', 'New Purchase Order · Details'),
+                subtitle: lbl('VAS_204_Page1Of2', 'Page 1 of 2') + ' · ' + poHeadValues.vendorName + ' · ' + lbl('VAS_204_From', 'from') + ' ' + (activeReq ? activeReq.requisitionNumber : ''),
                 body: summaryHtml + formHtml,
-                foot: '<span class="vas-204-foot-note"><span class="vas-204-req-star">*</span> ' + escapeHtml(lbl('VAS_RequiredNextPage', 'required · line details on the next page')) + '</span>' +
-                    '<span><button type="button" class="vas-204-btn vas-204-btn-back">' + escapeHtml(lbl('VAS_Back', 'Back')) + '</button> ' +
-                    '<button type="button" class="vas-204-btn vas-204-btn-primary vas-204-to-lines">' + escapeHtml(lbl('VAS_ContinueToLines', 'Continue to lines')) + '</button></span>',
+                foot: '<span class="vas-204-foot-note"><span class="vas-204-req-star">*</span> ' + escapeHtml(lbl('VAS_204_RequiredNextPage', 'required · line details on the next page')) + '</span>' +
+                    '<span><button type="button" class="vas-204-btn vas-204-btn-back">' + escapeHtml(lbl('VAS_204_Back', 'Back')) + '</button> ' +
+                    '<button type="button" class="vas-204-btn vas-204-btn-primary vas-204-to-lines">' + escapeHtml(lbl('VAS_204_ContinueToLines', 'Continue to lines')) + '</button></span>',
                 after: function () {
                     $mFoot.find('.vas-204-btn-back').on('click', function () { backModal(); });
                     $mFoot.find('.vas-204-to-lines').on('click', function () {
@@ -958,25 +958,25 @@
             var totals = computePoTotals();
 
             var poLineCols = [
-                { label: lbl('VAS_Product', 'Product'), w: 1.45, cls: 'c-dark' },
-                { label: lbl('VAS_Attribute', 'Attribute'), w: 1.35 },
-                { label: lbl('VAS_UoM', 'UoM'), w: 0.75 },
-                { label: lbl('VAS_Qty', 'Qty'), w: 0.6, align: 'right' },
-                { label: lbl('VAS_Rate', 'Rate'), w: 0.7, align: 'right' },
-                { label: lbl('VAS_Amount', 'Amount'), w: 0.85, align: 'right', cls: 'c-emph' },
-                { label: lbl('VAS_DatePromised', 'Date promised'), w: 1.05 }
+                { label: lbl('VAS_204_Product', 'Product'), w: 1.45, cls: 'c-dark' },
+                { label: lbl('VAS_204_Attribute', 'Attribute'), w: 1.35 },
+                { label: lbl('VAS_204_UoM', 'UoM'), w: 0.75 },
+                { label: lbl('VAS_204_Qty', 'Qty'), w: 0.6, align: 'right' },
+                { label: lbl('VAS_204_Rate', 'Rate'), w: 0.7, align: 'right' },
+                { label: lbl('VAS_204_Amount', 'Amount'), w: 0.85, align: 'right', cls: 'c-emph' },
+                { label: lbl('VAS_204_DatePromised', 'Date promised'), w: 1.05 }
             ];
 
             var summaryHtml =
                 '<div class="vas-204-posum">' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_Vendor', 'Vendor')) + '</div><div class="v">' + escapeHtml(poHeadValues.vendorName) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_PODate', 'PO date')) + '</div><div class="v">' + escapeHtml(poHeadValues.poDate) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_DatePromised', 'Date promised')) + '</div><div class="v">' + escapeHtml(poHeadValues.promisedDate) + '</div></div>' +
-                '  <div><div class="l">' + escapeHtml(lbl('VAS_OrderTotal', 'Order total')) + '</div><div class="v">' + fmtMoney(totals.total) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_Vendor', 'Vendor')) + '</div><div class="v">' + escapeHtml(poHeadValues.vendorName) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_PODate', 'PO date')) + '</div><div class="v">' + escapeHtml(poHeadValues.poDate) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_DatePromised', 'Date promised')) + '</div><div class="v">' + escapeHtml(poHeadValues.promisedDate) + '</div></div>' +
+                '  <div><div class="l">' + escapeHtml(lbl('VAS_204_OrderTotal', 'Order total')) + '</div><div class="v">' + fmtMoney(totals.total) + '</div></div>' +
                 '</div>';
 
             var linesTableHtml = pagedTable(poLineCols, selectedPoLines, {
-                label: lbl('VAS_LinesSummary', 'purchase order lines'),
+                label: lbl('VAS_204_LinesSummary', 'purchase order lines'),
                 render: function (l, i) {
                     return '<span class="vas-204-cell c-dark" title="' + escapeHtml(l.productName) + '">' + escapeHtml(l.productName) + '</span>' +
                         '<span class="vas-204-cell c-std" title="' + escapeHtml(l.attribute || 'Standard') + '">' + escapeHtml(l.attribute || 'Standard') + '</span>' +
@@ -990,27 +990,27 @@
 
             var totalsBarHtml =
                 '<div class="vas-204-totline">' +
-                '  <span>' + escapeHtml(lbl('VAS_Subtotal', 'Subtotal')) + ': <b>' + fmtMoney(totals.sub) + '</b></span>' +
-                '  <span>' + escapeHtml(lbl('VAS_Tax', 'Tax')) + ': <b>' + fmtMoney(totals.tax) + '</b></span>' +
-                '  <span>' + escapeHtml(lbl('VAS_OrderTotal', 'Order total')) + ': <b>' + fmtMoney(totals.total) + '</b></span>' +
+                '  <span>' + escapeHtml(lbl('VAS_204_Subtotal', 'Subtotal')) + ': <b>' + fmtMoney(totals.sub) + '</b></span>' +
+                '  <span>' + escapeHtml(lbl('VAS_204_Tax', 'Tax')) + ': <b>' + fmtMoney(totals.tax) + '</b></span>' +
+                '  <span>' + escapeHtml(lbl('VAS_204_OrderTotal', 'Order total')) + ': <b>' + fmtMoney(totals.total) + '</b></span>' +
                 '</div>';
 
             openModal({
                 child: true,
                 bodyClass: 'compact',
                 reopen: renderPoLinesPage,
-                title: lbl('VAS_NewPOLinesHeader', 'New Purchase Order · Lines'),
-                subtitle: lbl('VAS_Page2Of2', 'Page 2 of 2') + ' · ' + poHeadValues.vendorName + ' · ' + selectedPoLines.length + ' ' + lbl('VAS_Lines', 'lines'),
+                title: lbl('VAS_204_NewPOLinesHeader', 'New Purchase Order · Lines'),
+                subtitle: lbl('VAS_204_Page2Of2', 'Page 2 of 2') + ' · ' + poHeadValues.vendorName + ' · ' + selectedPoLines.length + ' ' + lbl('VAS_204_Lines', 'lines'),
                 body: summaryHtml +
-                    '<div class="vas-204-msec">' + escapeHtml(lbl('VAS_ConfirmLinesHeader', 'Purchase order lines')) + '</div>' +
+                    '<div class="vas-204-msec">' + escapeHtml(lbl('VAS_204_ConfirmLinesHeader', 'Purchase order lines')) + '</div>' +
                     linesTableHtml +
                     totalsBarHtml,
                 foot: '<span class="vas-204-foot-note" id="vas204_poFootNote">' +
-                    selectedPoLines.length + ' ' + lbl('VAS_Lines', 'lines') + ' · ' + fmtNum(totals.qty) + ' ' + lbl('VAS_Qty', 'qty') + ' · ' +
-                    lbl('VAS_OrderTotal', 'order total') + ' ' + fmtMoney(totals.total) +
+                    selectedPoLines.length + ' ' + lbl('VAS_204_Lines', 'lines') + ' · ' + fmtNum(totals.qty) + ' ' + lbl('VAS_204_Qty', 'qty') + ' · ' +
+                    lbl('VAS_204_OrderTotal', 'order total') + ' ' + fmtMoney(totals.total) +
                     '</span>' +
-                    '<span><button type="button" class="vas-204-btn vas-204-btn-back">' + escapeHtml(lbl('VAS_BackToDetails', 'Back to details')) + '</button> ' +
-                    '<button type="button" class="vas-204-btn vas-204-btn-primary vas-204-btn-create-po">' + escapeHtml(lbl('VAS_CreatePO', 'Create PO')) + '</button></span>',
+                    '<span><button type="button" class="vas-204-btn vas-204-btn-back">' + escapeHtml(lbl('VAS_204_BackToDetails', 'Back to details')) + '</button> ' +
+                    '<button type="button" class="vas-204-btn vas-204-btn-primary vas-204-btn-create-po">' + escapeHtml(lbl('VAS_204_CreatePO', 'Create PO')) + '</button></span>',
                 after: function () {
                     $mFoot.find('.vas-204-btn-back').on('click', function () { backModal(); });
                     $mFoot.find('.vas-204-btn-create-po').on('click', function () {
@@ -1060,19 +1060,19 @@
                     var res = parseResponse(response);
                     if (res && res.success) {
                         closeModal();
-                        toast(lbl('VAS_POCreatedSuccess', 'Purchase order created successfully.') + ' (' + (res.documentNo || '') + ')');
+                        toast(lbl('VAS_204_POCreatedSuccess', 'Purchase order created successfully.') + ' (' + (res.documentNo || '') + ')');
                         if (res.orderId > 0) {
                             openPurchaseOrderRecord(res.orderId);
                         }
                     } else {
-                        $createBtn.prop('disabled', false).text(lbl('VAS_CreatePO', 'Create PO'));
-                        VIS.ADialog.error('', true, (res && (res.error || res.message)) || lbl('VAS_ErrorCreatingPO', 'Error creating Purchase Order'));
+                        $createBtn.prop('disabled', false).text(lbl('VAS_204_CreatePO', 'Create PO'));
+                        VIS.ADialog.error('', true, (res && (res.error || res.message)) || lbl('VAS_204_ErrorCreatingPO', 'Error creating Purchase Order'));
                     }
                 },
                 error: function (xhr, status, error) {
                     isBusy = false;
-                    $createBtn.prop('disabled', false).text(lbl('VAS_CreatePO', 'Create PO'));
-                    VIS.ADialog.error('', true, error || lbl('VAS_ServerTimeoutError', 'Server error creating Purchase Order'));
+                    $createBtn.prop('disabled', false).text(lbl('VAS_204_CreatePO', 'Create PO'));
+                    VIS.ADialog.error('', true, error || lbl('VAS_204_ServerTimeoutError', 'Server error creating Purchase Order'));
                 }
             });
         }

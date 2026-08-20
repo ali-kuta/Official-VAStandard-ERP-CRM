@@ -8,43 +8,43 @@
  * Summary Message Table:
  *  #  | Current Text                         | Message Key
  * ----+--------------------------------------+-----------------------------------
- *  1  | Drafted / In-Process POs             | VAS_DraftedInProcessPOs
- *  2  | Drafted                              | VAS_Drafted
- *  3  | In Progress                          | VAS_InProgress
- *  4  | Total documents                      | VAS_TotalDocuments
- *  5  | Value                                | VAS_Value
- *  6  | Documents                            | VAS_Documents
- *  7  | PO No                                | VAS_PONo
- *  8  | PO date                              | VAS_PODate
- *  9  | Vendor                               | VAS_Vendor
- * 10  | Representative                       | VAS_Representative
- * 11  | Lines                                | VAS_Lines
- * 12  | Stage                                | VAS_Stage
- * 13  | drafted ·<br/>in process             | VAS_DraftedInProcessLabel
- * 14  | Purchase order lines                 | VAS_POLines
- * 15  | Product                              | VAS_Product
- * 16  | Attribute                            | VAS_Attribute
- * 17  | UoM                                  | VAS_UOM
- * 18  | Ordered                              | VAS_Ordered
- * 19  | Received                             | VAS_Received
- * 20  | Pending                              | VAS_Pending
- * 21  | Rate                                 | VAS_Rate
- * 22  | Amount                               | VAS_Amount
- * 23  | Line status                          | VAS_LineStatus
- * 24  | Qty ordered                          | VAS_QtyOrdered
- * 25  | Qty pending                          | VAS_QtyPending
- * 26  | Showing                              | VAS_Showing
- * 27  | of                                   | VAS_Of
- * 28  | newest first                         | VAS_NewestFirst
- * 29  | No drafted or in-process POs         | VAS_NoDraftedInProcessPOs
- * 30  | Couldn't load data                   | VAS_CouldntLoad
- * 31  | Close                                | VAS_Close
- * 32  | Back                                 | VAS_Back
- * 33  | View lines                           | VAS_ViewLines
- * 34  | Open record                          | VAS_OpenRecord
- * 35  | Purchase order                       | VAS_PurchaseOrder
- * 36  | No line items found.                 | VAS_NoRecordsFound
- * 37  | lines of                             | VAS_LinesOf
+ *  1  | Drafted / In-Process POs             | VAS_207_DraftedInProcessPOs
+ *  2  | Drafted                              | VAS_207_Drafted
+ *  3  | In Progress                          | VAS_207_InProgress
+ *  4  | Total documents                      | VAS_207_TotalDocuments
+ *  5  | Value                                | VAS_207_Value
+ *  6  | Documents                            | VAS_207_Documents
+ *  7  | PO No                                | VAS_207_PONo
+ *  8  | PO date                              | VAS_207_PODate
+ *  9  | Vendor                               | VAS_207_Vendor
+ * 10  | Representative                       | VAS_207_Representative
+ * 11  | Lines                                | VAS_207_Lines
+ * 12  | Stage                                | VAS_207_Stage
+ * 13  | drafted ·<br/>in process             | VAS_207_DraftedInProcessLabel
+ * 14  | Purchase order lines                 | VAS_207_POLines
+ * 15  | Product                              | VAS_207_Product
+ * 16  | Attribute                            | VAS_207_Attribute
+ * 17  | UoM                                  | VAS_207_UOM
+ * 18  | Ordered                              | VAS_207_Ordered
+ * 19  | Received                             | VAS_207_Received
+ * 20  | Pending                              | VAS_207_Pending
+ * 21  | Rate                                 | VAS_207_Rate
+ * 22  | Amount                               | VAS_207_Amount
+ * 23  | Line status                          | VAS_207_LineStatus
+ * 24  | Qty ordered                          | VAS_207_QtyOrdered
+ * 25  | Qty pending                          | VAS_207_QtyPending
+ * 26  | Showing                              | VAS_207_Showing
+ * 27  | of                                   | VAS_207_Of
+ * 28  | newest first                         | VAS_207_NewestFirst
+ * 29  | No drafted or in-process POs         | VAS_207_NoDraftedInProcessPOs
+ * 30  | Couldn't load data                   | VAS_207_CouldntLoad
+ * 31  | Close                                | VAS_207_Close
+ * 32  | Back                                 | VAS_207_Back
+ * 33  | View lines                           | VAS_207_ViewLines
+ * 34  | Open record                          | VAS_207_OpenRecord
+ * 35  | Purchase order                       | VAS_207_PurchaseOrder
+ * 36  | No line items found.                 | VAS_207_NoRecordsFound
+ * 37  | lines of                             | VAS_207_LinesOf
  */
 
 ; VAS = window.VAS || {};
@@ -155,7 +155,7 @@
         }
 
         function createWidgetDOM() {
-            var titleText = lbl("VAS_DraftedInProcessPOs", "Drafted / In-Process POs");
+            var titleText = lbl("VAS_207_DraftedInProcessPOs", "Drafted / In-Process POs");
 
             $card = $(
                 '<button type="button" class="vas-207-card vas-207-border-info" aria-label="' + esc(titleText) + '">' +
@@ -171,8 +171,8 @@
                         '<div class="vas-207-kpi-side">' +
                             '<div class="vas-207-side-v">— · —</div>' +
                             '<div class="vas-207-side-l">' +
-                                esc(lbl("VAS_Drafted", "drafted")) + ' ·<br/>' +
-                                esc(lbl("VAS_InProgress", "in process")) +
+                                esc(lbl("VAS_207_Drafted", "drafted")) + ' ·<br/>' +
+                                esc(lbl("VAS_207_InProgress", "in process")) +
                             '</div>' +
                         '</div>' +
                     '</div>' +
@@ -273,7 +273,7 @@
                 $kpiVal.removeAttr('title');
             }
             if ($kpiMeta) {
-                var errText = lbl("VAS_CouldntLoad", "Couldn't load data");
+                var errText = lbl("VAS_207_CouldntLoad", "Couldn't load data");
                 $kpiMeta.text(errText);
                 $kpiMeta.attr('title', errText);
             }
@@ -312,16 +312,16 @@
             var $header = $(
                 '<div class="vas-207-modal-header">' +
                     '<div class="vas-207-head-left">' +
-                        '<button type="button" class="vas-207-xbtn vas-207-mback" aria-label="' + esc(lbl("VAS_Back", "Back")) + '" style="display:none;">' +
+                        '<button type="button" class="vas-207-xbtn vas-207-mback" aria-label="' + esc(lbl("VAS_207_Back", "Back")) + '" style="display:none;">' +
                             '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>' +
                         '</button>' +
                         '<div class="vas-207-htxt">' +
-                            '<h2 class="vas-207-mtitle">' + esc(lbl("VAS_DraftedInProcessPOs", "Drafted / In-Process POs")) + '</h2>' +
+                            '<h2 class="vas-207-mtitle">' + esc(lbl("VAS_207_DraftedInProcessPOs", "Drafted / In-Process POs")) + '</h2>' +
                             '<div class="vas-207-msub">' + esc(formattedTotal) + '</div>' +
                         '</div>' +
                     '</div>' +
                     '<div class="vas-207-hact">' +
-                        '<button type="button" class="vas-207-xbtn vas-207-mclose" aria-label="' + esc(lbl("VAS_Close", "Close")) + '">' +
+                        '<button type="button" class="vas-207-xbtn vas-207-mclose" aria-label="' + esc(lbl("VAS_207_Close", "Close")) + '">' +
                             '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>' +
                         '</button>' +
                     '</div>' +
@@ -332,7 +332,7 @@
             var $foot = $(
                 '<div class="vas-207-modal-foot">' +
                     '<span class="vas-207-foot-note"></span>' +
-                    '<button type="button" class="vas-207-btn vas-207-close-btn">' + esc(lbl("VAS_Close", "Close")) + '</button>' +
+                    '<button type="button" class="vas-207-btn vas-207-close-btn">' + esc(lbl("VAS_207_Close", "Close")) + '</button>' +
                 '</div>'
             );
 
@@ -392,7 +392,7 @@
             var iso = cachedData.currencyIso || 'INR';
             var formattedTotal = formatCurrency(cachedData.totalValue, sym, iso);
 
-            $header.find('.vas-207-mtitle').text(lbl("VAS_DraftedInProcessPOs", "Drafted / In-Process POs"));
+            $header.find('.vas-207-mtitle').text(lbl("VAS_207_DraftedInProcessPOs", "Drafted / In-Process POs"));
             $header.find('.vas-207-msub').text(formattedTotal);
 
             $body.empty();
@@ -401,19 +401,19 @@
             var $statStrip = $(
                 '<div class="vas-207-mstats">' +
                     '<div class="vas-207-mstat">' +
-                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_TotalDocuments", "Total documents")) + '</div>' +
+                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_207_TotalDocuments", "Total documents")) + '</div>' +
                         '<div class="vas-207-stat-v" title="' + formatNumber(cachedData.totalDocuments) + '">' + formatNumber(cachedData.totalDocuments) + '</div>' +
                     '</div>' +
                     '<div class="vas-207-mstat">' +
-                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_Drafted", "Drafted")) + '</div>' +
+                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_207_Drafted", "Drafted")) + '</div>' +
                         '<div class="vas-207-stat-v" title="' + formatNumber(cachedData.draftedCount) + '">' + formatNumber(cachedData.draftedCount) + '</div>' +
                     '</div>' +
                     '<div class="vas-207-mstat">' +
-                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_InProgress", "In Progress")) + '</div>' +
+                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_207_InProgress", "In Progress")) + '</div>' +
                         '<div class="vas-207-stat-v" title="' + formatNumber(cachedData.inProgressCount) + '">' + formatNumber(cachedData.inProgressCount) + '</div>' +
                     '</div>' +
                     '<div class="vas-207-mstat">' +
-                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_Value", "Value")) + '</div>' +
+                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_207_Value", "Value")) + '</div>' +
                         '<div class="vas-207-stat-v" title="' + esc(formattedTotal) + '">' + esc(formattedTotal) + '</div>' +
                     '</div>' +
                 '</div>'
@@ -421,7 +421,7 @@
             $body.append($statStrip);
 
             // Section Header
-            $body.append('<div class="vas-207-msec">' + esc(lbl("VAS_Documents", "Documents")) + '</div>');
+            $body.append('<div class="vas-207-msec">' + esc(lbl("VAS_207_Documents", "Documents")) + '</div>');
 
             // Table Wrapper
             var $tableWrap = $('<div class="vas-207-mtbl-wrap"></div>');
@@ -435,7 +435,7 @@
 
             var records = cachedData.records || [];
             if (records.length === 0) {
-                $tableWrap.html('<div class="vas-207-empty-msg">' + esc(lbl("VAS_NoDraftedInProcessPOs", "No drafted or in-process purchase orders found.")) + '</div>');
+                $tableWrap.html('<div class="vas-207-empty-msg">' + esc(lbl("VAS_207_NoDraftedInProcessPOs", "No drafted or in-process purchase orders found.")) + '</div>');
                 return;
             }
 
@@ -454,13 +454,13 @@
             var $thead = $(
                 '<div class="vas-207-mrow vas-207-mhead">' +
                     '<span class="vas-207-cell vas-207-w-icon"></span>' +
-                    '<span class="vas-207-cell vas-207-w-pono" title="' + esc(lbl("VAS_PONo", "PO No")) + '">' + esc(lbl("VAS_PONo", "PO No")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-w-date" title="' + esc(lbl("VAS_PODate", "PO date")) + '">' + esc(lbl("VAS_PODate", "PO date")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-w-vendor" title="' + esc(lbl("VAS_Vendor", "Vendor")) + '">' + esc(lbl("VAS_Vendor", "Vendor")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-w-rep" title="' + esc(lbl("VAS_Representative", "Representative")) + '">' + esc(lbl("VAS_Representative", "Representative")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-w-lines vas-207-right" title="' + esc(lbl("VAS_Lines", "Lines")) + '">' + esc(lbl("VAS_Lines", "Lines")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-w-val vas-207-right" title="' + esc(lbl("VAS_Value", "Value")) + '">' + esc(lbl("VAS_Value", "Value")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-w-stage" title="' + esc(lbl("VAS_Stage", "Stage")) + '">' + esc(lbl("VAS_Stage", "Stage")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-w-pono" title="' + esc(lbl("VAS_207_PONo", "PO No")) + '">' + esc(lbl("VAS_207_PONo", "PO No")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-w-date" title="' + esc(lbl("VAS_207_PODate", "PO date")) + '">' + esc(lbl("VAS_207_PODate", "PO date")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-w-vendor" title="' + esc(lbl("VAS_207_Vendor", "Vendor")) + '">' + esc(lbl("VAS_207_Vendor", "Vendor")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-w-rep" title="' + esc(lbl("VAS_207_Representative", "Representative")) + '">' + esc(lbl("VAS_207_Representative", "Representative")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-w-lines vas-207-right" title="' + esc(lbl("VAS_207_Lines", "Lines")) + '">' + esc(lbl("VAS_207_Lines", "Lines")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-w-val vas-207-right" title="' + esc(lbl("VAS_207_Value", "Value")) + '">' + esc(lbl("VAS_207_Value", "Value")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-w-stage" title="' + esc(lbl("VAS_207_Stage", "Stage")) + '">' + esc(lbl("VAS_207_Stage", "Stage")) + '</span>' +
                 '</div>'
             );
             $table.append($thead);
@@ -473,18 +473,18 @@
             for (var i = 0; i < pageRows.length; i++) {
                 var r = pageRows[i];
                 var stageChipClass = r.DocStatus === 'DR' ? 'vas-207-chip-neutral' : 'vas-207-chip-prop';
-                var stageText = r.DocStatus === 'DR' ? lbl("VAS_Drafted", "Drafted") : lbl("VAS_InProgress", "In Progress");
+                var stageText = r.DocStatus === 'DR' ? lbl("VAS_207_Drafted", "Drafted") : lbl("VAS_207_InProgress", "In Progress");
                 var formattedVal = formatCurrency(r.ConvertedValue, sym, iso);
 
                 var $row = $(
                     '<div class="vas-207-mrow vas-207-data-row">' +
                         '<span class="vas-207-cell vas-207-w-icon vas-207-center">' +
-                            '<button type="button" class="vas-207-iconbtn vas-207-lines-btn" data-id="' + r.PurchaseOrderId + '" title="' + esc(lbl("VAS_ViewLines", "View lines")) + '" aria-label="' + esc(lbl("VAS_ViewLines", "View lines")) + '">' +
+                            '<button type="button" class="vas-207-iconbtn vas-207-lines-btn" data-id="' + r.PurchaseOrderId + '" title="' + esc(lbl("VAS_207_ViewLines", "View lines")) + '" aria-label="' + esc(lbl("VAS_207_ViewLines", "View lines")) + '">' +
                                 '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>' +
                             '</button>' +
                         '</span>' +
                         '<span class="vas-207-cell vas-207-w-pono">' +
-                            '<button type="button" class="vas-207-lnk vas-207-pono-btn" data-id="' + r.PurchaseOrderId + '" title="' + esc(lbl("VAS_OpenRecord", "Open record") + ' ' + r.PurchaseOrderNumber) + '">' +
+                            '<button type="button" class="vas-207-lnk vas-207-pono-btn" data-id="' + r.PurchaseOrderId + '" title="' + esc(lbl("VAS_207_OpenRecord", "Open record") + ' ' + r.PurchaseOrderNumber) + '">' +
                                 esc(r.PurchaseOrderNumber) +
                             '</button>' +
                         '</span>' +
@@ -517,9 +517,9 @@
             $tableWrap.append($table);
 
             // Table Footer / Pager
-            var helperText = lbl("VAS_Showing", "Showing") + ' ' + (startIdx + 1) + '–' + endIdx + ' ' +
-                             lbl("VAS_Of", "of") + ' ' + totalCount + ' · ' +
-                             lbl("VAS_NewestFirst", "newest first");
+            var helperText = lbl("VAS_207_Showing", "Showing") + ' ' + (startIdx + 1) + '–' + endIdx + ' ' +
+                             lbl("VAS_207_Of", "of") + ' ' + totalCount + ' · ' +
+                             lbl("VAS_207_NewestFirst", "newest first");
 
             var $tfoot = $(
                 '<div class="vas-207-mtfoot">' +
@@ -528,7 +528,7 @@
                         '<button type="button" class="vas-207-pbtn vas-207-prev-btn" ' + (modalCurrentPage === 0 ? 'disabled' : '') + ' aria-label="Previous">' +
                             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>' +
                         '</button>' +
-                        '<span class="vas-207-ptxt">' + (modalCurrentPage + 1) + ' ' + lbl("VAS_Of", "of") + ' ' + totalPages + '</span>' +
+                        '<span class="vas-207-ptxt">' + (modalCurrentPage + 1) + ' ' + lbl("VAS_207_Of", "of") + ' ' + totalPages + '</span>' +
                         '<button type="button" class="vas-207-pbtn vas-207-next-btn" ' + (modalCurrentPage >= totalPages - 1 ? 'disabled' : '') + ' aria-label="Next">' +
                             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>' +
                         '</button>' +
@@ -575,7 +575,7 @@
             var iso = cachedData.currencyIso || 'INR';
             var formattedVal = formatCurrency(poRec.ConvertedValue, sym, iso);
 
-            $header.find('.vas-207-mtitle').text(lbl("VAS_Lines", "Lines") + ' · ' + poRec.PurchaseOrderNumber);
+            $header.find('.vas-207-mtitle').text(lbl("VAS_207_Lines", "Lines") + ' · ' + poRec.PurchaseOrderNumber);
             $header.find('.vas-207-msub').text(poRec.VendorName + ' · ' + poRec.OrderDateFormatted + ' · ' + poRec.DocStatusName);
 
             $body.empty();
@@ -596,14 +596,14 @@
                     }
 
                     if (!data || data.error) {
-                        $body.html('<div class="vas-207-empty-msg">' + esc(lbl("VAS_CouldntLoad", "Couldn't load data")) + '</div>');
+                        $body.html('<div class="vas-207-empty-msg">' + esc(lbl("VAS_207_CouldntLoad", "Couldn't load data")) + '</div>');
                         return;
                     }
 
                     renderLinesContent(poRec, data.lines || [], $dialog, $header, $body, $foot);
                 },
                 error: function () {
-                    $body.html('<div class="vas-207-empty-msg">' + esc(lbl("VAS_CouldntLoad", "Couldn't load data")) + '</div>');
+                    $body.html('<div class="vas-207-empty-msg">' + esc(lbl("VAS_207_CouldntLoad", "Couldn't load data")) + '</div>');
                 }
             });
         }
@@ -625,8 +625,8 @@
             // Top Link Row
             var $poLinkRow = $(
                 '<div class="vas-207-polink">' +
-                    '<span>' + esc(lbl("VAS_PurchaseOrder", "Purchase order")) + ' </span>' +
-                    '<button type="button" class="vas-207-lnk vas-207-pono-btn" title="' + esc(lbl("VAS_OpenRecord", "Open record")) + '">' +
+                    '<span>' + esc(lbl("VAS_207_PurchaseOrder", "Purchase order")) + ' </span>' +
+                    '<button type="button" class="vas-207-lnk vas-207-pono-btn" title="' + esc(lbl("VAS_207_OpenRecord", "Open record")) + '">' +
                         esc(poRec.PurchaseOrderNumber) +
                     '</button>' +
                     '<span> · ' + esc(poRec.OrderDateFormatted) + ' · ' + esc(poRec.DocStatusName) + '</span>' +
@@ -642,19 +642,19 @@
             var $statStrip = $(
                 '<div class="vas-207-mstats">' +
                     '<div class="vas-207-mstat">' +
-                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_Lines", "Lines")) + '</div>' +
+                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_207_Lines", "Lines")) + '</div>' +
                         '<div class="vas-207-stat-v" title="' + formatNumber(lines.length) + '">' + formatNumber(lines.length) + '</div>' +
                     '</div>' +
                     '<div class="vas-207-mstat">' +
-                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_Value", "PO value")) + '</div>' +
+                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_207_Value", "PO value")) + '</div>' +
                         '<div class="vas-207-stat-v" title="' + esc(formattedVal) + '">' + esc(formattedVal) + '</div>' +
                     '</div>' +
                     '<div class="vas-207-mstat">' +
-                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_QtyOrdered", "Qty ordered")) + '</div>' +
+                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_207_QtyOrdered", "Qty ordered")) + '</div>' +
                         '<div class="vas-207-stat-v" title="' + formatNumber(totalOrderedQty) + '">' + formatNumber(totalOrderedQty) + '</div>' +
                     '</div>' +
                     '<div class="vas-207-mstat">' +
-                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_QtyPending", "Qty pending")) + '</div>' +
+                        '<div class="vas-207-stat-l">' + esc(lbl("VAS_207_QtyPending", "Qty pending")) + '</div>' +
                         '<div class="vas-207-stat-v" title="' + formatNumber(totalPendingQty) + '">' + formatNumber(totalPendingQty) + '</div>' +
                     '</div>' +
                 '</div>'
@@ -662,7 +662,7 @@
             $body.append($statStrip);
 
             // Section
-            $body.append('<div class="vas-207-msec">' + esc(lbl("VAS_POLines", "Purchase order lines")) + '</div>');
+            $body.append('<div class="vas-207-msec">' + esc(lbl("VAS_207_POLines", "Purchase order lines")) + '</div>');
 
             // Table
             var $tableWrap = $('<div class="vas-207-mtbl-wrap"></div>');
@@ -676,7 +676,7 @@
             $tableWrap.empty();
 
             if (!lines || lines.length === 0) {
-                $tableWrap.html('<div class="vas-207-empty-msg">' + esc(lbl("VAS_NoRecordsFound", "No line items found.")) + '</div>');
+                $tableWrap.html('<div class="vas-207-empty-msg">' + esc(lbl("VAS_207_NoRecordsFound", "No line items found.")) + '</div>');
                 return;
             }
 
@@ -695,15 +695,15 @@
             var $thead = $(
                 '<div class="vas-207-mrow vas-207-mhead vas-207-lines-head">' +
                     '<span class="vas-207-cell vas-207-lh-num vas-207-right" title="#">#</span>' +
-                    '<span class="vas-207-cell vas-207-lh-prod" title="' + esc(lbl("VAS_Product", "Product")) + '">' + esc(lbl("VAS_Product", "Product")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-lh-attr" title="' + esc(lbl("VAS_Attribute", "Attribute")) + '">' + esc(lbl("VAS_Attribute", "Attribute")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-lh-uom" title="' + esc(lbl("VAS_UOM", "UoM")) + '">' + esc(lbl("VAS_UOM", "UoM")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-lh-ord vas-207-right" title="' + esc(lbl("VAS_Ordered", "Ordered")) + '">' + esc(lbl("VAS_Ordered", "Ordered")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-lh-rec vas-207-right" title="' + esc(lbl("VAS_Received", "Received")) + '">' + esc(lbl("VAS_Received", "Received")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-lh-pend vas-207-right" title="' + esc(lbl("VAS_Pending", "Pending")) + '">' + esc(lbl("VAS_Pending", "Pending")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-lh-rate vas-207-right" title="' + esc(lbl("VAS_Rate", "Rate")) + '">' + esc(lbl("VAS_Rate", "Rate")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-lh-amt vas-207-right" title="' + esc(lbl("VAS_Amount", "Amount")) + '">' + esc(lbl("VAS_Amount", "Amount")) + '</span>' +
-                    '<span class="vas-207-cell vas-207-lh-stat" title="' + esc(lbl("VAS_LineStatus", "Line status")) + '">' + esc(lbl("VAS_LineStatus", "Line status")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-lh-prod" title="' + esc(lbl("VAS_207_Product", "Product")) + '">' + esc(lbl("VAS_207_Product", "Product")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-lh-attr" title="' + esc(lbl("VAS_207_Attribute", "Attribute")) + '">' + esc(lbl("VAS_207_Attribute", "Attribute")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-lh-uom" title="' + esc(lbl("VAS_207_UOM", "UoM")) + '">' + esc(lbl("VAS_207_UOM", "UoM")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-lh-ord vas-207-right" title="' + esc(lbl("VAS_207_Ordered", "Ordered")) + '">' + esc(lbl("VAS_207_Ordered", "Ordered")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-lh-rec vas-207-right" title="' + esc(lbl("VAS_207_Received", "Received")) + '">' + esc(lbl("VAS_207_Received", "Received")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-lh-pend vas-207-right" title="' + esc(lbl("VAS_207_Pending", "Pending")) + '">' + esc(lbl("VAS_207_Pending", "Pending")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-lh-rate vas-207-right" title="' + esc(lbl("VAS_207_Rate", "Rate")) + '">' + esc(lbl("VAS_207_Rate", "Rate")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-lh-amt vas-207-right" title="' + esc(lbl("VAS_207_Amount", "Amount")) + '">' + esc(lbl("VAS_207_Amount", "Amount")) + '</span>' +
+                    '<span class="vas-207-cell vas-207-lh-stat" title="' + esc(lbl("VAS_207_LineStatus", "Line status")) + '">' + esc(lbl("VAS_207_LineStatus", "Line status")) + '</span>' +
                 '</div>'
             );
             $table.append($thead);
@@ -743,9 +743,9 @@
             $tableWrap.append($table);
 
             // Footer
-            var helperText = lbl("VAS_Showing", "Showing") + ' ' + (startIdx + 1) + '–' + endIdx + ' ' +
-                             lbl("VAS_Of", "of") + ' ' + totalCount + ' ' +
-                             lbl("VAS_LinesOf", "lines of") + ' ' + poRec.PurchaseOrderNumber;
+            var helperText = lbl("VAS_207_Showing", "Showing") + ' ' + (startIdx + 1) + '–' + endIdx + ' ' +
+                             lbl("VAS_207_Of", "of") + ' ' + totalCount + ' ' +
+                             lbl("VAS_207_LinesOf", "lines of") + ' ' + poRec.PurchaseOrderNumber;
 
             var $tfoot = $(
                 '<div class="vas-207-mtfoot">' +
@@ -754,7 +754,7 @@
                         '<button type="button" class="vas-207-pbtn vas-207-prev-btn" ' + (linesCurrentPage === 0 ? 'disabled' : '') + ' aria-label="Previous">' +
                             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>' +
                         '</button>' +
-                        '<span class="vas-207-ptxt">' + (linesCurrentPage + 1) + ' ' + lbl("VAS_Of", "of") + ' ' + totalPages + '</span>' +
+                        '<span class="vas-207-ptxt">' + (linesCurrentPage + 1) + ' ' + lbl("VAS_207_Of", "of") + ' ' + totalPages + '</span>' +
                         '<button type="button" class="vas-207-pbtn vas-207-next-btn" ' + (linesCurrentPage >= totalPages - 1 ? 'disabled' : '') + ' aria-label="Next">' +
                             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>' +
                         '</button>' +
@@ -798,7 +798,7 @@
                 // Check window resolution from context or default Purchase Order window
                 var windowId = 0;
                 if (VIS.context && VIS.context.getWindowId) {
-                    windowId = VIS.context.getWindowId("VAS_PurchaseOrder") || VIS.context.getWindowId("C_Order") || 181;
+                    windowId = VIS.context.getWindowId("VAS_207_PurchaseOrder") || VIS.context.getWindowId("C_Order") || 181;
                 } else {
                     windowId = 181;
                 }

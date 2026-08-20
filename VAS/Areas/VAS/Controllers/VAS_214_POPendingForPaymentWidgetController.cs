@@ -407,19 +407,19 @@ namespace VIS.Controllers
                         decimal lineNetAmt = Util.GetValueOfDecimal(dr["line_net_amt"]);
 
                         string lineStatus = "Pending";
-                        string lineStatusKey = "VAS_LineStatusPending";
+                        string lineStatusKey = "VAS_214_LineStatusPending";
                         string lineStatusChip = "chip-neutral";
 
                         if (deliveredQty >= orderedQty && orderedQty > 0)
                         {
                             lineStatus = "Received";
-                            lineStatusKey = "VAS_LineStatusReceived";
+                            lineStatusKey = "VAS_214_LineStatusReceived";
                             lineStatusChip = "chip-ok";
                         }
                         else if (deliveredQty > 0 && deliveredQty < orderedQty)
                         {
                             lineStatus = "Partial received";
-                            lineStatusKey = "VAS_LineStatusPartialReceived";
+                            lineStatusKey = "VAS_214_LineStatusPartialReceived";
                             lineStatusChip = "chip-warn";
                         }
 

@@ -11,65 +11,65 @@
  * Message Table:
  *   # | Fallback Text                                    | Message Key
  *  ---+--------------------------------------------------+-----------------------------------
- *   1 | Representative wise PO                           | VAS_RepresentativeWisePO
- *   2 | Month                                            | VAS_Month
- *   3 | Year                                             | VAS_Year
- *   4 | Ranked by PO value                               | VAS_RankedByPOValue
- *   5 | Showing                                          | VAS_Showing
- *   6 | of                                               | VAS_Of
- *   7 | PO value                                         | VAS_POValue
- *   8 | POs raised                                       | VAS_POsRaised
- *   9 | Share of month                                   | VAS_ShareOfMonth
- *  10 | Avg cycle                                        | VAS_AvgCycle
- *  11 | Purchase orders                                  | VAS_PurchaseOrders
- *  12 | Purchase order lines                             | VAS_PurchaseOrderLines
- *  13 | Purchase orders raised by this representative    | VAS_PurchaseOrdersRaisedByRep
- *  14 | PO No                                            | VAS_PONo
- *  15 | PO date                                          | VAS_PODate
- *  16 | Vendor                                           | VAS_Vendor
- *  17 | Warehouse                                        | VAS_Warehouse
- *  18 | Representative                                   | VAS_Representative
- *  19 | Value                                            | VAS_Value
- *  20 | Delivery                                         | VAS_Delivery
- *  21 | Status                                           | VAS_Status
- *  22 | Product                                          | VAS_Product
- *  23 | Attribute                                        | VAS_Attribute
- *  24 | UoM                                              | VAS_UoM
- *  25 | Ordered                                          | VAS_Ordered
- *  26 | Received                                         | VAS_Received
- *  27 | Pending                                          | VAS_Pending
- *  28 | Rate                                             | VAS_Rate
- *  29 | Amount                                           | VAS_Amount
- *  30 | Line status                                      | VAS_LineStatus
- *  31 | Lines                                            | VAS_Lines
- *  32 | Qty ordered                                      | VAS_QtyOrdered
- *  33 | Qty pending                                      | VAS_QtyPending
- *  34 | Back                                             | VAS_Back
- *  35 | Close                                            | VAS_Close
- *  36 | select a PO number to open the record            | VAS_SelectPOToOpen
- *  37 | Lines of                                         | VAS_LinesOf
- *  38 | No representatives found for this period         | VAS_NoRepresentativesFound
- *  39 | Failed to load representative data               | VAS_FailedToLoadRepresentativeData
- *  40 | Retry                                            | VAS_Retry
- *  41 | Loading...                                       | VAS_Loading
- *  42 | No purchase orders found                         | VAS_NoPOsFound
- *  43 | No lines found                                   | VAS_NoLinesFound
- *  44 | Previous                                         | VAS_Previous
- *  45 | Next                                             | VAS_Next
- *  46 | Open in Window                                   | VAS_OpenInWindow
- *  47 | Drafted                                          | VAS_Drafted
- *  48 | In process                                       | VAS_InProcess
- *  49 | Completed                                        | VAS_Completed
- *  50 | Closed                                           | VAS_Closed
- *  51 | Voided                                           | VAS_Voided
- *  52 | Reversed                                         | VAS_Reversed
- *  53 | Fully delivered                                  | VAS_FullyDelivered
- *  54 | Partial                                          | VAS_Partial
- *  55 | Not applicable                                   | VAS_NotApplicable
- *  56 | Partial received                                 | VAS_PartialReceived
- *  57 | Day                                              | VAS_Day
- *  58 | Days                                             | VAS_Days
- *  59 | Purchase order                                   | VAS_PurchaseOrder
+ *   1 | Representative wise PO                           | VAS_215_RepresentativeWisePO
+ *   2 | Month                                            | VAS_215_Month
+ *   3 | Year                                             | VAS_215_Year
+ *   4 | Ranked by PO value                               | VAS_215_RankedByPOValue
+ *   5 | Showing                                          | VAS_215_Showing
+ *   6 | of                                               | VAS_215_Of
+ *   7 | PO value                                         | VAS_215_POValue
+ *   8 | POs raised                                       | VAS_215_POsRaised
+ *   9 | Share of month                                   | VAS_215_ShareOfMonth
+ *  10 | Avg cycle                                        | VAS_215_AvgCycle
+ *  11 | Purchase orders                                  | VAS_215_PurchaseOrders
+ *  12 | Purchase order lines                             | VAS_215_PurchaseOrderLines
+ *  13 | Purchase orders raised by this representative    | VAS_215_PurchaseOrdersRaisedByRep
+ *  14 | PO No                                            | VAS_215_PONo
+ *  15 | PO date                                          | VAS_215_PODate
+ *  16 | Vendor                                           | VAS_215_Vendor
+ *  17 | Warehouse                                        | VAS_215_Warehouse
+ *  18 | Representative                                   | VAS_215_Representative
+ *  19 | Value                                            | VAS_215_Value
+ *  20 | Delivery                                         | VAS_215_Delivery
+ *  21 | Status                                           | VAS_215_Status
+ *  22 | Product                                          | VAS_215_Product
+ *  23 | Attribute                                        | VAS_215_Attribute
+ *  24 | UoM                                              | VAS_215_UoM
+ *  25 | Ordered                                          | VAS_215_Ordered
+ *  26 | Received                                         | VAS_215_Received
+ *  27 | Pending                                          | VAS_215_Pending
+ *  28 | Rate                                             | VAS_215_Rate
+ *  29 | Amount                                           | VAS_215_Amount
+ *  30 | Line status                                      | VAS_215_LineStatus
+ *  31 | Lines                                            | VAS_215_Lines
+ *  32 | Qty ordered                                      | VAS_215_QtyOrdered
+ *  33 | Qty pending                                      | VAS_215_QtyPending
+ *  34 | Back                                             | VAS_215_Back
+ *  35 | Close                                            | VAS_215_Close
+ *  36 | select a PO number to open the record            | VAS_215_SelectPOToOpen
+ *  37 | Lines of                                         | VAS_215_LinesOf
+ *  38 | No representatives found for this period         | VAS_215_NoRepresentativesFound
+ *  39 | Failed to load representative data               | VAS_215_FailedToLoadRepresentativeData
+ *  40 | Retry                                            | VAS_215_Retry
+ *  41 | Loading...                                       | VAS_215_Loading
+ *  42 | No purchase orders found                         | VAS_215_NoPOsFound
+ *  43 | No lines found                                   | VAS_215_NoLinesFound
+ *  44 | Previous                                         | VAS_215_Previous
+ *  45 | Next                                             | VAS_215_Next
+ *  46 | Open in Window                                   | VAS_215_OpenInWindow
+ *  47 | Drafted                                          | VAS_215_Drafted
+ *  48 | In process                                       | VAS_215_InProcess
+ *  49 | Completed                                        | VAS_215_Completed
+ *  50 | Closed                                           | VAS_215_Closed
+ *  51 | Voided                                           | VAS_215_Voided
+ *  52 | Reversed                                         | VAS_215_Reversed
+ *  53 | Fully delivered                                  | VAS_215_FullyDelivered
+ *  54 | Partial                                          | VAS_215_Partial
+ *  55 | Not applicable                                   | VAS_215_NotApplicable
+ *  56 | Partial received                                 | VAS_215_PartialReceived
+ *  57 | Day                                              | VAS_215_Day
+ *  58 | Days                                             | VAS_215_Days
+ *  59 | Purchase order                                   | VAS_215_PurchaseOrder
  */
 
 ; VAS = window.VAS || {};
@@ -146,30 +146,30 @@
         function getStatusLabel(text) {
             if (!text) return '';
             switch (text) {
-                case 'Drafted': return lbl('VAS_Drafted', 'Drafted');
-                case 'In process': return lbl('VAS_InProcess', 'In process');
-                case 'Completed': return lbl('VAS_Completed', 'Completed');
-                case 'Closed': return lbl('VAS_Closed', 'Closed');
-                case 'Voided': return lbl('VAS_Voided', 'Voided');
-                case 'Reversed': return lbl('VAS_Reversed', 'Reversed');
-                case 'Fully delivered': return lbl('VAS_FullyDelivered', 'Fully delivered');
-                case 'Partial': return lbl('VAS_Partial', 'Partial');
-                case 'Not applicable': return lbl('VAS_NotApplicable', 'Not applicable');
-                case 'Received': return lbl('VAS_Received', 'Received');
-                case 'Partial received': return lbl('VAS_PartialReceived', 'Partial received');
-                case 'Pending': return lbl('VAS_Pending', 'Pending');
+                case 'Drafted': return lbl('VAS_215_Drafted', 'Drafted');
+                case 'In process': return lbl('VAS_215_InProcess', 'In process');
+                case 'Completed': return lbl('VAS_215_Completed', 'Completed');
+                case 'Closed': return lbl('VAS_215_Closed', 'Closed');
+                case 'Voided': return lbl('VAS_215_Voided', 'Voided');
+                case 'Reversed': return lbl('VAS_215_Reversed', 'Reversed');
+                case 'Fully delivered': return lbl('VAS_215_FullyDelivered', 'Fully delivered');
+                case 'Partial': return lbl('VAS_215_Partial', 'Partial');
+                case 'Not applicable': return lbl('VAS_215_NotApplicable', 'Not applicable');
+                case 'Received': return lbl('VAS_215_Received', 'Received');
+                case 'Partial received': return lbl('VAS_215_PartialReceived', 'Partial received');
+                case 'Pending': return lbl('VAS_215_Pending', 'Pending');
                 default: return text;
             }
         }
 
         function formatCycleText(avgCycleDays, serverText) {
             if (avgCycleDays != null && avgCycleDays >= 0) {
-                return avgCycleDays === 1 ? ('1 ' + lbl('VAS_Day', 'day')) : (avgCycleDays + ' ' + lbl('VAS_Days', 'days'));
+                return avgCycleDays === 1 ? ('1 ' + lbl('VAS_215_Day', 'day')) : (avgCycleDays + ' ' + lbl('VAS_215_Days', 'days'));
             }
             if (serverText && serverText.indexOf('day') !== -1) {
                 var numVal = parseInt(serverText, 10);
                 if (!isNaN(numVal)) {
-                    return numVal === 1 ? ('1 ' + lbl('VAS_Day', 'day')) : (numVal + ' ' + lbl('VAS_Days', 'days'));
+                    return numVal === 1 ? ('1 ' + lbl('VAS_215_Day', 'day')) : (numVal + ' ' + lbl('VAS_215_Days', 'days'));
                 }
             }
             return serverText || '—';
@@ -249,11 +249,11 @@
 
             // 1. Header with Title and Month/Year Dropdown filters (Rule 13 Arrow-less Standard)
             $header = $('<div class="vas-rwpo-head"></div>');
-            var $headTxt = $('<div class="vas-rwpo-head-txt"><p class="vas-rwpo-title" title="' + esc(lbl('VAS_RepresentativeWisePO', 'Representative wise PO')) + '">' + esc(lbl('VAS_RepresentativeWisePO', 'Representative wise PO')) + '</p></div>');
+            var $headTxt = $('<div class="vas-rwpo-head-txt"><p class="vas-rwpo-title" title="' + esc(lbl('VAS_215_RepresentativeWisePO', 'Representative wise PO')) + '">' + esc(lbl('VAS_215_RepresentativeWisePO', 'Representative wise PO')) + '</p></div>');
 
             var $mfilter = $('<div class="vas-rwpo-mfilter"></div>');
-            $monthSelect = $('<select class="vas-rwpo-sel vas-rwpo-sel-month" aria-label="' + esc(lbl('VAS_Month', 'Month')) + '"></select>');
-            $yearSelect = $('<select class="vas-rwpo-sel vas-rwpo-sel-year" aria-label="' + esc(lbl('VAS_Year', 'Year')) + '"></select>');
+            $monthSelect = $('<select class="vas-rwpo-sel vas-rwpo-sel-month" aria-label="' + esc(lbl('VAS_215_Month', 'Month')) + '"></select>');
+            $yearSelect = $('<select class="vas-rwpo-sel vas-rwpo-sel-year" aria-label="' + esc(lbl('VAS_215_Year', 'Year')) + '"></select>');
 
             for (var m = 1; m <= 12; m++) {
                 var mName = MONTH_NAMES[m - 1];
@@ -286,11 +286,11 @@
             $helperText = $('<span class="vas-rwpo-helper"></span>');
             $pagerContainer = $('<div class="vas-rwpo-pager"></div>');
 
-            $prevBtn = $('<button type="button" class="vas-rwpo-pbtn" aria-label="' + esc(lbl('VAS_Previous', 'Previous')) + '" disabled>' +
+            $prevBtn = $('<button type="button" class="vas-rwpo-pbtn" aria-label="' + esc(lbl('VAS_215_Previous', 'Previous')) + '" disabled>' +
                 '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>' +
                 '</button>');
-            $pageText = $('<span class="vas-rwpo-ptxt">1 ' + lbl('VAS_Of', 'of') + ' 1</span>');
-            $nextBtn = $('<button type="button" class="vas-rwpo-pbtn" aria-label="' + esc(lbl('VAS_Next', 'Next')) + '" disabled>' +
+            $pageText = $('<span class="vas-rwpo-ptxt">1 ' + lbl('VAS_215_Of', 'of') + ' 1</span>');
+            $nextBtn = $('<button type="button" class="vas-rwpo-pbtn" aria-label="' + esc(lbl('VAS_215_Next', 'Next')) + '" disabled>' +
                 '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>' +
                 '</button>');
 
@@ -404,8 +404,8 @@
                     '<span class="vas-rwpo-track"><span class="vas-rwpo-fill" style="width:0%;"></span></span></div>';
             }
             $listContainer.html(skeletonHtml);
-            $helperText.text(lbl('VAS_Loading', 'Loading...'));
-            $pageText.text('1 ' + lbl('VAS_Of', 'of') + ' 1');
+            $helperText.text(lbl('VAS_215_Loading', 'Loading...'));
+            $pageText.text('1 ' + lbl('VAS_215_Of', 'of') + ' 1');
             $prevBtn.prop('disabled', true);
             $nextBtn.prop('disabled', true);
         }
@@ -413,15 +413,15 @@
         function renderErrorState() {
             $listContainer.empty();
             var errHtml = $('<div class="vas-rwpo-empty-box">' +
-                '<p class="vas-rwpo-empty-msg">' + esc(lbl('VAS_FailedToLoadRepresentativeData', 'Failed to load representative data')) + '</p>' +
-                '<button type="button" class="vas-rwpo-retry-btn">' + esc(lbl('VAS_Retry', 'Retry')) + '</button>' +
+                '<p class="vas-rwpo-empty-msg">' + esc(lbl('VAS_215_FailedToLoadRepresentativeData', 'Failed to load representative data')) + '</p>' +
+                '<button type="button" class="vas-rwpo-retry-btn">' + esc(lbl('VAS_215_Retry', 'Retry')) + '</button>' +
                 '</div>');
             errHtml.find('.vas-rwpo-retry-btn').on('click', function () {
                 loadRepresentativeWisePO();
             });
             $listContainer.append(errHtml);
-            $helperText.text('0 ' + lbl('VAS_Of', 'of') + ' 0');
-            $pageText.text('1 ' + lbl('VAS_Of', 'of') + ' 1');
+            $helperText.text('0 ' + lbl('VAS_215_Of', 'of') + ' 0');
+            $pageText.text('1 ' + lbl('VAS_215_Of', 'of') + ' 1');
             $prevBtn.prop('disabled', true);
             $nextBtn.prop('disabled', true);
         }
@@ -432,11 +432,11 @@
 
             if (count === 0) {
                 var emptyHtml = '<div class="vas-rwpo-empty-box">' +
-                    '<p class="vas-rwpo-empty-msg">' + esc(lbl('VAS_NoRepresentativesFound', 'No representatives found for this period')) + '</p>' +
+                    '<p class="vas-rwpo-empty-msg">' + esc(lbl('VAS_215_NoRepresentativesFound', 'No representatives found for this period')) + '</p>' +
                     '</div>';
                 $listContainer.html(emptyHtml);
-                $helperText.text('0 ' + lbl('VAS_Of', 'of') + ' 0');
-                $pageText.text('1 ' + lbl('VAS_Of', 'of') + ' 1');
+                $helperText.text('0 ' + lbl('VAS_215_Of', 'of') + ' 0');
+                $pageText.text('1 ' + lbl('VAS_215_Of', 'of') + ' 1');
                 $prevBtn.prop('disabled', true);
                 $nextBtn.prop('disabled', true);
                 return;
@@ -473,10 +473,10 @@
             $listContainer.html(rowsHtml);
 
             // Update footer helper and pager
-            var helperString = lbl('VAS_Showing', 'Showing') + ' ' + (startIdx + 1) + '–' + endIdx + ' ' +
-                lbl('VAS_Of', 'of') + ' ' + count + ' · ' + lbl('VAS_RankedByPOValue', 'ranked by PO value');
+            var helperString = lbl('VAS_215_Showing', 'Showing') + ' ' + (startIdx + 1) + '–' + endIdx + ' ' +
+                lbl('VAS_215_Of', 'of') + ' ' + count + ' · ' + lbl('VAS_215_RankedByPOValue', 'ranked by PO value');
             $helperText.text(helperString);
-            $pageText.text((currentPage + 1) + ' ' + lbl('VAS_Of', 'of') + ' ' + totalPages);
+            $pageText.text((currentPage + 1) + ' ' + lbl('VAS_215_Of', 'of') + ' ' + totalPages);
 
             $prevBtn.prop('disabled', currentPage === 0);
             $nextBtn.prop('disabled', currentPage >= totalPages - 1);
@@ -493,7 +493,7 @@
                     '<div class="vas-rwpo-modal" id="vas_rwpo_modal_box">' +
                     '  <div class="vas-rwpo-modal-header">' +
                     '    <div class="vas-rwpo-mhead-left">' +
-                    '      <button type="button" class="vas-rwpo-xbtn vas-rwpo-mback" id="vas_rwpo_mBack" aria-label="' + esc(lbl('VAS_Back', 'Back')) + '" hidden>' +
+                    '      <button type="button" class="vas-rwpo-xbtn vas-rwpo-mback" id="vas_rwpo_mBack" aria-label="' + esc(lbl('VAS_215_Back', 'Back')) + '" hidden>' +
                     '        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>' +
                     '      </button>' +
                     '      <div class="vas-rwpo-htxt">' +
@@ -502,7 +502,7 @@
                     '      </div>' +
                     '    </div>' +
                     '    <div class="vas-rwpo-hact">' +
-                    '      <button type="button" class="vas-rwpo-xbtn" id="vas_rwpo_mClose" aria-label="' + esc(lbl('VAS_Close', 'Close')) + '">' +
+                    '      <button type="button" class="vas-rwpo-xbtn" id="vas_rwpo_mClose" aria-label="' + esc(lbl('VAS_215_Close', 'Close')) + '">' +
                     '        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>' +
                     '      </button>' +
                     '    </div>' +
@@ -581,7 +581,7 @@
                 $mFoot.html(cfg.foot);
             } else {
                 var $defFoot = $('<span class="vas-rwpo-foot-note"></span>' +
-                    '<button type="button" class="vas-rwpo-btn vas-rwpo-btn-close">' + esc(lbl('VAS_Close', 'Close')) + '</button>');
+                    '<button type="button" class="vas-rwpo-btn vas-rwpo-btn-close">' + esc(lbl('VAS_215_Close', 'Close')) + '</button>');
                 $defFoot.filter('.vas-rwpo-btn-close').on('click', closeModal);
                 $mFoot.append($defFoot);
             }
@@ -620,8 +620,8 @@
             }
 
             var periodStr = getPeriodLabel();
-            var title = repName || (rObj ? rObj.name : lbl('VAS_Representative', 'Representative'));
-            var subtitle = lbl('VAS_PurchaseOrdersRaisedByRep', 'Purchase orders raised by this representative') + ' · ' + periodStr;
+            var title = repName || (rObj ? rObj.name : lbl('VAS_215_Representative', 'Representative'));
+            var subtitle = lbl('VAS_215_PurchaseOrdersRaisedByRep', 'Purchase orders raised by this representative') + ' · ' + periodStr;
 
             var rSpend = rObj ? rObj.value : 0;
             var rPOs = rObj ? rObj.pos : 0;
@@ -629,12 +629,12 @@
             var rAvgCycle = rObj ? formatCycleText(rObj.avgCycle, rObj.avgCycleText) : '—';
 
             var statStripHtml = '<div class="vas-rwpo-mstats">' +
-                '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_POValue', 'PO value')) + '</div><div class="v" id="vas_rwpo_stat_val" title="' + esc(fmtMoney(rSpend)) + '">' + esc(fmtMoney(rSpend)) + '</div></div>' +
-                '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_POsRaised', 'POs raised')) + '</div><div class="v" id="vas_rwpo_stat_pos">' + num(rPOs) + '</div></div>' +
-                '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_ShareOfMonth', 'Share of month')) + '</div><div class="v" id="vas_rwpo_stat_share">' + esc(rShare) + '</div></div>' +
-                '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_AvgCycle', 'Avg cycle')) + '</div><div class="v" id="vas_rwpo_stat_cycle">' + esc(rAvgCycle) + '</div></div>' +
+                '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_215_POValue', 'PO value')) + '</div><div class="v" id="vas_rwpo_stat_val" title="' + esc(fmtMoney(rSpend)) + '">' + esc(fmtMoney(rSpend)) + '</div></div>' +
+                '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_215_POsRaised', 'POs raised')) + '</div><div class="v" id="vas_rwpo_stat_pos">' + num(rPOs) + '</div></div>' +
+                '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_215_ShareOfMonth', 'Share of month')) + '</div><div class="v" id="vas_rwpo_stat_share">' + esc(rShare) + '</div></div>' +
+                '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_215_AvgCycle', 'Avg cycle')) + '</div><div class="v" id="vas_rwpo_stat_cycle">' + esc(rAvgCycle) + '</div></div>' +
                 '</div>' +
-                '<div class="vas-rwpo-msec">' + esc(lbl('VAS_PurchaseOrders', 'Purchase orders')) + '</div>' +
+                '<div class="vas-rwpo-msec">' + esc(lbl('VAS_215_PurchaseOrders', 'Purchase orders')) + '</div>' +
                 '<div class="vas-rwpo-mtbl-wrap" id="vas_rwpo_po_table_wrap"></div>';
 
             openModal({
@@ -643,8 +643,8 @@
                 subtitle: subtitle,
                 body: statStripHtml,
                 foot: function ($foot) {
-                    $foot.html('<span class="vas-rwpo-foot-note">' + esc(lbl('VAS_SelectPOToOpen', 'select a PO number to open the record')) + '</span>' +
-                        '<button type="button" class="vas-rwpo-btn vas-rwpo-close-btn">' + esc(lbl('VAS_Close', 'Close')) + '</button>');
+                    $foot.html('<span class="vas-rwpo-foot-note">' + esc(lbl('VAS_215_SelectPOToOpen', 'select a PO number to open the record')) + '</span>' +
+                        '<button type="button" class="vas-rwpo-btn vas-rwpo-close-btn">' + esc(lbl('VAS_215_Close', 'Close')) + '</button>');
                     $foot.find('.vas-rwpo-close-btn').on('click', closeModal);
                 },
                 afterRender: function ($host) {
@@ -655,7 +655,7 @@
 
         function loadRepresentativePurchaseOrders(repId, repName, $host) {
             var $container = $host.find('#vas_rwpo_po_table_wrap');
-            $container.html('<div class="vas-rwpo-loading-row">' + esc(lbl('VAS_Loading', 'Loading...')) + '</div>');
+            $container.html('<div class="vas-rwpo-loading-row">' + esc(lbl('VAS_215_Loading', 'Loading...')) + '</div>');
 
             var url = VIS.Application.contextUrl + 'VAS_215_RepresentativeWisePOWidget/GetRepresentativePurchaseOrders';
             $.ajax({
@@ -683,7 +683,7 @@
                     renderPagedPOTable($container, orders, repName);
                 },
                 error: function () {
-                    $container.html('<div class="vas-rwpo-empty-box"><p class="vas-rwpo-empty-msg">' + esc(lbl('VAS_FailedToLoadRepresentativeData', 'Failed to load representative data')) + '</p></div>');
+                    $container.html('<div class="vas-rwpo-empty-box"><p class="vas-rwpo-empty-msg">' + esc(lbl('VAS_215_FailedToLoadRepresentativeData', 'Failed to load representative data')) + '</p></div>');
                 }
             });
         }
@@ -697,14 +697,14 @@
             var $tableWrap = $('<div class="vas-rwpo-paged-table-wrap"></div>');
             var $tableHead = $('<div class="vas-rwpo-mrow vas-rwpo-mhead" style="grid-template-columns: minmax(0, 0.35fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 1.1fr);">' +
                 '<span class="vas-rwpo-cell"></span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_PONo', 'PO No')) + '">' + esc(lbl('VAS_PONo', 'PO No')) + '</span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_PODate', 'PO date')) + '">' + esc(lbl('VAS_PODate', 'PO date')) + '</span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_Vendor', 'Vendor')) + '">' + esc(lbl('VAS_Vendor', 'Vendor')) + '</span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_Warehouse', 'Warehouse')) + '">' + esc(lbl('VAS_Warehouse', 'Warehouse')) + '</span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_Representative', 'Representative')) + '">' + esc(lbl('VAS_Representative', 'Representative')) + '</span>' +
-                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_Value', 'Value')) + '">' + esc(lbl('VAS_Value', 'Value')) + '</span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_Delivery', 'Delivery')) + '">' + esc(lbl('VAS_Delivery', 'Delivery')) + '</span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_Status', 'Status')) + '">' + esc(lbl('VAS_Status', 'Status')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_PONo', 'PO No')) + '">' + esc(lbl('VAS_215_PONo', 'PO No')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_PODate', 'PO date')) + '">' + esc(lbl('VAS_215_PODate', 'PO date')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_Vendor', 'Vendor')) + '">' + esc(lbl('VAS_215_Vendor', 'Vendor')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_Warehouse', 'Warehouse')) + '">' + esc(lbl('VAS_215_Warehouse', 'Warehouse')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_Representative', 'Representative')) + '">' + esc(lbl('VAS_215_Representative', 'Representative')) + '</span>' +
+                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_215_Value', 'Value')) + '">' + esc(lbl('VAS_215_Value', 'Value')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_Delivery', 'Delivery')) + '">' + esc(lbl('VAS_215_Delivery', 'Delivery')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_Status', 'Status')) + '">' + esc(lbl('VAS_215_Status', 'Status')) + '</span>' +
                 '</div>');
 
             var $tableBody = $('<div class="vas-rwpo-mbody"></div>');
@@ -716,8 +716,8 @@
             function drawPage() {
                 $tableBody.empty();
                 if (orders.length === 0) {
-                    $tableBody.html('<div class="vas-rwpo-empty-box"><p class="vas-rwpo-empty-msg">' + esc(lbl('VAS_NoPOsFound', 'No purchase orders found')) + '</p></div>');
-                    $tableFoot.html('<span class="vas-rwpo-helper">' + esc(lbl('VAS_Showing', 'Showing') + ' 0 ' + lbl('VAS_Of', 'of') + ' 0') + '</span>');
+                    $tableBody.html('<div class="vas-rwpo-empty-box"><p class="vas-rwpo-empty-msg">' + esc(lbl('VAS_215_NoPOsFound', 'No purchase orders found')) + '</p></div>');
+                    $tableFoot.html('<span class="vas-rwpo-helper">' + esc(lbl('VAS_215_Showing', 'Showing') + ' 0 ' + lbl('VAS_215_Of', 'of') + ' 0') + '</span>');
                     return;
                 }
 
@@ -738,7 +738,7 @@
                     var statusLabel = getStatusLabel(p.statusText);
 
                     var $row = $('<div class="vas-rwpo-mrow" style="grid-template-columns: minmax(0, 0.35fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 1.1fr);">' +
-                        '<span class="vas-rwpo-cell vas-rwpo-center"><button type="button" class="vas-rwpo-iconbtn" data-order-id="' + p.orderId + '" title="' + esc(lbl('VAS_LinesOf', 'Lines of') + ' ' + p.po) + '">' + iconLinesSvg + '</button></span>' +
+                        '<span class="vas-rwpo-cell vas-rwpo-center"><button type="button" class="vas-rwpo-iconbtn" data-order-id="' + p.orderId + '" title="' + esc(lbl('VAS_215_LinesOf', 'Lines of') + ' ' + p.po) + '">' + iconLinesSvg + '</button></span>' +
                         '<span class="vas-rwpo-cell"><button type="button" class="vas-rwpo-lnk" data-order-id="' + p.orderId + '" title="' + esc(p.po) + '">' + esc(p.po) + '</button></span>' +
                         '<span class="vas-rwpo-cell" title="' + esc(p.dateFull) + '">' + esc(p.dateFull) + '</span>' +
                         '<span class="vas-rwpo-cell" title="' + esc(p.vendor) + '">' + esc(p.vendor) + '</span>' +
@@ -752,15 +752,15 @@
                     $tableBody.append($row);
                 }
 
-                var footHelper = lbl('VAS_Showing', 'Showing') + ' ' + (sIdx + 1) + '–' + eIdx + ' ' +
-                    lbl('VAS_Of', 'of') + ' ' + orders.length + ' · ' + lbl('VAS_SelectPOToOpen', 'select a PO number to open the record');
+                var footHelper = lbl('VAS_215_Showing', 'Showing') + ' ' + (sIdx + 1) + '–' + eIdx + ' ' +
+                    lbl('VAS_215_Of', 'of') + ' ' + orders.length + ' · ' + lbl('VAS_215_SelectPOToOpen', 'select a PO number to open the record');
 
                 var pagerHtml = '<span class="vas-rwpo-helper">' + esc(footHelper) + '</span>';
                 if (mTotalPages > 1) {
                     pagerHtml += '<span class="vas-rwpo-pager">' +
-                        '<button type="button" class="vas-rwpo-pbtn vas-rwpo-m-prev"' + (mPage === 0 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_Previous', 'Previous')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>' +
-                        '<span class="vas-rwpo-ptxt">' + (mPage + 1) + ' ' + lbl('VAS_Of', 'of') + ' ' + mTotalPages + '</span>' +
-                        '<button type="button" class="vas-rwpo-pbtn vas-rwpo-m-next"' + (mPage >= mTotalPages - 1 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_Next', 'Next')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>' +
+                        '<button type="button" class="vas-rwpo-pbtn vas-rwpo-m-prev"' + (mPage === 0 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_215_Previous', 'Previous')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>' +
+                        '<span class="vas-rwpo-ptxt">' + (mPage + 1) + ' ' + lbl('VAS_215_Of', 'of') + ' ' + mTotalPages + '</span>' +
+                        '<button type="button" class="vas-rwpo-pbtn vas-rwpo-m-next"' + (mPage >= mTotalPages - 1 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_215_Next', 'Next')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>' +
                         '</span>';
                 }
 
@@ -810,7 +810,7 @@
                     var header = data.header || {};
                     var lines = data.lines || [];
 
-                    var poNo = header.po || (lbl('VAS_PONo', 'PO No') + ' #' + orderId);
+                    var poNo = header.po || (lbl('VAS_215_PONo', 'PO No') + ' #' + orderId);
                     var poVendor = header.vendor || '—';
                     var poDate = header.dateFull || '—';
 
@@ -824,30 +824,30 @@
                     }
 
                     var linesBodyHtml = '<div class="vas-rwpo-polink">' +
-                        '  <span>' + esc(lbl('VAS_PurchaseOrder', 'Purchase order')) + ' </span>' +
+                        '  <span>' + esc(lbl('VAS_215_PurchaseOrder', 'Purchase order')) + ' </span>' +
                         '  <button type="button" class="vas-rwpo-lnk vas-rwpo-po-direct-lnk" data-order-id="' + orderId + '">' + esc(poNo) + '</button>' +
                         '  <span> · ' + esc(poDate) + ' · ' + esc(poVendor) + '</span>' +
                         '</div>' +
                         '<div class="vas-rwpo-mstats">' +
-                        '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_Lines', 'Lines')) + '</div><div class="v">' + lines.length + '</div></div>' +
-                        '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_POValue', 'PO value')) + '</div><div class="v" title="' + esc(fmtMoney(totalLinesAmt)) + '">' + esc(fmtMoney(totalLinesAmt)) + '</div></div>' +
-                        '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_QtyOrdered', 'Qty ordered')) + '</div><div class="v">' + num(totalOrdered) + '</div></div>' +
-                        '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_QtyPending', 'Qty pending')) + '</div><div class="v">' + num(totalPending) + '</div></div>' +
+                        '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_215_Lines', 'Lines')) + '</div><div class="v">' + lines.length + '</div></div>' +
+                        '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_215_POValue', 'PO value')) + '</div><div class="v" title="' + esc(fmtMoney(totalLinesAmt)) + '">' + esc(fmtMoney(totalLinesAmt)) + '</div></div>' +
+                        '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_215_QtyOrdered', 'Qty ordered')) + '</div><div class="v">' + num(totalOrdered) + '</div></div>' +
+                        '  <div class="vas-rwpo-mstat"><div class="l">' + esc(lbl('VAS_215_QtyPending', 'Qty pending')) + '</div><div class="v">' + num(totalPending) + '</div></div>' +
                         '</div>' +
-                        '<div class="vas-rwpo-msec">' + esc(lbl('VAS_PurchaseOrderLines', 'Purchase order lines')) + '</div>' +
+                        '<div class="vas-rwpo-msec">' + esc(lbl('VAS_215_PurchaseOrderLines', 'Purchase order lines')) + '</div>' +
                         '<div class="vas-rwpo-mtbl-wrap" id="vas_rwpo_lines_table_wrap"></div>';
 
                     openModal({
                         isChild: true,
                         size: 'md',
-                        title: lbl('VAS_Lines', 'Lines') + ' · ' + poNo,
+                        title: lbl('VAS_215_Lines', 'Lines') + ' · ' + poNo,
                         subtitle: poVendor + ' · ' + poDate,
                         body: linesBodyHtml,
                         foot: function ($foot) {
                             $foot.html('<span class="vas-rwpo-foot-note">' + esc(poNo) + ' · ' + esc(poVendor) + '</span>' +
                                 '<span>' +
-                                '<button type="button" class="vas-rwpo-btn vas-rwpo-back-btn">' + esc(lbl('VAS_Back', 'Back')) + '</button> ' +
-                                '<button type="button" class="vas-rwpo-btn vas-rwpo-close-btn">' + esc(lbl('VAS_Close', 'Close')) + '</button>' +
+                                '<button type="button" class="vas-rwpo-btn vas-rwpo-back-btn">' + esc(lbl('VAS_215_Back', 'Back')) + '</button> ' +
+                                '<button type="button" class="vas-rwpo-btn vas-rwpo-close-btn">' + esc(lbl('VAS_215_Close', 'Close')) + '</button>' +
                                 '</span>');
                             $foot.find('.vas-rwpo-back-btn').on('click', popModal);
                             $foot.find('.vas-rwpo-close-btn').on('click', closeModal);
@@ -872,15 +872,15 @@
             var $tableWrap = $('<div class="vas-rwpo-paged-table-wrap"></div>');
             var $tableHead = $('<div class="vas-rwpo-mrow vas-rwpo-mhead" style="grid-template-columns: minmax(0, 0.4fr) minmax(0, 1.6fr) minmax(0, 1.2fr) minmax(0, 0.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 1fr) minmax(0, 1.1fr);">' +
                 '<span class="vas-rwpo-cell vas-rwpo-right">#</span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_Product', 'Product')) + '">' + esc(lbl('VAS_Product', 'Product')) + '</span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_Attribute', 'Attribute')) + '">' + esc(lbl('VAS_Attribute', 'Attribute')) + '</span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_UoM', 'UoM')) + '">' + esc(lbl('VAS_UoM', 'UoM')) + '</span>' +
-                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_Ordered', 'Ordered')) + '">' + esc(lbl('VAS_Ordered', 'Ordered')) + '</span>' +
-                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_Received', 'Received')) + '">' + esc(lbl('VAS_Received', 'Received')) + '</span>' +
-                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_Pending', 'Pending')) + '">' + esc(lbl('VAS_Pending', 'Pending')) + '</span>' +
-                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_Rate', 'Rate')) + '">' + esc(lbl('VAS_Rate', 'Rate')) + '</span>' +
-                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_Amount', 'Amount')) + '">' + esc(lbl('VAS_Amount', 'Amount')) + '</span>' +
-                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_LineStatus', 'Line status')) + '">' + esc(lbl('VAS_LineStatus', 'Line status')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_Product', 'Product')) + '">' + esc(lbl('VAS_215_Product', 'Product')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_Attribute', 'Attribute')) + '">' + esc(lbl('VAS_215_Attribute', 'Attribute')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_UoM', 'UoM')) + '">' + esc(lbl('VAS_215_UoM', 'UoM')) + '</span>' +
+                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_215_Ordered', 'Ordered')) + '">' + esc(lbl('VAS_215_Ordered', 'Ordered')) + '</span>' +
+                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_215_Received', 'Received')) + '">' + esc(lbl('VAS_215_Received', 'Received')) + '</span>' +
+                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_215_Pending', 'Pending')) + '">' + esc(lbl('VAS_215_Pending', 'Pending')) + '</span>' +
+                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_215_Rate', 'Rate')) + '">' + esc(lbl('VAS_215_Rate', 'Rate')) + '</span>' +
+                '<span class="vas-rwpo-cell vas-rwpo-right" title="' + esc(lbl('VAS_215_Amount', 'Amount')) + '">' + esc(lbl('VAS_215_Amount', 'Amount')) + '</span>' +
+                '<span class="vas-rwpo-cell" title="' + esc(lbl('VAS_215_LineStatus', 'Line status')) + '">' + esc(lbl('VAS_215_LineStatus', 'Line status')) + '</span>' +
                 '</div>');
 
             var $tableBody = $('<div class="vas-rwpo-mbody"></div>');
@@ -892,8 +892,8 @@
             function drawLinesPage() {
                 $tableBody.empty();
                 if (lines.length === 0) {
-                    $tableBody.html('<div class="vas-rwpo-empty-box"><p class="vas-rwpo-empty-msg">' + esc(lbl('VAS_NoLinesFound', 'No lines found')) + '</p></div>');
-                    $tableFoot.html('<span class="vas-rwpo-helper">' + esc(lbl('VAS_Showing', 'Showing') + ' 0 ' + lbl('VAS_Of', 'of') + ' 0') + '</span>');
+                    $tableBody.html('<div class="vas-rwpo-empty-box"><p class="vas-rwpo-empty-msg">' + esc(lbl('VAS_215_NoLinesFound', 'No lines found')) + '</p></div>');
+                    $tableFoot.html('<span class="vas-rwpo-helper">' + esc(lbl('VAS_215_Showing', 'Showing') + ' 0 ' + lbl('VAS_215_Of', 'of') + ' 0') + '</span>');
                     return;
                 }
 
@@ -927,15 +927,15 @@
                     $tableBody.append($row);
                 }
 
-                var footHelper = lbl('VAS_Showing', 'Showing') + ' ' + (sIdx + 1) + '–' + eIdx + ' ' +
-                    lbl('VAS_Of', 'of') + ' ' + lines.length + ' · ' + lbl('VAS_LinesOf', 'lines of') + ' ' + poNo;
+                var footHelper = lbl('VAS_215_Showing', 'Showing') + ' ' + (sIdx + 1) + '–' + eIdx + ' ' +
+                    lbl('VAS_215_Of', 'of') + ' ' + lines.length + ' · ' + lbl('VAS_215_LinesOf', 'lines of') + ' ' + poNo;
 
                 var pagerHtml = '<span class="vas-rwpo-helper">' + esc(footHelper) + '</span>';
                 if (lTotalPages > 1) {
                     pagerHtml += '<span class="vas-rwpo-pager">' +
-                        '<button type="button" class="vas-rwpo-pbtn vas-rwpo-l-prev"' + (lPage === 0 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_Previous', 'Previous')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>' +
-                        '<span class="vas-rwpo-ptxt">' + (lPage + 1) + ' ' + lbl('VAS_Of', 'of') + ' ' + lTotalPages + '</span>' +
-                        '<button type="button" class="vas-rwpo-pbtn vas-rwpo-l-next"' + (lPage >= lTotalPages - 1 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_Next', 'Next')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>' +
+                        '<button type="button" class="vas-rwpo-pbtn vas-rwpo-l-prev"' + (lPage === 0 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_215_Previous', 'Previous')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>' +
+                        '<span class="vas-rwpo-ptxt">' + (lPage + 1) + ' ' + lbl('VAS_215_Of', 'of') + ' ' + lTotalPages + '</span>' +
+                        '<button type="button" class="vas-rwpo-pbtn vas-rwpo-l-next"' + (lPage >= lTotalPages - 1 ? ' disabled' : '') + ' aria-label="' + esc(lbl('VAS_215_Next', 'Next')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>' +
                         '</span>';
                 }
 
@@ -959,7 +959,7 @@
             if (!orderId) return;
             closeModal();
 
-            var ZOOM_WINDOW_NAME = 'VAS_PurchaseOrder';
+            var ZOOM_WINDOW_NAME = 'VAS_215_PurchaseOrder';
             var ZOOM_WINDOW_FALLBACK = 'Purchase Order';
             var ZOOM_TABLE = 'C_Order';
 

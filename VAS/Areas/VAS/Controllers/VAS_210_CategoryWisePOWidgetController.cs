@@ -216,7 +216,7 @@ namespace VAS.Areas.VAS.Controllers
                     {
                         CategoryId = 0,
                         CategoryIds = otherCatIds,
-                        CategoryName = Msg.GetMsg(ctx, "VAS_Other") ?? "Other",
+                        CategoryName = Msg.GetMsg(ctx, "VAS_210_Other") ?? "Other",
                         CategoryValue = otherValue,
                         Share = otherShare,
                         PoCount = otherOrderIds.Count,

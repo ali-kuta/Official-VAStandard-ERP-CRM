@@ -240,7 +240,7 @@ namespace VIS.Controllers
                         }
 
                         // Delivery status derivation
-                        string delivStatus = deliveredQty > 0m ? (Msg.GetMsg(ctx, "VAS_Partial") ?? "Partial") : (Msg.GetMsg(ctx, "VAS_Pending") ?? "Pending");
+                        string delivStatus = deliveredQty > 0m ? (Msg.GetMsg(ctx, "VAS_213_Partial") ?? "Partial") : (Msg.GetMsg(ctx, "VAS_213_Pending") ?? "Pending");
                         string delivStatusChip = deliveredQty > 0m ? "chip-warn" : "chip-neutral";
 
                         // Document status display label
@@ -474,7 +474,7 @@ namespace VIS.Controllers
                         totalLineNetAmt += amount;
 
                         string lineStatus = "Pending";
-                        string lineStatusKey = "VAS_LineStatusPending";
+                        string lineStatusKey = "VAS_213_LineStatusPending";
                         string lineStatusChip = "chip-neutral";
 
                         if (docStatus == "DR")
@@ -492,19 +492,19 @@ namespace VIS.Controllers
                         else if (ordered > 0m && delivered >= ordered)
                         {
                             lineStatus = Msg.GetMsg(ctx, "Received") ?? "Received";
-                            lineStatusKey = "VAS_LineStatusReceived";
+                            lineStatusKey = "VAS_213_LineStatusReceived";
                             lineStatusChip = "chip-ok";
                         }
                         else if (delivered > 0m && delivered < ordered)
                         {
                             lineStatus = Msg.GetMsg(ctx, "PartialReceived") ?? "Partial received";
-                            lineStatusKey = "VAS_LineStatusPartialReceived";
+                            lineStatusKey = "VAS_213_LineStatusPartialReceived";
                             lineStatusChip = "chip-warn";
                         }
                         else
                         {
                             lineStatus = Msg.GetMsg(ctx, "Pending") ?? "Pending";
-                            lineStatusKey = "VAS_LineStatusPending";
+                            lineStatusKey = "VAS_213_LineStatusPending";
                             lineStatusChip = "chip-neutral";
                         }
 
@@ -534,12 +534,12 @@ namespace VIS.Controllers
 
                 // Delivery Status
                 string delivStatus = (docStatus == "CL" || docStatus == "VO")
-                    ? (Msg.GetMsg(ctx, "VAS_NotApplicable") ?? "Not applicable")
+                    ? (Msg.GetMsg(ctx, "VAS_213_NotApplicable") ?? "Not applicable")
                     : (totalOrderedQty > 0m && totalDeliveredQty >= totalOrderedQty)
-                        ? (Msg.GetMsg(ctx, "VAS_FullyDelivered") ?? "Fully delivered")
+                        ? (Msg.GetMsg(ctx, "VAS_213_FullyDelivered") ?? "Fully delivered")
                         : (totalDeliveredQty > 0m)
-                            ? (Msg.GetMsg(ctx, "VAS_Partial") ?? "Partial")
-                            : (Msg.GetMsg(ctx, "VAS_Pending") ?? "Pending");
+                            ? (Msg.GetMsg(ctx, "VAS_213_Partial") ?? "Partial")
+                            : (Msg.GetMsg(ctx, "VAS_213_Pending") ?? "Pending");
 
                 // Doc Status Text
                 string docStatusText = docStatus == "DR" ? (Msg.GetMsg(ctx, "Drafted") ?? "Drafted")

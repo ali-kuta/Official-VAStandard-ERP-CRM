@@ -44,7 +44,7 @@ namespace VIS.Controllers
             Ctx ctx = Session["ctx"] as Ctx;
             try
             {
-                int windowId = GetWindowIdByName(ctx, "VAS_PurchaseOrder");
+                int windowId = GetWindowIdByName(ctx, "VAS_204_PurchaseOrder");
                 if (windowId <= 0)
                 {
                     windowId = GetWindowIdByName(ctx, "Purchase Order");
@@ -220,7 +220,7 @@ namespace VIS.Controllers
             Ctx ctx = Session["ctx"] as Ctx;
             if (requisitionId <= 0)
             {
-                return Fail(Msg.GetMsg(ctx, "VAS_RequisitionRequired") ?? "Requisition ID is required.");
+                return Fail(Msg.GetMsg(ctx, "VAS_204_RequisitionRequired") ?? "Requisition ID is required.");
             }
 
             string rawSql = @"
@@ -508,7 +508,7 @@ namespace VIS.Controllers
 
             if (vendorId <= 0)
             {
-                return Fail(Msg.GetMsg(ctx, "VAS_VendorRequired") ?? "Vendor is required.");
+                return Fail(Msg.GetMsg(ctx, "VAS_204_VendorRequired") ?? "Vendor is required.");
             }
 
             List<POLineInput> lineInputs = string.IsNullOrWhiteSpace(linesJson)
@@ -517,13 +517,13 @@ namespace VIS.Controllers
 
             if (lineInputs == null || lineInputs.Count == 0)
             {
-                return Fail(Msg.GetMsg(ctx, "VAS_SelectLinesToOrder") ?? "Please select at least one line to order.");
+                return Fail(Msg.GetMsg(ctx, "VAS_204_SelectLinesToOrder") ?? "Please select at least one line to order.");
             }
 
             Trx trx = null;
             try
             {
-                trx = Trx.Get("VAS_NewPO_" + DateTime.Now.Ticks);
+                trx = Trx.Get("VAS_204_NewPO_" + DateTime.Now.Ticks);
 
                 // Fetch requisition organization if source requisition provided
                 int reqOrgId = ctx.GetAD_Org_ID();
@@ -607,7 +607,7 @@ namespace VIS.Controllers
                 if (!order.Save(trx))
                 {
                     trx.Rollback();
-                    string error = GetSaveError(ctx, "VAS_PONotSaved", "Purchase order could not be saved.");
+                    string error = GetSaveError(ctx, "VAS_204_PONotSaved", "Purchase order could not be saved.");
                     return Fail(error);
                 }
 
@@ -657,7 +657,7 @@ namespace VIS.Controllers
                     if (!ol.Save(trx))
                     {
                         trx.Rollback();
-                        string error = GetSaveError(ctx, "VAS_POLineNotSaved", "Purchase order line could not be saved.");
+                        string error = GetSaveError(ctx, "VAS_204_POLineNotSaved", "Purchase order line could not be saved.");
                         return Fail(error);
                     }
 
@@ -683,7 +683,7 @@ namespace VIS.Controllers
                     success = true,
                     orderId = order.GetC_Order_ID(),
                     documentNo = order.GetDocumentNo(),
-                    message = Msg.GetMsg(ctx, "VAS_POSaved") ?? "Purchase Order created successfully."
+                    message = Msg.GetMsg(ctx, "VAS_204_POSaved") ?? "Purchase Order created successfully."
                 });
             }
             catch (Exception ex)

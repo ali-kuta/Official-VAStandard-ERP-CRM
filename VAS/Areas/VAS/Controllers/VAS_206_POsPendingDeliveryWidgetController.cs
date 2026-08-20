@@ -222,7 +222,7 @@ namespace VIS.Controllers
                         bool isPastDue = promisedDate.HasValue && promisedDate.Value.Date < today && pendingQty > 0;
 
                         string deliveryStatus = deliveredQty > 0 ? "Partial" : "Pending";
-                        string deliveryStatusKey = deliveredQty > 0 ? "VAS_DeliveryStatusPartial" : "VAS_DeliveryStatusPending";
+                        string deliveryStatusKey = deliveredQty > 0 ? "VAS_206_DeliveryStatusPartial" : "VAS_206_DeliveryStatusPending";
                         string deliveryStatusChip = deliveredQty > 0 ? "chip-warn" : "chip-neutral";
 
                         openPOsCount++;
@@ -258,7 +258,7 @@ namespace VIS.Controllers
                             DeliveryStatusKey = deliveryStatusKey,
                             DeliveryStatusChip = deliveryStatusChip,
                             DocStatus = "Completed",
-                            DocStatusKey = "VAS_DocStatusCompleted",
+                            DocStatusKey = "VAS_206_DocStatusCompleted",
                             DocStatusChip = "chip-ok"
                         });
                     }
@@ -357,19 +357,19 @@ namespace VIS.Controllers
                         decimal lineNetAmt = Util.GetValueOfDecimal(dr["line_net_amt"]);
 
                         string lineStatus = "Pending";
-                        string lineStatusKey = "VAS_LineStatusPending";
+                        string lineStatusKey = "VAS_206_LineStatusPending";
                         string lineStatusChip = "chip-neutral";
 
                         if (deliveredQty >= orderedQty && orderedQty > 0)
                         {
                             lineStatus = "Received";
-                            lineStatusKey = "VAS_LineStatusReceived";
+                            lineStatusKey = "VAS_206_LineStatusReceived";
                             lineStatusChip = "chip-ok";
                         }
                         else if (deliveredQty > 0 && deliveredQty < orderedQty)
                         {
                             lineStatus = "Partial received";
-                            lineStatusKey = "VAS_LineStatusPartialReceived";
+                            lineStatusKey = "VAS_206_LineStatusPartialReceived";
                             lineStatusChip = "chip-warn";
                         }
 

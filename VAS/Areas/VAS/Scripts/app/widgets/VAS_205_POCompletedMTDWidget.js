@@ -105,7 +105,7 @@
 
         var MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-        var ZOOM_WINDOW_NAME = 'VAS_PurchaseOrder';
+        var ZOOM_WINDOW_NAME = 'VAS_205_PurchaseOrder';
         var ZOOM_WINDOW_FALLBACK = 'Purchase Order';
         var ZOOM_TABLE = 'C_Order';
 

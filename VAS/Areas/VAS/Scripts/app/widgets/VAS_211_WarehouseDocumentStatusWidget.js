@@ -4,7 +4,7 @@
  *           document statuses (Drafted, In Process, Completed, Closed) for a selected
  *           month/year. Clicking any warehouse row opens a drill-down modal listing
  *           all purchase orders for that warehouse, with full PO line inspection and
- *           direct record navigation into the VAS_PurchaseOrder window.
+ *           direct record navigation into the VAS_211_PurchaseOrder window.
  * Prefix  - VAS_211_
  *
  * Message Keys / Localization Table:
@@ -909,7 +909,7 @@
                     "TabWhereClause": "C_Order.C_Order_ID=" + orderId,
                     "TabLayout": "Y",
                     "TabIndex": "0",
-                    "ActionName": "VAS_PurchaseOrder",
+                    "ActionName": "VAS_211_PurchaseOrder",
                     "ActionType": "W"
                 });
             } catch (e) {

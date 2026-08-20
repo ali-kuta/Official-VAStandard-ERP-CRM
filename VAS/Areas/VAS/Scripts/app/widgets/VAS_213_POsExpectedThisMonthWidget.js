@@ -240,8 +240,8 @@
         }
 
         function createWidgetHtml() {
-            var title = lbl('VAS_POsExpectedThisMonth', 'POs Expected This Month');
-            var initialSub = lbl('VAS_DeliveryDueIn', 'Delivery due in') + ' ' + getPeriodLabel(currentMonth, currentYear);
+            var title = lbl('VAS_213_POsExpectedThisMonth', 'POs Expected This Month');
+            var initialSub = lbl('VAS_213_DeliveryDueIn', 'Delivery due in') + ' ' + getPeriodLabel(currentMonth, currentYear);
 
             $card = $(
                 '<section class="vas-213-card vas-213-glass">' +
@@ -326,7 +326,7 @@
             var records = data.records || [];
 
             var formattedValue = formatMoney(expectedVal, cur.CurSymbol, cur.ISO_Code, cur.StdPrecision);
-            var subText = lbl('VAS_DeliveryDueIn', 'Delivery due in') + ' ' + getPeriodLabel(data.targetMonth, data.targetYear);
+            var subText = lbl('VAS_213_DeliveryDueIn', 'Delivery due in') + ' ' + getPeriodLabel(data.targetMonth, data.targetYear);
 
             if ($subTitle) {
                 $subTitle.text(subText);
@@ -338,7 +338,7 @@
             }
 
             if ($kpiMeta) {
-                var metaStr = formattedValue + ' · ' + dueIn7 + ' ' + lbl('VAS_DueInNext7Days', 'due in the next 7 days');
+                var metaStr = formattedValue + ' · ' + dueIn7 + ' ' + lbl('VAS_213_DueInNext7Days', 'due in the next 7 days');
                 $kpiMeta.text(metaStr);
                 $kpiMeta.attr('title', metaStr);
             }
@@ -350,7 +350,7 @@
                 if (records.length === 0) {
                     $listContainer.html(
                         '<div class="vas-213-empty-state">' +
-                            esc(lbl('VAS_NoExpectedPOsFound', 'No expected POs found for this month')) +
+                            esc(lbl('VAS_213_NoExpectedPOsFound', 'No expected POs found for this month')) +
                         '</div>'
                     );
                 } else {
@@ -363,7 +363,7 @@
                         var expDateDisplay = p.PromisedDateShort || p.PromisedDateDisplay || p.PromisedDate || '—';
 
                         html +=
-                            '<button type="button" class="vas-213-hrow" data-po-id="' + p.PurchaseOrderID + '" data-po-no="' + esc(p.PurchaseOrderNo) + '" title="' + esc(lbl('VAS_PurchaseOrder', 'Purchase order') + ' ' + p.PurchaseOrderNo) + '">' +
+                            '<button type="button" class="vas-213-hrow" data-po-id="' + p.PurchaseOrderID + '" data-po-no="' + esc(p.PurchaseOrderNo) + '" title="' + esc(lbl('VAS_213_PurchaseOrder', 'Purchase order') + ' ' + p.PurchaseOrderNo) + '">' +
                                 '<span class="vas-213-row-left">' +
                                     '<span class="vas-213-mname vas-213-c-link">' + esc(p.PurchaseOrderNo) + '</span>' +
                                     '<span class="vas-213-mmeta">' + esc(vendorShort) + ' · ' + esc(expDateDisplay) + '</span>' +
@@ -378,11 +378,11 @@
 
         function setError() {
             if ($kpiCount) { $kpiCount.text('—'); }
-            if ($kpiMeta) { $kpiMeta.text(lbl('VAS_CouldntLoad', "Couldn't load data")); }
+            if ($kpiMeta) { $kpiMeta.text(lbl('VAS_213_CouldntLoad', "Couldn't load data")); }
             if ($listContainer) {
                 $listContainer.html(
                     '<div class="vas-213-empty-state">' +
-                        esc(lbl('VAS_CouldntLoad', "Couldn't load data")) +
+                        esc(lbl('VAS_213_CouldntLoad', "Couldn't load data")) +
                     '</div>'
                 );
             }
@@ -395,7 +395,7 @@
             if (!orderId) { return; }
 
             var ZOOM_TABLE = "C_Order";
-            var ZOOM_WINDOW_NAME = "VAS_PurchaseOrder";
+            var ZOOM_WINDOW_NAME = "VAS_213_PurchaseOrder";
             var ZOOM_WINDOW_FALLBACK = "Purchase Order";
 
             var navigated = false;
@@ -447,7 +447,7 @@
                     '<div class="vas-213-modal">' +
                         '<div class="vas-213-modal-header">' +
                             '<div class="vas-213-htxt-wrap">' +
-                                '<button type="button" class="vas-213-xbtn vas-213-back-btn" aria-label="' + esc(lbl('VAS_Back', 'Back')) + '" style="display:none;">' +
+                                '<button type="button" class="vas-213-xbtn vas-213-back-btn" aria-label="' + esc(lbl('VAS_213_Back', 'Back')) + '" style="display:none;">' +
                                     ICON_BACK +
                                 '</button>' +
                                 '<div class="vas-213-htxt">' +
@@ -456,7 +456,7 @@
                                 '</div>' +
                             '</div>' +
                             '<div class="vas-213-hact">' +
-                                '<button type="button" class="vas-213-xbtn vas-213-close-btn" aria-label="' + esc(lbl('VAS_Close', 'Close')) + '">' +
+                                '<button type="button" class="vas-213-xbtn vas-213-close-btn" aria-label="' + esc(lbl('VAS_213_Close', 'Close')) + '">' +
                                     ICON_CLOSE +
                                 '</button>' +
                             '</div>' +
@@ -549,7 +549,7 @@
             $modalHost.find('.vas-213-mtitle').text(cfg.title || '');
             $modalHost.find('.vas-213-msub').text(cfg.subtitle || '');
             $modalHost.find('.vas-213-modal-body').html(cfg.body || '');
-            $modalHost.find('.vas-213-modal-foot').html(cfg.foot || '<span class="vas-213-foot-note"></span><button type="button" class="vas-213-btn" data-vas-close="1">' + esc(lbl('VAS_Close', 'Close')) + '</button>');
+            $modalHost.find('.vas-213-modal-foot').html(cfg.foot || '<span class="vas-213-foot-note"></span><button type="button" class="vas-213-btn" data-vas-close="1">' + esc(lbl('VAS_213_Close', 'Close')) + '</button>');
 
             $modalHost.addClass('vas-213-open');
             drawAllTables();
@@ -608,7 +608,7 @@
                     return '<span class="vas-213-cell"><button type="button" class="vas-213-lnk" data-po-id="' + esc(cell.id) + '" data-po-no="' + esc(cell.link) + '" title="' + esc(cell.link) + '">' + esc(cell.link) + '</button></span>';
                 }
                 if (cell.icon) {
-                    return '<span class="vas-213-cell vas-213-center"><button type="button" class="vas-213-iconbtn" data-lines-po-id="' + esc(cell.id) + '" data-lines-po-no="' + esc(cell.icon) + '" title="' + esc(lbl('VAS_Lines', 'Lines')) + '">' + ICON_LINES + '</button></span>';
+                    return '<span class="vas-213-cell vas-213-center"><button type="button" class="vas-213-iconbtn" data-lines-po-id="' + esc(cell.id) + '" data-lines-po-no="' + esc(cell.icon) + '" title="' + esc(lbl('VAS_213_Lines', 'Lines')) + '">' + ICON_LINES + '</button></span>';
                 }
                 if (cell.chip) {
                     return '<span class="vas-213-cell" title="' + esc(cell.text) + '"><span class="vas-213-chip ' + esc(cell.chip) + '">' + esc(cell.text) + '</span></span>';
@@ -643,7 +643,7 @@
                  '<div class="vas-213-mbody">';
 
             if (slice.length === 0) {
-                h += '<div class="vas-213-empty-row">' + esc(lbl('VAS_NoExpectedPOsFound', 'No expected POs found for this month')) + '</div>';
+                h += '<div class="vas-213-empty-row">' + esc(lbl('VAS_213_NoExpectedPOsFound', 'No expected POs found for this month')) + '</div>';
             } else {
                 for (var ri = 0; ri < slice.length; ri++) {
                     var r = slice[ri];
@@ -659,7 +659,7 @@
             // Pager & helper text
             var showingFrom = totalRows > 0 ? (s + 1) : 0;
             var showingTo = totalRows > 0 ? (s + slice.length) : 0;
-            var showingText = lbl('VAS_Showing', 'Showing') + ' ' + showingFrom + '–' + showingTo + ' ' + lbl('VAS_Of', 'of') + ' ' + totalRows;
+            var showingText = lbl('VAS_213_Showing', 'Showing') + ' ' + showingFrom + '–' + showingTo + ' ' + lbl('VAS_213_Of', 'of') + ' ' + totalRows;
             if (t.label) { showingText += ' · ' + t.label; }
 
             h += '<div class="vas-213-mtfoot">' +
@@ -668,7 +668,7 @@
             if (pages > 1) {
                 h += '<span class="vas-213-pager">' +
                         '<button type="button" class="vas-213-pbtn" data-mt="' + id + '" data-dir="-1"' + (t.page === 0 ? ' disabled' : '') + ' aria-label="Previous">' + ICON_PREV + '</button>' +
-                        '<span class="vas-213-ptxt">' + (t.page + 1) + ' ' + lbl('VAS_Of', 'of') + ' ' + pages + '</span>' +
+                        '<span class="vas-213-ptxt">' + (t.page + 1) + ' ' + lbl('VAS_213_Of', 'of') + ' ' + pages + '</span>' +
                         '<button type="button" class="vas-213-pbtn" data-mt="' + id + '" data-dir="1"' + (t.page >= pages - 1 ? ' disabled' : '') + ' aria-label="Next">' + ICON_NEXT + '</button>' +
                      '</span>';
             } else {
@@ -739,27 +739,27 @@
             var periodStr = getPeriodLabel(widgetData.targetMonth, widgetData.targetYear);
 
             var statStrip = mstatsHtml([
-                { l: lbl('VAS_ExpectedPOs', 'Expected POs'), v: formatNumber(widgetData.expectedPOs) },
-                { l: lbl('VAS_Value', 'Value'), v: formattedValue },
-                { l: lbl('VAS_DueIn7Days', 'Due in 7 days'), v: formatNumber(widgetData.dueIn7Days) },
-                { l: lbl('VAS_OfOpenPOs', 'Of open POs'), v: formatNumber(widgetData.totalOpenPendingPOs) + ' ' + lbl('VAS_PendingLabel', 'pending') }
+                { l: lbl('VAS_213_ExpectedPOs', 'Expected POs'), v: formatNumber(widgetData.expectedPOs) },
+                { l: lbl('VAS_213_Value', 'Value'), v: formattedValue },
+                { l: lbl('VAS_213_DueIn7Days', 'Due in 7 days'), v: formatNumber(widgetData.dueIn7Days) },
+                { l: lbl('VAS_213_OfOpenPOs', 'Of open POs'), v: formatNumber(widgetData.totalOpenPendingPOs) + ' ' + lbl('VAS_213_PendingLabel', 'pending') }
             ]);
 
             var cols = [
                 { label: '', w: 0.32 },
-                { label: lbl('VAS_PONo', 'PO No'), w: 1.2, cls: 'vas-213-c-link' },
-                { label: lbl('VAS_PODate', 'PO date'), w: 1.0 },
-                { label: lbl('VAS_Vendor', 'Vendor'), w: 1.7 },
-                { label: lbl('VAS_Warehouse', 'Warehouse'), w: 1.2 },
-                { label: lbl('VAS_Representative', 'Representative'), w: 1.2 },
-                { label: lbl('VAS_Value', 'Value'), w: 0.9, align: 'right', cls: 'vas-213-c-emph' },
-                { label: lbl('VAS_Delivery', 'Delivery'), w: 1.05 },
-                { label: lbl('VAS_Status', 'Status'), w: 1.1 }
+                { label: lbl('VAS_213_PONo', 'PO No'), w: 1.2, cls: 'vas-213-c-link' },
+                { label: lbl('VAS_213_PODate', 'PO date'), w: 1.0 },
+                { label: lbl('VAS_213_Vendor', 'Vendor'), w: 1.7 },
+                { label: lbl('VAS_213_Warehouse', 'Warehouse'), w: 1.2 },
+                { label: lbl('VAS_213_Representative', 'Representative'), w: 1.2 },
+                { label: lbl('VAS_213_Value', 'Value'), w: 0.9, align: 'right', cls: 'vas-213-c-emph' },
+                { label: lbl('VAS_213_Delivery', 'Delivery'), w: 1.05 },
+                { label: lbl('VAS_213_Status', 'Status'), w: 1.1 }
             ];
 
             var rows = all.map(function (p) {
                 var pValueFormatted = formatMoney(p.POValue, p.CurrencySymbol, p.CurrencyISO);
-                var delivText = p.DeliveryStatus || lbl('VAS_Pending', 'Pending');
+                var delivText = p.DeliveryStatus || lbl('VAS_213_Pending', 'Pending');
                 var delivChip = (p.DeliveryStatusChip === 'chip-warn') ? 'vas-213-chip-warn' : 'vas-213-chip-neutral';
                 var statusText = p.DocStatusText || p.DocumentStatus;
                 var statusChip = (p.DocStatusChip === 'chip-prop') ? 'vas-213-chip-prop' : 'vas-213-chip-neutral';
@@ -779,15 +779,15 @@
 
             var bodyHtml =
                 statStrip +
-                '<div class="vas-213-msec">' + esc(lbl('VAS_ExpectedDeliveries', 'Expected deliveries')) + '</div>' +
-                pagedTable(cols, rows, { label: lbl('VAS_EarliestExpectedFirst', 'earliest expected first') });
+                '<div class="vas-213-msec">' + esc(lbl('VAS_213_ExpectedDeliveries', 'Expected deliveries')) + '</div>' +
+                pagedTable(cols, rows, { label: lbl('VAS_213_EarliestExpectedFirst', 'earliest expected first') });
 
             openModal({
-                title: lbl('VAS_POsExpectedThisMonth', 'POs Expected This Month'),
-                subtitle: lbl('VAS_DeliveryDueIn', 'Delivery due in') + ' ' + periodStr,
+                title: lbl('VAS_213_POsExpectedThisMonth', 'POs Expected This Month'),
+                subtitle: lbl('VAS_213_DeliveryDueIn', 'Delivery due in') + ' ' + periodStr,
                 body: bodyHtml,
-                foot: '<span class="vas-213-foot-note">' + all.length + ' ' + esc(lbl('VAS_ExpectedPOs', 'Expected POs')) + ' · ' + esc(formattedValue) + '</span>' +
-                      '<span><button type="button" class="vas-213-btn" data-vas-close="1">' + esc(lbl('VAS_Close', 'Close')) + '</button></span>'
+                foot: '<span class="vas-213-foot-note">' + all.length + ' ' + esc(lbl('VAS_213_ExpectedPOs', 'Expected POs')) + ' · ' + esc(formattedValue) + '</span>' +
+                      '<span><button type="button" class="vas-213-btn" data-vas-close="1">' + esc(lbl('VAS_213_Close', 'Close')) + '</button></span>'
             });
         }
 
@@ -818,23 +818,23 @@
                     var pValFormatted = formatMoney(totalAmt, data.currencySymbol, data.currencyIso, data.stdPrecision);
 
                     var statStrip = mstatsHtml([
-                        { l: lbl('VAS_Lines', 'Lines'), v: formatNumber(lines.length) },
-                        { l: lbl('VAS_POValue', 'PO value'), v: pValFormatted },
-                        { l: lbl('VAS_QtyOrdered', 'Qty ordered'), v: formatNumber(totalOrderedQty) },
-                        { l: lbl('VAS_QtyPending', 'Qty pending'), v: formatNumber(totalPendingQty) }
+                        { l: lbl('VAS_213_Lines', 'Lines'), v: formatNumber(lines.length) },
+                        { l: lbl('VAS_213_POValue', 'PO value'), v: pValFormatted },
+                        { l: lbl('VAS_213_QtyOrdered', 'Qty ordered'), v: formatNumber(totalOrderedQty) },
+                        { l: lbl('VAS_213_QtyPending', 'Qty pending'), v: formatNumber(totalPendingQty) }
                     ]);
 
                     var lineCols = [
                         { label: '#', w: 0.3, align: 'right' },
-                        { label: lbl('VAS_Product', 'Product'), w: 1.5, cls: 'vas-213-c-prim' },
-                        { label: lbl('VAS_Attribute', 'Attribute'), w: 1.2 },
-                        { label: lbl('VAS_UOM', 'UoM'), w: 0.5 },
-                        { label: lbl('VAS_Ordered', 'Ordered'), w: 0.7, align: 'right' },
-                        { label: lbl('VAS_Received', 'Received'), w: 0.7, align: 'right' },
-                        { label: lbl('VAS_Pending', 'Pending'), w: 0.7, align: 'right', cls: 'vas-213-c-prim' },
-                        { label: lbl('VAS_Rate', 'Rate'), w: 0.7, align: 'right' },
-                        { label: lbl('VAS_Amount', 'Amount'), w: 0.9, align: 'right', cls: 'vas-213-c-emph' },
-                        { label: lbl('VAS_LineStatus', 'Line status'), w: 1.0 }
+                        { label: lbl('VAS_213_Product', 'Product'), w: 1.5, cls: 'vas-213-c-prim' },
+                        { label: lbl('VAS_213_Attribute', 'Attribute'), w: 1.2 },
+                        { label: lbl('VAS_213_UOM', 'UoM'), w: 0.5 },
+                        { label: lbl('VAS_213_Ordered', 'Ordered'), w: 0.7, align: 'right' },
+                        { label: lbl('VAS_213_Received', 'Received'), w: 0.7, align: 'right' },
+                        { label: lbl('VAS_213_Pending', 'Pending'), w: 0.7, align: 'right', cls: 'vas-213-c-prim' },
+                        { label: lbl('VAS_213_Rate', 'Rate'), w: 0.7, align: 'right' },
+                        { label: lbl('VAS_213_Amount', 'Amount'), w: 0.9, align: 'right', cls: 'vas-213-c-emph' },
+                        { label: lbl('VAS_213_LineStatus', 'Line status'), w: 1.0 }
                     ];
 
                     var lineRows = lines.map(function (l, idx) {
@@ -843,18 +843,18 @@
 
                         var chipClass = 'vas-213-chip-neutral';
                         var statusTxt = l.LineStatus;
-                        if (l.LineStatusKey === 'VAS_LineStatusReceived') {
+                        if (l.LineStatusKey === 'VAS_213_LineStatusReceived') {
                             chipClass = 'vas-213-chip-ok';
-                            statusTxt = lbl('VAS_Received', 'Received');
-                        } else if (l.LineStatusKey === 'VAS_LineStatusPartialReceived') {
+                            statusTxt = lbl('VAS_213_Received', 'Received');
+                        } else if (l.LineStatusKey === 'VAS_213_LineStatusPartialReceived') {
                             chipClass = 'vas-213-chip-warn';
-                            statusTxt = lbl('VAS_PartialReceived', 'Partial received');
+                            statusTxt = lbl('VAS_213_PartialReceived', 'Partial received');
                         } else if (l.LineStatusKey === 'Drafted') {
                             chipClass = 'vas-213-chip-neutral';
-                            statusTxt = lbl('VAS_Drafted', 'Drafted');
+                            statusTxt = lbl('VAS_213_Drafted', 'Drafted');
                         } else {
                             chipClass = 'vas-213-chip-neutral';
-                            statusTxt = lbl('VAS_Pending', 'Pending');
+                            statusTxt = lbl('VAS_213_Pending', 'Pending');
                         }
 
                         return [
@@ -873,7 +873,7 @@
 
                     var topPolink =
                         '<div class="vas-213-polink">' +
-                            esc(lbl('VAS_PurchaseOrder', 'Purchase order')) + ' ' +
+                            esc(lbl('VAS_213_PurchaseOrder', 'Purchase order')) + ' ' +
                             '<button type="button" class="vas-213-lnk" data-po-id="' + poId + '" data-po-no="' + esc(poNo) + '">' + esc(poNo) + '</button>' +
                             ' · ' + esc(dateDisplay || data.orderDateFormatted) + ' · ' + esc(docStatusDisplay || data.documentStatus) +
                         '</div>';
@@ -881,18 +881,18 @@
                     var bodyHtml =
                         topPolink +
                         statStrip +
-                        '<div class="vas-213-msec">' + esc(lbl('VAS_PurchaseOrderLines', 'Purchase order lines')) + '</div>' +
-                        pagedTable(lineCols, lineRows, { label: lbl('VAS_LinesOf', 'lines of') + ' ' + poNo });
+                        '<div class="vas-213-msec">' + esc(lbl('VAS_213_PurchaseOrderLines', 'Purchase order lines')) + '</div>' +
+                        pagedTable(lineCols, lineRows, { label: lbl('VAS_213_LinesOf', 'lines of') + ' ' + poNo });
 
                     openModal({
                         child: true,
                         size: 'md',
-                        title: lbl('VAS_Lines', 'Lines') + ' · ' + poNo,
-                        subtitle: (vendor || data.vendorName) + ' · ' + (dateDisplay || data.orderDateFormatted) + ' · ' + (data.deliveryStatus || lbl('VAS_Pending', 'Pending')),
+                        title: lbl('VAS_213_Lines', 'Lines') + ' · ' + poNo,
+                        subtitle: (vendor || data.vendorName) + ' · ' + (dateDisplay || data.orderDateFormatted) + ' · ' + (data.deliveryStatus || lbl('VAS_213_Pending', 'Pending')),
                         body: bodyHtml,
                         foot: '<span class="vas-213-foot-note">' + esc(poNo) + ' · ' + esc(vendor || data.vendorName) + '</span>' +
-                              '<span><button type="button" class="vas-213-btn" onclick="VAS.VAS_213_POsExpectedThisMonthWidget.back()">' + esc(lbl('VAS_Back', 'Back')) + '</button> ' +
-                              '<button type="button" class="vas-213-btn" data-vas-close="1">' + esc(lbl('VAS_Close', 'Close')) + '</button></span>'
+                              '<span><button type="button" class="vas-213-btn" onclick="VAS.VAS_213_POsExpectedThisMonthWidget.back()">' + esc(lbl('VAS_213_Back', 'Back')) + '</button> ' +
+                              '<button type="button" class="vas-213-btn" data-vas-close="1">' + esc(lbl('VAS_213_Close', 'Close')) + '</button></span>'
                     });
                 },
                 error: function () {
@@ -935,27 +935,27 @@
                             var valFormatted = formatMoney(header.GrandTotal || lData.totalAmount, curSym, curIso, precision);
 
                             var statStrip = mstatsHtml([
-                                { l: lbl('VAS_Vendor', 'Vendor'), v: header.VendorName || lData.vendorName || '—' },
-                                { l: lbl('VAS_PODate', 'PO date'), v: header.OrderDateDisplay || lData.orderDateFormatted || '—' },
-                                { l: lbl('VAS_ExpectedOn', 'Expected on'), v: header.PromisedDateDisplay || lData.promisedDateFormatted || '—' },
-                                { l: lbl('VAS_POValue', 'PO value'), v: valFormatted },
-                                { l: lbl('VAS_Warehouse', 'Warehouse'), v: header.WarehouseName || lData.warehouseName || '—' },
-                                { l: lbl('VAS_CreatedBy', 'Created by'), v: (header.CreatedBy || '—') + (header.CreatedOn ? (' · ' + header.CreatedOn) : '') },
-                                { l: lbl('VAS_DocumentStatus', 'Document status'), v: header.DocStatusDisplay || lData.documentStatus || '—' },
-                                { l: lbl('VAS_DeliveryStatus', 'Delivery status'), v: lData.deliveryStatus || lbl('VAS_Pending', 'Pending') }
+                                { l: lbl('VAS_213_Vendor', 'Vendor'), v: header.VendorName || lData.vendorName || '—' },
+                                { l: lbl('VAS_213_PODate', 'PO date'), v: header.OrderDateDisplay || lData.orderDateFormatted || '—' },
+                                { l: lbl('VAS_213_ExpectedOn', 'Expected on'), v: header.PromisedDateDisplay || lData.promisedDateFormatted || '—' },
+                                { l: lbl('VAS_213_POValue', 'PO value'), v: valFormatted },
+                                { l: lbl('VAS_213_Warehouse', 'Warehouse'), v: header.WarehouseName || lData.warehouseName || '—' },
+                                { l: lbl('VAS_213_CreatedBy', 'Created by'), v: (header.CreatedBy || '—') + (header.CreatedOn ? (' · ' + header.CreatedOn) : '') },
+                                { l: lbl('VAS_213_DocumentStatus', 'Document status'), v: header.DocStatusDisplay || lData.documentStatus || '—' },
+                                { l: lbl('VAS_213_DeliveryStatus', 'Delivery status'), v: lData.deliveryStatus || lbl('VAS_213_Pending', 'Pending') }
                             ]);
 
                             var lineCols = [
                                 { label: '#', w: 0.3, align: 'right' },
-                                { label: lbl('VAS_Product', 'Product'), w: 1.5, cls: 'vas-213-c-prim' },
-                                { label: lbl('VAS_Attribute', 'Attribute'), w: 1.2 },
-                                { label: lbl('VAS_UOM', 'UoM'), w: 0.5 },
-                                { label: lbl('VAS_Ordered', 'Ordered'), w: 0.7, align: 'right' },
-                                { label: lbl('VAS_Received', 'Received'), w: 0.7, align: 'right' },
-                                { label: lbl('VAS_Pending', 'Pending'), w: 0.7, align: 'right', cls: 'vas-213-c-prim' },
-                                { label: lbl('VAS_Rate', 'Rate'), w: 0.7, align: 'right' },
-                                { label: lbl('VAS_Amount', 'Amount'), w: 0.9, align: 'right', cls: 'vas-213-c-emph' },
-                                { label: lbl('VAS_LineStatus', 'Line status'), w: 1.0 }
+                                { label: lbl('VAS_213_Product', 'Product'), w: 1.5, cls: 'vas-213-c-prim' },
+                                { label: lbl('VAS_213_Attribute', 'Attribute'), w: 1.2 },
+                                { label: lbl('VAS_213_UOM', 'UoM'), w: 0.5 },
+                                { label: lbl('VAS_213_Ordered', 'Ordered'), w: 0.7, align: 'right' },
+                                { label: lbl('VAS_213_Received', 'Received'), w: 0.7, align: 'right' },
+                                { label: lbl('VAS_213_Pending', 'Pending'), w: 0.7, align: 'right', cls: 'vas-213-c-prim' },
+                                { label: lbl('VAS_213_Rate', 'Rate'), w: 0.7, align: 'right' },
+                                { label: lbl('VAS_213_Amount', 'Amount'), w: 0.9, align: 'right', cls: 'vas-213-c-emph' },
+                                { label: lbl('VAS_213_LineStatus', 'Line status'), w: 1.0 }
                             ];
 
                             var lineRows = lines.map(function (l, idx) {
@@ -964,15 +964,15 @@
 
                                 var chipClass = 'vas-213-chip-neutral';
                                 var statusTxt = l.LineStatus;
-                                if (l.LineStatusKey === 'VAS_LineStatusReceived') {
+                                if (l.LineStatusKey === 'VAS_213_LineStatusReceived') {
                                     chipClass = 'vas-213-chip-ok';
-                                    statusTxt = lbl('VAS_Received', 'Received');
-                                } else if (l.LineStatusKey === 'VAS_LineStatusPartialReceived') {
+                                    statusTxt = lbl('VAS_213_Received', 'Received');
+                                } else if (l.LineStatusKey === 'VAS_213_LineStatusPartialReceived') {
                                     chipClass = 'vas-213-chip-warn';
-                                    statusTxt = lbl('VAS_PartialReceived', 'Partial received');
+                                    statusTxt = lbl('VAS_213_PartialReceived', 'Partial received');
                                 } else {
                                     chipClass = 'vas-213-chip-neutral';
-                                    statusTxt = lbl('VAS_Pending', 'Pending');
+                                    statusTxt = lbl('VAS_213_Pending', 'Pending');
                                 }
 
                                 return [
@@ -991,8 +991,8 @@
 
                             var bodyHtml =
                                 statStrip +
-                                '<div class="vas-213-msec">' + esc(lbl('VAS_PurchaseOrderLines', 'Purchase order lines')) + '</div>' +
-                                pagedTable(lineCols, lineRows, { label: lbl('VAS_LinesOf', 'lines of') + ' ' + (header.PurchaseOrderNo || poNo) });
+                                '<div class="vas-213-msec">' + esc(lbl('VAS_213_PurchaseOrderLines', 'Purchase order lines')) + '</div>' +
+                                pagedTable(lineCols, lineRows, { label: lbl('VAS_213_LinesOf', 'lines of') + ' ' + (header.PurchaseOrderNo || poNo) });
 
                             var totalOrd = Number(lData.totalOrderedQty || 0);
 
@@ -1001,10 +1001,10 @@
                                 title: header.PurchaseOrderNo || poNo,
                                 subtitle: (header.VendorName || lData.vendorName || '') + ' · ' + (header.OrderDateDisplay || lData.orderDateFormatted || '') + ' · ' + (header.DocStatusDisplay || lData.documentStatus || ''),
                                 body: bodyHtml,
-                                foot: '<span class="vas-213-foot-note">' + lines.length + ' ' + esc(lbl('VAS_Lines', 'lines')) + ' · ' + formatNumber(totalOrd) + ' ' + esc(lbl('VAS_QtyOrdered', 'qty ordered')) + ' · ' + esc(lData.deliveryStatus || lbl('VAS_Pending', 'Pending')) + '</span>' +
-                                      '<span><button type="button" class="vas-213-btn vas-213-btn-primary" id="vas201_open_window_btn">' + ICON_OPEN_EXT + ' ' + esc(lbl('VAS_OpenInWindow', 'Open in Window')) + '</button> ' +
-                                      '<button type="button" class="vas-213-btn" onclick="VAS.VAS_213_POsExpectedThisMonthWidget.back()">' + esc(lbl('VAS_Back', 'Back')) + '</button> ' +
-                                      '<button type="button" class="vas-213-btn" data-vas-close="1">' + esc(lbl('VAS_Close', 'Close')) + '</button></span>',
+                                foot: '<span class="vas-213-foot-note">' + lines.length + ' ' + esc(lbl('VAS_213_Lines', 'lines')) + ' · ' + formatNumber(totalOrd) + ' ' + esc(lbl('VAS_213_QtyOrdered', 'qty ordered')) + ' · ' + esc(lData.deliveryStatus || lbl('VAS_213_Pending', 'Pending')) + '</span>' +
+                                      '<span><button type="button" class="vas-213-btn vas-213-btn-primary" id="vas201_open_window_btn">' + ICON_OPEN_EXT + ' ' + esc(lbl('VAS_213_OpenInWindow', 'Open in Window')) + '</button> ' +
+                                      '<button type="button" class="vas-213-btn" onclick="VAS.VAS_213_POsExpectedThisMonthWidget.back()">' + esc(lbl('VAS_213_Back', 'Back')) + '</button> ' +
+                                      '<button type="button" class="vas-213-btn" data-vas-close="1">' + esc(lbl('VAS_213_Close', 'Close')) + '</button></span>',
                                 after: function () {
                                     $('#vas201_open_window_btn').on('click', function () {
                                         openPurchaseOrderRecord(poId);

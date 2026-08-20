@@ -56,7 +56,7 @@
 
     VAS.VAS_203_POGlobalSearchWidget = function () {
         var ENDPOINT = 'VAS/VAS_203_POGlobalSearchWidget/SearchPurchaseOrders';
-        var WINDOW_NAME = 'VAS_PurchaseOrder';
+        var WINDOW_NAME = 'VAS_203_PurchaseOrder';
         var TAB_ID = 1002398;
         var TABLE_NAME = 'C_Order';
 

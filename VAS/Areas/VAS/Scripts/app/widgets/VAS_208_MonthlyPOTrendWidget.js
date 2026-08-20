@@ -7,40 +7,40 @@
  * Summary Message Table
  *  #  | Current Text                           | Message Key
  * ----+----------------------------------------+-----------------------------------
- *  1  | Monthly Purchase Order Trend           | VAS_MonthlyPurchaseOrderTrend
- *  2  | PO value in                            | VAS_POValueIn
- *  3  | months                                 | VAS_Months
- *  4  | Range limited to 12 months             | VAS_RangeLimited12Months
- *  5  | Purchase Orders                        | VAS_PurchaseOrders
- *  6  | All POs raised in the selected month   | VAS_AllPOsRaisedInSelectedMonth
- *  7  | PO count                               | VAS_POCount
- *  8  | PO value                               | VAS_POValue
- *  9  | Vendors                                | VAS_Vendors
- *  10 | Avg PO value                           | VAS_AvgPOValue
- *  11 | PO No                                  | VAS_PONo
- *  12 | PO date                                | VAS_PODate
- *  13 | Vendor                                 | VAS_Vendor
- *  14 | Warehouse                              | VAS_Warehouse
- *  15 | Representative                         | VAS_Representative
- *  16 | Value                                  | VAS_Value
- *  17 | Delivery                               | VAS_Delivery
- *  18 | Status                                 | VAS_Status
- *  19 | Lines                                  | VAS_Lines
- *  20 | Product                                | VAS_Product
- *  21 | Attribute                              | VAS_Attribute
- *  22 | UoM                                    | VAS_UOM
- *  23 | Ordered                                | VAS_Ordered
- *  24 | Received                               | VAS_Received
- *  25 | Pending                                | VAS_Pending
- *  26 | Rate                                   | VAS_Rate
- *  27 | Amount                                 | VAS_Amount
- *  28 | Line status                            | VAS_LineStatus
+ *  1  | Monthly Purchase Order Trend           | VAS_208_MonthlyPurchaseOrderTrend
+ *  2  | PO value in                            | VAS_208_POValueIn
+ *  3  | months                                 | VAS_208_Months
+ *  4  | Range limited to 12 months             | VAS_208_RangeLimited12Months
+ *  5  | Purchase Orders                        | VAS_208_PurchaseOrders
+ *  6  | All POs raised in the selected month   | VAS_208_AllPOsRaisedInSelectedMonth
+ *  7  | PO count                               | VAS_208_POCount
+ *  8  | PO value                               | VAS_208_POValue
+ *  9  | Vendors                                | VAS_208_Vendors
+ *  10 | Avg PO value                           | VAS_208_AvgPOValue
+ *  11 | PO No                                  | VAS_208_PONo
+ *  12 | PO date                                | VAS_208_PODate
+ *  13 | Vendor                                 | VAS_208_Vendor
+ *  14 | Warehouse                              | VAS_208_Warehouse
+ *  15 | Representative                         | VAS_208_Representative
+ *  16 | Value                                  | VAS_208_Value
+ *  17 | Delivery                               | VAS_208_Delivery
+ *  18 | Status                                 | VAS_208_Status
+ *  19 | Lines                                  | VAS_208_Lines
+ *  20 | Product                                | VAS_208_Product
+ *  21 | Attribute                              | VAS_208_Attribute
+ *  22 | UoM                                    | VAS_208_UOM
+ *  23 | Ordered                                | VAS_208_Ordered
+ *  24 | Received                               | VAS_208_Received
+ *  25 | Pending                                | VAS_208_Pending
+ *  26 | Rate                                   | VAS_208_Rate
+ *  27 | Amount                                 | VAS_208_Amount
+ *  28 | Line status                            | VAS_208_LineStatus
  *  29 | Close                                  | Close
  *  30 | Back                                   | Back
  *  31 | Showing                                | Showing
  *  32 | of                                     | Of
- *  33 | No purchase orders found for this month| VAS_NoPOsFoundForMonth
- *  34 | Purchase order lines                   | VAS_PurchaseOrderLines
+ *  33 | No purchase orders found for this month| VAS_208_NoPOsFoundForMonth
+ *  34 | Purchase order lines                   | VAS_208_PurchaseOrderLines
  */
 ; VAS = window.VAS || {};
 
@@ -194,7 +194,7 @@
         }
 
         function buildWidget() {
-            var title = lbl("VAS_MonthlyPurchaseOrderTrend", "Monthly Purchase Order Trend");
+            var title = lbl("VAS_208_MonthlyPurchaseOrderTrend", "Monthly Purchase Order Trend");
 
             $card = $(
                 '<div class="vas-mpt-card">' +
@@ -273,7 +273,7 @@
             populateSelectOptions($toSel, toIdx);
 
             if (clamped) {
-                showToast(lbl("VAS_RangeLimited12Months", "Range limited to 12 months"));
+                showToast(lbl("VAS_208_RangeLimited12Months", "Range limited to 12 months"));
             }
 
             loadTrendData();
@@ -325,11 +325,11 @@
             var toLabel = idxToLabel(toIdx);
             var monthCount = trendSeries.length || 1;
 
-            var subTxt = fromLabel + ' – ' + toLabel + ' · ' + monthCount + ' ' + lbl("VAS_Months", "months") + ' · ' + lbl("VAS_POValueIn", "PO value in") + ' ' + curSym;
+            var subTxt = fromLabel + ' – ' + toLabel + ' · ' + monthCount + ' ' + lbl("VAS_208_Months", "months") + ' · ' + lbl("VAS_208_POValueIn", "PO value in") + ' ' + curSym;
             $subLabel.text(subTxt);
 
             if (!trendSeries || trendSeries.length === 0) {
-                $plot.html('<div class="vas-mpt-empty">' + escapeHtml(lbl("VAS_NoPOsFoundForMonth", "No purchase orders found for this period")) + '</div>');
+                $plot.html('<div class="vas-mpt-empty">' + escapeHtml(lbl("VAS_208_NoPOsFoundForMonth", "No purchase orders found for this period")) + '</div>');
                 $axis.empty();
                 return;
             }
@@ -479,12 +479,12 @@
                     "TabLayout": "Y",
                     "TabIndex": "0",
                     "AD_Tab_ID": 1002398,
-                    "ActionName": "VAS_PurchaseOrder",
+                    "ActionName": "VAS_208_PurchaseOrder",
                     "ActionType": "W"
                 });
             } catch (e) {
                 if (VIS && VIS.viewManager && VIS.viewManager.startWindow) {
-                    VIS.viewManager.startWindow("VAS_PurchaseOrder", "C_Order.C_Order_ID=" + orderId);
+                    VIS.viewManager.startWindow("VAS_208_PurchaseOrder", "C_Order.C_Order_ID=" + orderId);
                 }
             }
         }
@@ -492,8 +492,8 @@
         /* Drill-down: Month PO List */
         function openMonthPODrilldown(year, month) {
             var monthLabel = MONTH_SHORT[month - 1] + ' ' + year;
-            var title = lbl("VAS_PurchaseOrders", "Purchase Orders") + ' — ' + monthLabel;
-            var sub = lbl("VAS_AllPOsRaisedInSelectedMonth", "All POs raised in the selected month");
+            var title = lbl("VAS_208_PurchaseOrders", "Purchase Orders") + ' — ' + monthLabel;
+            var sub = lbl("VAS_208_AllPOsRaisedInSelectedMonth", "All POs raised in the selected month");
 
             showBusy(true);
 
@@ -530,24 +530,24 @@
             function buildBodyHtml() {
                 var statsHtml =
                     '<div class="vas-mpt-mstats">' +
-                        '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_POCount", "PO count")) + '</div><div class="v">' + formatNumber(poCount) + '</div></div>' +
-                        '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_POValue", "PO value")) + '</div><div class="v">' + formatCompactMoney(poVal, curSym) + '</div></div>' +
-                        '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_Vendors", "Vendors")) + '</div><div class="v">' + formatNumber(vendorCount) + '</div></div>' +
-                        '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_AvgPOValue", "Avg PO value")) + '</div><div class="v">' + formatCompactMoney(avgPoVal, curSym) + '</div></div>' +
+                        '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_208_POCount", "PO count")) + '</div><div class="v">' + formatNumber(poCount) + '</div></div>' +
+                        '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_208_POValue", "PO value")) + '</div><div class="v">' + formatCompactMoney(poVal, curSym) + '</div></div>' +
+                        '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_208_Vendors", "Vendors")) + '</div><div class="v">' + formatNumber(vendorCount) + '</div></div>' +
+                        '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_208_AvgPOValue", "Avg PO value")) + '</div><div class="v">' + formatCompactMoney(avgPoVal, curSym) + '</div></div>' +
                     '</div>' +
-                    '<div class="vas-mpt-msec">' + escapeHtml(lbl("VAS_PurchaseOrders", "Purchase Orders")) + '</div>' +
+                    '<div class="vas-mpt-msec">' + escapeHtml(lbl("VAS_208_PurchaseOrders", "Purchase Orders")) + '</div>' +
                     '<div class="vas-mpt-mtwrap" id="vas-mpt-table-wrap">' +
                         '<div class="vas-mpt-mtbl">' +
                             '<div class="vas-mpt-mrow vas-mpt-mhead" style="grid-template-columns: minmax(0, 0.32fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.7fr) minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 0.9fr) minmax(0, 1.05fr) minmax(0, 1.1fr);">' +
                                 '<span class="vas-mpt-cell center"></span>' +
-                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_PONo", "PO No")) + '">' + escapeHtml(lbl("VAS_PONo", "PO No")) + '</span>' +
-                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_PODate", "PO date")) + '">' + escapeHtml(lbl("VAS_PODate", "PO date")) + '</span>' +
-                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_Vendor", "Vendor")) + '">' + escapeHtml(lbl("VAS_Vendor", "Vendor")) + '</span>' +
-                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_Warehouse", "Warehouse")) + '">' + escapeHtml(lbl("VAS_Warehouse", "Warehouse")) + '</span>' +
-                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_Representative", "Representative")) + '">' + escapeHtml(lbl("VAS_Representative", "Representative")) + '</span>' +
-                                '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_Value", "Value")) + '">' + escapeHtml(lbl("VAS_Value", "Value")) + '</span>' +
-                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_Delivery", "Delivery")) + '">' + escapeHtml(lbl("VAS_Delivery", "Delivery")) + '</span>' +
-                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_Status", "Status")) + '">' + escapeHtml(lbl("VAS_Status", "Status")) + '</span>' +
+                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_PONo", "PO No")) + '">' + escapeHtml(lbl("VAS_208_PONo", "PO No")) + '</span>' +
+                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_PODate", "PO date")) + '">' + escapeHtml(lbl("VAS_208_PODate", "PO date")) + '</span>' +
+                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_Vendor", "Vendor")) + '">' + escapeHtml(lbl("VAS_208_Vendor", "Vendor")) + '</span>' +
+                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_Warehouse", "Warehouse")) + '">' + escapeHtml(lbl("VAS_208_Warehouse", "Warehouse")) + '</span>' +
+                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_Representative", "Representative")) + '">' + escapeHtml(lbl("VAS_208_Representative", "Representative")) + '</span>' +
+                                '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_208_Value", "Value")) + '">' + escapeHtml(lbl("VAS_208_Value", "Value")) + '</span>' +
+                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_Delivery", "Delivery")) + '">' + escapeHtml(lbl("VAS_208_Delivery", "Delivery")) + '</span>' +
+                                '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_Status", "Status")) + '">' + escapeHtml(lbl("VAS_208_Status", "Status")) + '</span>' +
                             '</div>' +
                             '<div class="vas-mpt-mbody" id="vas-mpt-rows-container"></div>' +
                         '</div>' +
@@ -562,14 +562,14 @@
                 var rowsHtml = '';
 
                 if (slice.length === 0) {
-                    rowsHtml = '<div class="vas-mpt-empty" style="padding: 2em 0;">' + escapeHtml(lbl("VAS_NoPOsFoundForMonth", "No purchase orders found for this month")) + '</div>';
+                    rowsHtml = '<div class="vas-mpt-empty" style="padding: 2em 0;">' + escapeHtml(lbl("VAS_208_NoPOsFoundForMonth", "No purchase orders found for this month")) + '</div>';
                 } else {
                     for (var i = 0; i < slice.length; i++) {
                         var p = slice[i];
                         var poValFormatted = formatCompactMoney(p.value, curSym);
                         rowsHtml +=
                             '<div class="vas-mpt-mrow" style="grid-template-columns: minmax(0, 0.32fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1.7fr) minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 0.9fr) minmax(0, 1.05fr) minmax(0, 1.1fr);">' +
-                                '<span class="vas-mpt-cell center"><button type="button" class="vas-mpt-iconbtn vas-mpt-lines-btn" data-id="' + p.orderId + '" data-no="' + escapeHtml(p.poNo) + '" title="' + escapeHtml(lbl("VAS_Lines", "Lines")) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button></span>' +
+                                '<span class="vas-mpt-cell center"><button type="button" class="vas-mpt-iconbtn vas-mpt-lines-btn" data-id="' + p.orderId + '" data-no="' + escapeHtml(p.poNo) + '" title="' + escapeHtml(lbl("VAS_208_Lines", "Lines")) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button></span>' +
                                 '<span class="vas-mpt-cell"><button type="button" class="vas-mpt-lnk vas-mpt-zoom-btn" data-id="' + p.orderId + '" title="' + escapeHtml(p.poNo) + '">' + escapeHtml(p.poNo) + '</button></span>' +
                                 '<span class="vas-mpt-cell vas-mpt-c-std" title="' + escapeHtml(p.orderDateFormatted) + '">' + escapeHtml(p.orderDateFormatted) + '</span>' +
                                 '<span class="vas-mpt-cell vas-mpt-c-std" title="' + escapeHtml(p.vendor) + '">' + escapeHtml(p.vendor) + '</span>' +
@@ -631,7 +631,7 @@
                 title: title,
                 subtitle: subtitle,
                 body: buildBodyHtml(),
-                foot: '<span class="vas-mpt-foot-note">' + records.length + ' ' + lbl("VAS_PurchaseOrders", "purchase orders") + '</span><button type="button" class="vas-mpt-btn vas-mpt-close-action">' + escapeHtml(lbl("Close", "Close")) + '</button>',
+                foot: '<span class="vas-mpt-foot-note">' + records.length + ' ' + lbl("VAS_208_PurchaseOrders", "purchase orders") + '</span><button type="button" class="vas-mpt-btn vas-mpt-close-action">' + escapeHtml(lbl("Close", "Close")) + '</button>',
                 onRender: function ($m) {
                     renderRows($m);
                 }
@@ -662,8 +662,8 @@
         }
 
         function renderPOLinesModal(orderId, poNo, lines, curSym) {
-            var title = lbl("VAS_Lines", "Lines") + ' · ' + poNo;
-            var sub = lbl("VAS_PurchaseOrderLines", "Purchase order lines");
+            var title = lbl("VAS_208_Lines", "Lines") + ' · ' + poNo;
+            var sub = lbl("VAS_208_PurchaseOrderLines", "Purchase order lines");
             var PAGE_SIZE = 10;
             var curPage = 0;
             var totalPages = Math.max(1, Math.ceil(lines.length / PAGE_SIZE));
@@ -679,25 +679,25 @@
 
             function buildLinesBodyHtml() {
                 return '<div class="vas-mpt-mstats">' +
-                    '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_Lines", "Lines")) + '</div><div class="v">' + lines.length + '</div></div>' +
-                    '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_Ordered", "Qty ordered")) + '</div><div class="v">' + formatNumber(totalOrdered) + '</div></div>' +
-                    '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_Pending", "Qty pending")) + '</div><div class="v">' + formatNumber(totalPending) + '</div></div>' +
-                    '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_POValue", "PO value")) + '</div><div class="v">' + formatCompactMoney(totalAmt, curSym) + '</div></div>' +
+                    '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_208_Lines", "Lines")) + '</div><div class="v">' + lines.length + '</div></div>' +
+                    '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_208_Ordered", "Qty ordered")) + '</div><div class="v">' + formatNumber(totalOrdered) + '</div></div>' +
+                    '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_208_Pending", "Qty pending")) + '</div><div class="v">' + formatNumber(totalPending) + '</div></div>' +
+                    '<div class="vas-mpt-mstat"><div class="l">' + escapeHtml(lbl("VAS_208_POValue", "PO value")) + '</div><div class="v">' + formatCompactMoney(totalAmt, curSym) + '</div></div>' +
                 '</div>' +
-                '<div class="vas-mpt-msec">' + escapeHtml(lbl("VAS_PurchaseOrderLines", "Purchase order lines")) + '</div>' +
+                '<div class="vas-mpt-msec">' + escapeHtml(lbl("VAS_208_PurchaseOrderLines", "Purchase order lines")) + '</div>' +
                 '<div class="vas-mpt-mtwrap">' +
                     '<div class="vas-mpt-mtbl">' +
                         '<div class="vas-mpt-mrow vas-mpt-mhead" style="grid-template-columns: minmax(0, 0.3fr) minmax(0, 1.5fr) minmax(0, 1.2fr) minmax(0, 0.5fr) minmax(0, 0.7fr) minmax(0, 0.7fr) minmax(0, 0.7fr) minmax(0, 0.7fr) minmax(0, 0.9fr) minmax(0, 1fr);">' +
                             '<span class="vas-mpt-cell right">#</span>' +
-                            '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_Product", "Product")) + '">' + escapeHtml(lbl("VAS_Product", "Product")) + '</span>' +
-                            '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_Attribute", "Attribute")) + '">' + escapeHtml(lbl("VAS_Attribute", "Attribute")) + '</span>' +
-                            '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_UOM", "UoM")) + '">' + escapeHtml(lbl("VAS_UOM", "UoM")) + '</span>' +
-                            '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_Ordered", "Ordered")) + '">' + escapeHtml(lbl("VAS_Ordered", "Ordered")) + '</span>' +
-                            '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_Received", "Received")) + '">' + escapeHtml(lbl("VAS_Received", "Received")) + '</span>' +
-                            '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_Pending", "Pending")) + '">' + escapeHtml(lbl("VAS_Pending", "Pending")) + '</span>' +
-                            '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_Rate", "Rate")) + '">' + escapeHtml(lbl("VAS_Rate", "Rate")) + '</span>' +
-                            '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_Amount", "Amount")) + '">' + escapeHtml(lbl("VAS_Amount", "Amount")) + '</span>' +
-                            '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_LineStatus", "Line status")) + '">' + escapeHtml(lbl("VAS_LineStatus", "Line status")) + '</span>' +
+                            '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_Product", "Product")) + '">' + escapeHtml(lbl("VAS_208_Product", "Product")) + '</span>' +
+                            '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_Attribute", "Attribute")) + '">' + escapeHtml(lbl("VAS_208_Attribute", "Attribute")) + '</span>' +
+                            '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_UOM", "UoM")) + '">' + escapeHtml(lbl("VAS_208_UOM", "UoM")) + '</span>' +
+                            '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_208_Ordered", "Ordered")) + '">' + escapeHtml(lbl("VAS_208_Ordered", "Ordered")) + '</span>' +
+                            '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_208_Received", "Received")) + '">' + escapeHtml(lbl("VAS_208_Received", "Received")) + '</span>' +
+                            '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_208_Pending", "Pending")) + '">' + escapeHtml(lbl("VAS_208_Pending", "Pending")) + '</span>' +
+                            '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_208_Rate", "Rate")) + '">' + escapeHtml(lbl("VAS_208_Rate", "Rate")) + '</span>' +
+                            '<span class="vas-mpt-cell right" title="' + escapeHtml(lbl("VAS_208_Amount", "Amount")) + '">' + escapeHtml(lbl("VAS_208_Amount", "Amount")) + '</span>' +
+                            '<span class="vas-mpt-cell" title="' + escapeHtml(lbl("VAS_208_LineStatus", "Line status")) + '">' + escapeHtml(lbl("VAS_208_LineStatus", "Line status")) + '</span>' +
                         '</div>' +
                         '<div class="vas-mpt-mbody" id="vas-mpt-line-rows-container"></div>' +
                     '</div>' +
@@ -711,7 +711,7 @@
                 var html = '';
 
                 if (slice.length === 0) {
-                    html = '<div class="vas-mpt-empty" style="padding: 2em 0;">' + escapeHtml(lbl("VAS_NoPOsFoundForMonth", "No lines found")) + '</div>';
+                    html = '<div class="vas-mpt-empty" style="padding: 2em 0;">' + escapeHtml(lbl("VAS_208_NoPOsFoundForMonth", "No lines found")) + '</div>';
                 } else {
                     for (var i = 0; i < slice.length; i++) {
                         var l = slice[i];
